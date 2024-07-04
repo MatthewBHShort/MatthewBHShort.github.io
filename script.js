@@ -33,6 +33,7 @@ function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
     localStorage.setItem('sharedString', inputString);
+    // window.location.href = 'http://localhost:8000/results.html';
     window.location.href = 'https://matthewbhshort.github.io/results.html';
     
 
