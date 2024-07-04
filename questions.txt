@@ -427,7 +427,7 @@ baseboardAge: {
         question: "Does your home have gas/propane/oil/wood boiler",
         answers: {
             "Yes": { next: "boilerAge", action: () => stringFunction("boilerAge","boiler","")},
-            "No": { next: "end", action: () => stringFunction("waterHeating","boiler","")}, 
+            "No": { next: "baseboard", action: () => stringFunction("baseboard","boiler","")}, 
             "I don't know": { next: "virutalConsultation", action: () => stringFunction("virtualConsultation","boiler","")},
         }
     },
@@ -516,65 +516,65 @@ baseboardAge: {
         question: "What is the age of your water heating system?",
         answers: {
             "0 - 5 years": { 
-                next: "end", 
+                next: "solar", 
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("end","waterHeatingAge","JK2");
+                                stringFunction("solar","waterHeatingAge","JK2");
                             case result.driver.includes('ghgs'):
-                                stringFunction("end","waterHeatingAge","JK2");
+                                stringFunction("solar","waterHeatingAge","JK2");
                             case result.driver.includes('comfort'):
-                                stringFunction("end","waterHeatingAge","JK");
+                                stringFunction("solar","waterHeatingAge","JK");
                             case result.driver.includes('equipment'):
-                                stringFunction("end","waterHeatingAge","");
+                                stringFunction("solar","waterHeatingAge","");
                                     break;
                         }
                     }
             },
             "6 - 10 years": { 
-                next: "end",
+                next: "solar",
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("end","waterHeatingAge","JK2");
+                            stringFunction("solar","waterHeatingAge","JK2");
                         case result.driver.includes('ghgs'):
-                            stringFunction("end","waterHeatingAge","JK2");
+                            stringFunction("solar","waterHeatingAge","JK2");
                         case result.driver.includes('comfort'):
-                            stringFunction("end","waterHeatingAge","JK");
+                            stringFunction("solar","waterHeatingAge","JK");
                         case result.driver.includes('equipment'):
-                            stringFunction("end","waterHeatingAge","");
+                            stringFunction("solar","waterHeatingAge","");
                                 break;
                     }
                 }
             },
             "11 - 15 years": { 
-                next: "end", 
+                next: "solar", 
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("end","waterHeatingAge","JK2");
+                            stringFunction("solar","waterHeatingAge","JK2");
                         case result.driver.includes('ghgs'):
-                            stringFunction("end","waterHeatingAge","JK2");
+                            stringFunction("solar","waterHeatingAge","JK2");
                         case result.driver.includes('comfort'):
-                            stringFunction("end","waterHeatingAge","JK");
+                            stringFunction("solar","waterHeatingAge","JK");
                         case result.driver.includes('equipment'):
-                            stringFunction("end","waterHeatingAge","JKQR");
+                            stringFunction("solar","waterHeatingAge","JKQR");
                                 break;
                     }
                 }
             },
             "16+ years": { 
-                next: "end", 
+                next: "solar", 
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("end","waterHeatingAge","JKQRZ2");
+                            stringFunction("solar","waterHeatingAge","JKQRZ2");
                         case result.driver.includes('ghgs'):
-                            stringFunction("end","waterHeatingAge","JKQRZ2");
+                            stringFunction("solar","waterHeatingAge","JKQRZ2");
                         case result.driver.includes('comfort'):
-                            stringFunction("end","waterHeatingAge","JKQRZ");
+                            stringFunction("solar","waterHeatingAge","JKQRZ");
                         case result.driver.includes('equipment'):
-                            stringFunction("end","waterHeatingAge","JKQRZ");
+                            stringFunction("solar","waterHeatingAge","JKQRZ");
                                 break;
                     }
             }
