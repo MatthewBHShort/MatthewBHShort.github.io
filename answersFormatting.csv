@@ -1,0 +1,803 @@
+identifier,paragraph,
+A,"<h1>Household Routines:</h1> <ul class=\""inline-bullets\""> <li>Draw curtains during cold winter days and bright hot sunny days. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > 10% per year</li> <li>Expected emissions reductions: > 0.5 tonnes of CO<sub>2</sub> per year. </li></strong></ul></li> <li>Make sure that furniture does not block floor vents, radiators or electric baseboard heaters.</li> <li>Turn off lights and appliances when not in use including switching power bars off serving appliances that aren't being used. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $100 per year </li> <li>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </li> </ul> <li> If you take baths in the winter, leave the water in the tub for a couple of hours after use to allow the remaining heat in the water to continue warming up the home. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < $100 per year; </li> <li>Expected emissions reductions: < 0.5 tonnes per year CO<sub>2</sub></strong></li> </li> </ul> <li> Take showers instead of baths. Showers lasting longer than 10mins can consume more water and energy than a bath. Take shorter showers. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: ~ $50 - $100 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> Limit how long you leave your fridge door open; decide what you need before opening it.</li> <li> Vacuum fridge coils of dust and dirt every six months so its compressor doesn't have to work as hard. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $10 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> If you have an open wood fireplace, close its damper when not in use to prevent warm air escaping up the chimney. If you have a gas fireplace, determine whether it is possible to switch back on its pilot light if you shut off the gas when not using the unit. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < 10% per year</strong></li> <li><strong>Expected emissions reductions: < 10% per year</strong></li> </ul> </li> </li></ul>",
+B,"<h1>Clothes Washing:</h1> <ul class=\""inline-bullets\""> <li>Wash clothes in cold water. <ul class=\""inline-bullets\""> <li><strong>Expected cost savings: ~ $1 per wash cycle</strong></li> <li><strong>Reduction in emissions: > 0.1 tonnes of CO<sub>2</sub> compared to washing clothes in hot water</strong></li> </ul> </li> </ul>",
+C,"<h1>Clothes Drying:</h1>
+<ul class=\""inline-bullets\"">
+    <li>Hang dry clothes whenever possible even if just one load per week. Clothes drying can reach up to 10% of a household's total utility bills.
+        <ul class=\""inline-bullets\"">
+            <li>Requires a clothes drying rack (&lt;$50) or a clothes line (&lt;$200)</li>
+            <li><strong>Running the dryer during times of OFF-PEAK electricity rates can reduce the cost by &gt;50% per cycle</strong></li>
+            <li>Reduces the load on the home's furnace (winter) and air conditioning (summer)</li>
+        </ul>
+    </li>
+    <li>Do not over dry clothes. Use moisture sensor if your machine is equipped with this feature.</li>
+    <li>Hang dry even for just one load per week.</li>
+    <li>Clean out lint trap before every load. This will result in:
+        <ul class=\""inline-bullets\"">
+            <li>Shorter drying times</li>
+            <li>Lower utility costs</li>
+            <li>Less wear & tear on the dryer</li>
+            <li>Reduced risk of fire</li>
+        </ul>
+    </li>
+    <li>Clean out dryer vent pipe once per year. This will result in:
+        <ul class=\""inline-bullets\"">
+            <li>Shorter drying times</li>
+            <li>Lower utility costs</li>
+            <li>Less wear & tear on the dryer</li>
+            <li>Reduced risk of fire</li>
+        </ul>
+    </li>
+</ul>
+",
+D,"<h1>Dish Washing:</h1>
+<ul class=\""inline-bullets\"">
+    <li>Use dishwasher during times of OFF-PEAK electricity rates.
+        <ul class=\""inline-bullets\"">
+            <li><strong>The cost estimate could be ~ $0.25 per cycle so running the machine during OFF-PEAK could save &gt;50%</strong></li>
+        </ul>
+    </li>
+    <li>Scrape plates of food scraps before loading into dishwasher.</li>
+    <li>Run dishwasher only when it's full.</li>
+    <li>Consider setting machine to air dry rather than heat dry.</li>
+</ul>
+",
+E,"<h1>Thermostat Operation:</h1>
+<ul class=\""inline-bullets\"">
+    <li>Turn down temperature-setting a degree or two in the winter to lower heating costs.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected heating energy savings: &gt;1% per degree of total heating costs</strong></li>
+            <li><strong>Expected emissions reductions: &gt;0.05 tonnes CO<sub>2</sub> per degree</strong></li>
+        </ul>
+    </li>
+    <li>Turn up temperature-setting a degree or two in the summer to lower cooling costs.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected cooling energy savings: &gt;1% per degree of total cooling costs</strong></li>
+        </ul>
+    </li>
+</ul>
+",
+F,"<h1>Heating and Cooling Maintenance Routines:</h1>
+<h2>Ductwork-based System:</h2>
+<ul class=\""inline-bullets\"">
+    <li>Clean and replace air filters at least twice per year.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected cost of filter replacements: ~ $50 per filter</strong></li>
+            <li>Expected energy savings: &gt;$10 per month</li>
+        </ul>
+    </li>
+    <li>Have heating and cooling equipment inspected and maintained once per year to ensure the equipment operate well and are less likely to break down unexpectedly, and extend the life of the equipment.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected maintenance cost: ~ $300 per call excluding parts</strong></li>
+            <li><strong>Expected energy savings: &lt;25% per year of total heating and cooling cost</strong></li>
+            <li><strong>Expected emissions reductions: &lt;25% per year</strong></li>
+        </ul>
+    </li>
+    <li>Have ductwork cleaned every three to five years to maintain unhindered air flow to prevent stress on the home's heating and cooling equipment. Cleaner ductwork will also help improve the air quality in the home as well.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected cost: ~ $300 per call</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<h2>How to find a reputable service technician should consider the following aspects:</h2>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of this technology, the contractor must have a long solid track record working with gas (i.e. furnace) and refrigerant (i.e. air conditioner) systems.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in the finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+G,"<h1>Heating and Cooling Maintenance Routines:</h1>
+<h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
+<ul class=\""inline-bullets\"">
+    <li>Schedule a technician to inspect and maintain the system as per the manufacturer's recommended schedule, or if unknown, once per year.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected maintenance cost: ~$300 per call excluding parts</strong></li>
+            <li><strong>Expected heating energy savings: &lt;10% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;10% per year</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<h2>How to find a reputable service technician should consider the following aspects:</h2>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of this technology, the contractor must have a long solid track record working with gas-fired boiler and radiator and in-floor heating systems.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in the finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+H,"<h1>Heating and Cooling Maintenance Routines:</h1>
+<h2>Ductless Heat Pumps (a.k.a. Mini-Splits):</h2>
+<ul class=\""inline-bullets\"">
+    <li>Clean air filters at least twice per year.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected heating and cooling energy savings: &lt;15% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;15% per year</strong></li>
+        </ul>
+    </li>
+    <li>Schedule a technician to inspect and maintain the system as per the manufacturer's recommended schedule, or if unknown, once per year.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected maintenance cost: ~$300 per call excluding parts</strong></li>
+            <li><strong>Expected heating and cooling energy savings: &lt;25% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;25% per year</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<h2>How to find a reputable service technician should consider the following aspects:</h2>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of this technology, the contractor must have a long solid track record working with heat pump-based equipment and specifically refrigerant systems.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in the finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+I,"<h1>Heating and Cooling Maintenance Routines:</h1>
+<h2>Electric Baseboard Heating:</h2>
+<ul class=\""inline-bullets\"">
+    <li>To ensure that the baseboards deliver heat efficiently and safely, regularly (i.e. once per year) clean the units of dust (e.g. vacuum cleaner after the heater is switched off). Remember to keep furniture, curtains and other objects away from the heaters to ensure safe and reliable operation.
+        <ul class=\""inline-bullets\"">
+            <li>Apart from being able to deliver heat more evenly, regular cleaning of the electric baseboards will extend their lives and reduce the risk of fire.</li>
+        </ul>
+    </li>
+    <li>There are many helpful DIY videos on YouTube such as: <a href=\""https://www.youtube.com/watch?v=h1i3ysAo5ZY\"">https://www.youtube.com/watch?v=h1i3ysAo5ZY</a></li>
+</ul>
+",
+J,"Water Heater Maintenance Routines:
+Tank-based Heater (gas and electric):
+-turn down the temperature setting to >49C (>120F) to save energy, extend the life of the heater and prevent scalding. Expected water heating energy savings: <10%/yr; Expected emissions reductions: <10%/yr
+-follow manufacturer's recommended maintenance schedule (e.g. flushing the tank once per year) to ensure proper operation of the appliance and extended life. Consider combining the heater's maintenance with the home's heating annual service call to lower costs
+-Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf",
+K,"<h1>Water Heater Maintenance Routines:</h1>
+<h2>Tankless Water Heater (a.k.a. On-Demand Water Heater):</h2>
+<ul class=\""inline-bullets\"">
+    <li>Turn down the temperature setting to &gt;49C (&gt;120F) to save energy, extend the life of the heater and prevent scalding.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected water heating energy savings: &lt;10% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;10% per year</strong></li>
+        </ul>
+    </li>
+    <li>Schedule a technician to service the heating system as per the manufacturer's recommended schedule.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Annual costs: ~$300</strong></li>
+            <li><strong>Expected water heating energy savings: &lt;10% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;10% per year</strong></li>
+        </ul>
+    </li>
+    <li>Consider combining the water heater's service call with that of your home's other heating and cooling equipment regular maintenance schedule to lower costs.</li>
+    <li>Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: <a href=\""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf\"">https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf</a></li>
+</ul>
+",
+L,"<h1>Thermostat Upgrading:</h1>
+<ul class=\""inline-bullets\"">
+    <li>If your home's thermostat cannot be programmed to run your heating and cooling on specified schedules, consider replacing it with a smart thermostat. The scheduling feature can enhance the level of comfort in the home whilst saving energy.
+        <ul class=\""inline-bullets\"">
+            <li>Typical cost range of a smart thermostat is $150 - $300</li>
+            <li><strong>Expected energy savings: &gt;10% per year</strong></li>
+            <li><strong>Expected emissions reductions: &gt;10%</strong></li>
+        </ul>
+    </li>
+    <li>Most installations can be done by homeowners themselves whilst following the manufacturer's instructions.</li>
+</ul>
+",
+M,"<h1>Space-Heating Equipment Upgrading:</h1>
+<h2>Ductwork-based System:</h2>
+<p>Aging gas furnace replacement with these various options:</p>
+<h3>1) High energy efficiency gas furnace:</h3>
+<ul class=\""inline-bullets\"">
+    <li>High energy efficiency gas furnace with an AFUE rating (Annual Fuel Utilization Efficiency) &gt;90% to replace an older, less efficient (i.e. low and mid efficiency) gas furnace.
+        <ul class=\""inline-bullets\"">
+            <li>Cost can range from $3,000 - $6,000 depending on home</li>
+            <li><strong>Expected energy savings: &lt;20%</strong></li>
+            <li><strong>Expected emissions reductions: &lt;20%</strong></li>
+        </ul>
+    </li>
+</ul>
+<p>Seek reputable contractors by speaking to others for reference and referrals, client reviews verifying their technical credentials such as being licensed gas fitters. Most reputable furnace manufacturers offer a 10-year warranty on key parts and 20 years on the heat exchanger. Installers should offer at least a 1-year warranty on labor to install the equipment. Most furnace replacements can be done in a day.</p>
+
+<h3>2) Fully electric furnace heating system:</h3>
+<ul class=\""inline-bullets\"">
+    <li>Fully electric furnace heating system that involves replacing the home's existing gas furnace and AC with a new electric furnace (comprises new air handler with electric strip-heaters) and cold climate heat pump which must have a COP rating (Coefficient of Performance) of &gt;1.8 with an outside temperature of -15C as per NRCan's guidelines.
+        <ul class=\""inline-bullets\"">
+            <li>The typical combined installed cost can range from $15,000 - $25,000 depending on the home and equipment</li>
+            <li><strong>Expected energy savings: &gt;50% per year</strong></li>
+            <li><strong>Expected emissions reductions: &gt;50% per year</strong></li>
+        </ul>
+    </li>
+</ul>
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of heat pumps: <a href=\""https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589\"">https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589</a></p>
+
+<h3>Notes:</h3>
+<ul class=\""inline-bullets\"">
+    <li>a) A home's annual utility bills may be actually greater by &gt;$300 than they were before the replacement. The extra cost will depend on the home's ductwork system (i.e. capacity of cold climate heat pump that can be accommodated where a larger rating is preferred), the efficiency of the new heating system, the severity of winter temperatures and finally the homeowner's habits (e.g. temperature setbacks overnight vs. leaving the thermostat set at a constant temperature-setting, etc.).</li>
+    <li>b) This type of system will almost certainly require that the home has a 200A electrical service with sufficient available capacity to connect the new electric furnace heating system in conjunction with the home's existing and future expected (e.g. EV charger) electrical appliances. The cost of an electrical panel upgrade, if required, will range from $2,000 - $4,000 in most cases. Always consult a licensed electrician.</li>
+    <li>c) The location of the cold climate heat pump must take into account that (i) it will remain clear of snow in the winter (e.g. snow banks, roof snow-shedding), and (ii) the condensate generated by the unit will not cause issues such as ice buildup on pathways and potential water leakage into the home's foundation.</li>
+    <li>d) Since an electric furnace heating system would eliminate the household's largest use of gas (i.e. gas furnace), homeowners may wish to consider whether this is the time they should electrify their other gas appliances as well (e.g. hot water heating). Doing so would eliminate the need for gas service to the home altogether. This would save the homeowner a whole set of fixed monthly charges from the gas utility (~ $300 per year).</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of a gas furnace replacement, the contractor must hold a gas fitter license. In the case of the electric furnace heating system, the contractor must be licensed to work with refrigerants and should have a long solid track record working with heat pump-based equipment.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+N,"<h1>Space-Heating Equipment Upgrading:</h1>
+<h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
+<ul class=\""inline-bullets\"">
+    <li>Consider replacing the gas-fired boiler with a cold climate heat pump connected to a hydronic air-handler (a.k.a. heat exchanger) that would transfer the pump's thermal energy to the home's radiator or in-floor heating network. It may also be possible to use the same system to provide domestic hot water heating as well thereby negating the need for a separate water heater. Depending on the home and location, the annual energy costs may exceed the heating costs from a gas furnace, however. The delivered benefits, though, include vastly expected reduced emissions of &gt;50% per year, the continued stable heating sink provided from the home's radiators and in-floor heating network, and possibly the elimination of a separate water heater. For very cold weather, an electric backup system built into an accompanying buffer tank will be included in the system's specifications. 
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected emissions reductions: &gt;50% per year</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<p>Typical components of a warranty include: parts (e.g. key components such as heat exchanger, circulation pump, controls, etc. that can range from several years to a lifetime depending on the quality of the make and model), labor for install replacement parts that are still under warranty as well as the original installation's labor)</p>
+
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of heat pumps: <a href=\""https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589\"">https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589</a></p>
+
+<h3>Notes:</h3>
+<ul class=\""inline-bullets\"">
+    <li>a) This type of system will almost certainly require that the home has a 200A electrical service with sufficient available capacity to connect the new electric furnace heating system in conjunction with the home's existing and future expected (e.g. EV charger) electrical appliances. The cost of an electrical panel upgrade, if required, will range from $2,000 - $4,000 in most cases. Always consult a licensed electrician.</li>
+    <li>b) A separate, independent cooling system may be required for the cooling season.</li>
+    <li>c) The location of the heat pump must take into account that (i) it will remain clear of snow in the winter (e.g. potential for snow banks, roof snow-shedding), and (ii) the condensate generated by the unit will not cause issues such as ice buildup on pathways and potential water leakage into the home's foundation.</li>
+    <li>d) Since a cold climate heating system would eliminate the household's largest use of gas (i.e. gas boiler), homeowners may wish to consider whether this is the time they should electrify their other gas appliances as well (e.g. hot water heating). Doing so would eliminate the need for gas service to the home altogether. This would save the homeowner a whole set of fixed monthly charges from the gas utility (~ $300 per year).</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of this technology, the contractor must have a long solid track record working with gas-fired boiler and radiator and in-floor heating systems.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+O,"<h1>Space-Heating Equipment Upgrading:</h1>
+<h2>Ductless Heat Pump (a.k.a. Mini-Splits) Heating System:</h2>
+<ul class=\""inline-bullets\"">
+    <li>Consider replacing the system with a more efficient model if the existing system's HSPF rating (Heating Seasonal Performance Factor) is less than 8. Consider the following sample calculation to gauge the incremental efficiency impact of a new machine with a higher HSPF:
+        <ul class=\""inline-bullets\"">
+            <li>Home's existing ductless heat pump has an HSPF rating of 7 whilst a new model under consideration has an HSPF rating of 10. The efficiency improvement = ((new HSPF - existing HSPF)/existing HSPF) x 100% or ((10 - 7)/7) x 100% = 30%</li>
+        </ul>
+    </li>
+    <li>Cost for a system will depend on size (i.e. tonnage rating), efficiency, noise level (i.e. ideally should not exceed 60 - 70 dbl) and ease of installation and whether a wiring upgrade is required. 
+        <ul class=\""inline-bullets\"">
+            <li>Expect typical cost for a system to range from $6,000 - $12,000 with an annual maintenance cost of ~ $300 excluding parts.</li>
+            <li>For cold climate systems, there is approximately a 20% incremental cost over and above these estimates.</li>
+            <li>The installation time is approximately a day depending on the complexity of the installation.</li>
+        </ul>
+    </li>
+    <li>Homeowners with existing traditional ductwork or even hydronic heating systems who wish to keep them in place and who nonetheless wish to lower their energy costs, lower their household emissions and/or improve the comfort level of their home (e.g. warm up a cold top floor or room(s) in the winter, cool down the same in the summer) may wish to consider installing a ductless unit in the offending area(s) to complement their home's existing system. This will add more control to the homeowner to create 'heating zones' in their home whilst not having to over-heat well-warmed areas (or over-cool well-cooled areas) just to make the colder areas more comfortable (warmer areas more comfortable).</li>
+    <li><strong>Expected energy savings and emissions reductions are difficult to estimate since they will be contingent on the performance of the home's existing heating system, the location of the ductless interior units and the homeowner's preference. There is certainly a potential to save up to 50% in energy and emissions, however.</strong></li>
+    <li>The typical components of warranties for the type of system include:
+        <ul class=\""inline-bullets\"">
+            <li>Parts (e.g. interior blower units, remotes for individual interior units, compressor for the heat pump that can range from several years to a lifetime)</li>
+            <li>Labour for install replacement parts that are still under warranty and well as the original installation's labour</li>
+        </ul>
+    </li>
+    <li>In all cases, it is imperative that the home's electrical service capacity be verified by a licensed electrician to ensure that the incremental electrical load that the ductless unit will present are within safe limits for the home's electrical system. A cold climate ductless system in particular will almost certainly have a higher electrical rating than a regular or non-cold climate ductless heat pump. Should an upgrade be required, the cost typically ranges from $2,000 to $4,000.</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of this technology, the contractor must have a long solid track record working with gas-fired boiler and radiator and in-floor heating systems.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+P,"<h1>Cooling Equipment Upgrading:</h1>
+<h2>Aging AC replacement with these various options:</h2>
+<ul class=\""inline-bullets\"">
+    <li>Consider installing a high energy efficiency AC meaning one with as high a SEER rating (Seasonal Energy Efficiency Ratio) as you can manage. As a rough gauge, each SEER # increase is equivalent to approximately a $30 per year saving in electricity. As an example, an AC with a SEER rating of 19 could save a homeowner some $150 per year in energy costs over an AC with a SEER rating of 14. 
+        <ul class=\""inline-bullets\"">
+            <li>Depending on the home and the equipment, a new AC can cost in the range of $4,000 - $8,000 to install.</li>
+        </ul>
+    </li>
+    <li>As a more energy efficient alternative to just replacing an old AC with a new AC, consider implementing a 'hybrid heating system' in your home that involves replacing a home's AC with a same-sized heat pump (rating expressed in 'tons' with most homes in the 2 - 4 ton range) whilst leaving the furnace intact. The heat pump becomes the home's primary heating source which will comfortably heat the home for outside temperatures &gt;0C (in some homes even lower) whilst the gas furnace heats during colder temperatures. 
+        <ul class=\""inline-bullets\"">
+            <li>The incremental cost of a same-sized heat pump over a traditional AC is ~ $3,000 installed.</li>
+            <li><strong>Expected combined gas and electricity energy savings: &gt;10% per year</strong></li>
+            <li><strong>Expected reduction in emissions: &gt;10% per year</strong></li>
+            <li>Incremental maintenance of the heat pump over the AC is minimal and can and should be combined with the regular maintenance of the furnace. Combined annual cost of a service call ~ $300.</li>
+            <li>As the AC is being replaced with a heat pump of the same size, the home's electrical panel will rarely need upgrading; consult a licensed electrician nonetheless.</li>
+        </ul>
+    </li>
+</ul>
+
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of heat pumps: <a href=\""https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589\"">https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589</a></p>
+
+<h3>Note:</h3>
+<ul class=\""inline-bullets\"">
+    <li>Since the heat pump also be working in the winter, take care that the location of the unit will not be burdened by snow drifts and roof snow-sheds; the pumps must remain clear at all times.</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. The contractor must be licensed to work with refrigerants and should have a long solid track record working with heat pump-based equipment.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+Q,"<h1>Water Heater Equipment Upgrading:</h1>
+<h2>Tank-based water heater (electric or gas):</h2>
+<ul class=\""inline-bullets\"">
+    <li>If you notice any rust or corrosion (i.e. visually noticeable on the heater, discoloration of the water), the heater should be replaced immediately to avoid a leak and hence water damage to the home. If the heater is taking longer to heat water, it is recommended that you call a service technician to inspect the appliance. In some instances, the tank will need to be replaced. The 10-year mark is a good reference point for this. Consider the following options:
+        <ul class=\""inline-bullets\"">
+            <li>a) Electric water heaters: their replacements are straightforward and good plumbers typically will not have any issues. They are generally the least expensive to purchase and install. If the 30A wiring is already in place, then installation of a new electrical tank water heater can range from $750 - $2,000 and take just a few hours to complete. Make sure to clear the area ahead of time to make the water heater accessible. If the existing water heater that is being replaced is gas-fired, then a dedicated 30A electrical cable will need to be run from the electrical panel to the electrical water heater. It is strongly recommended that homeowners consult a licensed electrician to verify that there is sufficient capacity in the home's electrical panel and to install the wiring.</li>
+            <li>b) Gas-fired water heater: consider installing a more energy efficient model such as a 'direct-vent' water heater that draws air from outside of the home rather than a non-direct vent water heater that draws air from inside the home. The higher the heater's Energy Factor (EF), the more efficient it is. A direct-vent model's EF rating should fall within the 0.60-0.80 range whilst a less efficient non-direct vent water heater's will be within 0.50-0.70 range; the direct-vent heater would typically cost $50 per year - $100 per year less to operate with some <5% per year lower emissions.
+                <ul class=\""inline-bullets\"">
+                    <li><strong>Expected emissions reductions: <5% per year</strong></li>
+                </ul>
+                <li>The typical cost ranges of direct and non-direct water heaters are respectively $1,500 - $3,000 and $1,000 - $2,000. Installation time is about 2 - 3 hours. Clear the area ahead of time to make the water heater accessible.</li>
+            </li>
+            <li>c) Tankless (a.k.a. on-demand) gas-fired water heater: roughly uses 20% less gas than its tanked-based counterpart with corresponding reductions in emissions.
+                <ul class=\""inline-bullets\"">
+                    <li><strong>Expected emissions reductions: 20% less than tank-based counterpart</strong></li>
+                </ul>
+                <li>The unit cost can be twice the cost or more of that of a tank-based gas-fired water heater. The tankless units do have an annual maintenance regime to ensure they continue to operate properly. Most of the maintenance can be done by handy homeowners, but for those less comfortable doing the work themselves, consider lumping in the heater's maintenance schedule with that of the home's heating and cooling equipment to lower the cost of the service call. Installation time can be the best part of the day, depending on the home. Clear the area ahead of time to make the heater accessible. (It is strongly recommended that homeowners do not install an electric on-demand water heater. The electrical demands for this type of unit are enormous placing undue stress on the home's and utility's electrical infrastructure.)</li>
+            </li>
+            <li>d) Heat pump water heater: if space permits (&gt;150 sq.ft. of room space), an ~5C drop in room temperature isn't an issue (i.e. heat pump 'steals' some of the surrounding heat in the room it's located in) and the home's electrical panel can safely accommodate a 30A service to the pump (a qualified electrician to verify the electrical panel's capacity is strongly recommended), this type of water heater may be a good option to lower the household's cost of water heating.
+                <ul class=\""inline-bullets\"">
+                    <li><strong>Expected energy savings: &gt;$200 per year</strong></li>
+                    <li><strong>Expected emissions reductions: &gt;1 tonne CO<sub>2</sub> per year</strong></li>
+                </ul>
+                <li>The cost of the heat pump water heater is approximately two times that of a direct-vent gas water heater or $5,000 - $6,000. Although installations of heat pump water heaters in homes are beginning to grow as interest in reducing carbon emissions picks up, they are still quite rare in Ontario, so the homeowner needs to do their research for experienced HVAC contractors. The installation work, however, is quite straightforward with knowledge in plumbing and basic electrics required. If an electrical panel upgrade is required, the cost can range from $2,000 - $4,000.</li>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<p>Typical components of the warranties for water heaters include: parts (i.e. heat exchangers (gas-fired units), elements (electric based units including heat pumps), compressor (heat-pump), control boards, sensors, burners (gas-fired unit)), labour (cost coverage to replace parts still under warranty, installation)</p>
+
+<p>Natural Resources Canada have posted a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: <a href=\""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf\"">https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf</a> They have also posted a helpful resource guide on the fundamentals of heat pumps: <a href=\""https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589\"">https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589</a></p>
+
+<h3>Notes:</h3>
+<ul class=\""inline-bullets\"">
+    <li>a) If the home's water heater is rented, check the contractual terms with the rental company first before making any decisions</li>
+    <li>b) Remember to verify with the contractors that they will include the removal of the old water heater in their proposal</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of gas water heaters, the contractor must hold a gas fitter license. In the case of heat pump water heaters, the contractor should have experience working with this equipment.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+R,"<h1>Water Heater Equipment Upgrading:</h1>
+<h2>Tankless water heater (electric or gas) (a.k.a. on-demand):</h2>
+<ul class=\""inline-bullets\"">
+    <li>Depending on whether the heater has been used for just domestic hot water or that as well as hydronic space heating in the home (e.g. in-floor heating, radiators), and how well the unit has been maintained, the appliance typically will need to be replaced after 12 - 15 years. Expect costs to be in the $4,000 - $5,000 range with annual maintenance of ~$300; consider combining the water heater's annual service call with the home's furnace or heat pump maintenance schedule to save money. 
+        <ul class=\""inline-bullets\"">
+            <li>Tankless water heaters are typically 20% - 30% more energy efficient than their tank-based counterparts.</li>
+        </ul>
+    </li>
+    <li><strong>Note: It is strongly recommended that homeowners do not install an electric on-demand water heater. The electrical demands for this type of unit are enormous placing undue stress on the home's and utility's electrical infrastructure</strong></li>
+</ul>
+
+<h2>Consider upgrading to a heat pump water heater:</h2>
+<ul class=\""inline-bullets\"">
+    <li>If space permits (&gt;150 sq.ft. of room space), an ~5C drop in room temperature isn't an issue (i.e. heat pump 'steals' some of the surrounding heat in the room it's located in) and the home's electrical panel can safely accommodate a 30A service to the pump (a qualified electrician to verify the electrical panel's capacity is strongly recommended), this type of water heater may be a good option to lower the household's cost of water heating.
+        <ul class=\""inline-bullets\"">
+            <li><strong>Expected energy savings: &gt;$200 per year</strong></li>
+            <li><strong>Expected emissions reductions: &gt;1 tonne CO<sub>2</sub> per year</strong></li>
+        </ul>
+        <li>The cost of the heat pump water heater is approximately two times that of a direct-vent gas water heater or $5,000 - $6,000. Although installations of heat pump water heaters in homes are beginning to grow as interest in reducing carbon emissions picks up, they are still quite rare in Ontario, so the homeowner needs to do their research for experienced HVAC contractors. The installation work, however, is quite straightforward with knowledge in plumbing and basic electrics required. If an electrical panel upgrade is required, the cost can range from $2,000 - $4,000.</li>
+    </li>
+</ul>
+
+<p>Typical components of the warranties for water heaters include: parts (i.e. heat exchangers (gas-fired units), control boards, sensors, burners), labour (cost coverage to replace parts still under warranty, installation)</p>
+
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of heat pumps: <a href=\""https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589\"">https://natural-resources.canada.ca/energy-efficiency/heat-pumps/heat-pump-basics/25589</a> They have also posted a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: <a href=\""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf\"">https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf</a></p>
+
+<h3>Notes:</h3>
+<ul class=\""inline-bullets\"">
+    <li>a) If the home's water heater is rented, check the contractual terms with the rental company first before making any decisions</li>
+    <li>b) Remember to verify with the contractors that they will include the removal of the old water heater in their proposal</li>
+</ul>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has professional affiliations (e.g. member of the 'Heating, Refrigeration, and Air Conditioning Institute of Canada' (HRAI))</li>
+    <li>Contractor has a solid track record with appropriate skills</li>
+    <li>Can provide a written contract</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly. In the case of gas water heaters, the contractor must hold a gas fitter license. In the case of heat pump water heaters, the contractor should have experience working with this equipment.</li>
+</ul>
+<p>Two sites for homeowners to visit to help in finding and selecting reputable contractors:</p>
+<ul class=\""inline-bullets\"">
+    <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
+    <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
+</ul>
+",
+S,"<h1>Attic Insulation:</h1>
+<p>Cold rooms on the top floor in the winter and excessively warm ones in the summer may be signs of under-performing insulation in the attic. Other tell-tale signs can be a roof devoid of snow whilst most other surrounding homes remain snow covered, and excessive build-up of icicles off of soffits and guttering. These can be the result of heat escaping into the attic from the interior of the home.</p>
+<p>In general, adding to or even replacing old insulation in the attic is a good investment.
+    <ul class=\""inline-bullets\"">
+        <li><strong>Expected energy savings: &lt;50% per year</strong></li>
+        <li><strong>Expected emissions reductions: &lt;50% per year</strong></li>
+    </ul>
+    The comfort level of the home is almost always improved: warmer in the winter and cooler in the summer.
+</p>
+<p>What drives the cost will be factors such as the size of the area being insulated, the amount of insulation (expressed as R-value), the type of insulation (e.g. cellulose, sprayed-foam, fibreglass), how each type of insulation is installed (e.g. blown in, hand-placed), whether the existing insulation is to be removed first, whether the area needs to be cleared of debris ahead of time, whether there are any repairs, seals needed to be made (e.g. vapour-barrier torn or missing on ceiling), and installing proper ventilation in the attic (e.g. installing 'rafter attic vents'). Canadian homes should aim for having insulation in the attic up to an R-value of 60 - 80 with the higher number being preferable.</p>
+<p>At R-60, loose-fill cellulose will be 3"" - 4"" deep. At an R-value &gt;70, the thickness will be ~ 2'. The best, but most expensive insulation material is spray foam (good R-value, seals gaps best, doesn't shrink, durable) whilst cellulose is more affordable with satisfactory performance. Regardless, expect typical project costs to range from $2,000 - $6,000.</p>
+<p>This is a good primer on the different types of spray-foam: <a href=\""https://www.whysprayfoam.org/spray-foam/types-spray-foam/\"">https://www.whysprayfoam.org/spray-foam/types-spray-foam/</a></p>
+
+<p>Homeowners are encouraged to seek multiple quotes and to ask to speak to recent customers about their experiences. When assessing contractors, take note of the insulation material they work with/recommend, how they will prepare the area first, how they will apply it (hand-placed or sprayed), and very importantly what their strategy is when it comes to ensuring the attic is properly ventilated and that the vapour barrier between the home's top floor and the attic is properly sealed. The importance of ventilation of the attic and a tight vapour barrier cannot be overstated. How well both of these are addressed will determine how well the home will perform in the long run. Most attics can be properly insulated within a day. The homeowner can save time and possibly money if they clear away materials from the attic and pathway to the attic (e.g. closet-access to the attic) ahead of the contractors arriving.</p>
+
+<p>For homes with vaulted ceilings, insulation application is a bit more complicated. It is recommended that the homeowner speak to a number of insulation contractors who specialize in this area. In the interim, the homeowner may wish to consider installing a slow-moving fan with the reversible-direction feature. The fan can help to gently push down some of the warmer air that will tend to accumulate up into the vaulted ceiling. Bringing back down some of this warm air can also help to lower the heating demands on the home's furnace or other heating devices.</p>
+
+<p>Natural Resources Canada has a helpful guide on home and attic insulation:
+    <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/15768\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/15768</a> 
+    <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/chapter-5-roofs-and-attics/15637\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/chapter-5-roofs-and-attics/15637</a>
+</p>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>Check licenses and certifications (i.e. in Ontario, although contractors are required to adhere to the regulations in the Ontario Building Code, they can choose to obtain voluntary certifications or memberships with industry associations such as the Insulation Contractors Association of Canada (ICAC) to demonstrate their expertise and commitment to quality workmanship)</li>
+    <li>Ensure that the contractor has liability insurance and workers' compensation</li>
+    <li>The contractor should be able to demonstrate their expertise and experience (e.g. ask for their experience in working with different kinds of insulation material (fibreglass, cellulose, spray foam or rigid foam, and their areas of expertise similar to homeowner's need (e.g. attics, walls, basements or crawl spaces))</li>
+    <li>Ask how they investigate the attic's condition at the outset (e.g. determine whether the vapour barrier is properly sealed, their remedial strategies if not, whether existing insulation is wet/damp, whether there is evidence of rodents, etc.)</li>
+    <li>Ask for references</li>
+    <li>Test the contractor's knowledge of their ability to assess the impact of installing insulation in your home</li>
+    <li>Assess the contractor's level of professionalism (e.g. how they communicate, do they explain the installation process clearly, do they explain clearly the impacts of the insulation on the home's performance, do they respond in a timely manner)</li>
+    <li>Are proposals and contracts provided in writing and clearly and comprehensively?</li>
+</ul>
+",
+T,"<h1>Wall Insulation:</h1>
+<p>Homeowners may sense that the exterior walls are cold-to-the-touch in the winter. Depending on how, and often when, their home was constructed, the problem may be due to poorly performing insulation, including poor installation of the insulation, or no insulation at all in the case of many of the homes built pre and post war. It is recommended that the homeowner source a contractor who is an expert in wall insulation of existing homes to ascertain how the wall is constructed and what options are best to solve the problem. There are a number of techniques available without removing plaster and wall-boards to determine whether one's existing walls are insulated, and if so, with what type of material (e.g. fishing through holes by removing electrical outlet and light switch covers, drilling small holes in inconspicuous places, etc.). The range of solutions include blowing and spraying in insulation between the wall's studs and wall cavities from inside/outside/from below/above, removing plaster-boards entirely to enable batt insulation or foam board insulation, or even applying outside cladding to the wall. It is imperative, however, that skilled contractors be engaged to ensure the work is done to at least the regulations stipulated in the Ontario Building Code (e.g. vapour barriers to prevent mold growth, proper amount of insulation, etc.).</p>
+<p>High level cost estimates will depend on the type of insulation material used (e.g. blown-in: $1 - $3/sq.ft., batts: $2 - $4/sq.ft., spray foam: $2 - $6/sq.ft. depending on foam's density, foam board: $1 - $3/sq.ft.) plus labour which will depend on the extent of the preparatory and finishing work needed. Knowledgeable contractors should be able to run the homeowner through their options and the pros & cons of each option.</p>
+<p>This is a good primer on the different types of spray-foam: <a href=\""https://www.whysprayfoam.org/spray-foam/types-spray-foam/\"">https://www.whysprayfoam.org/spray-foam/types-spray-foam/</a></p>
+
+<ul class=\""inline-bullets\"">
+    <li><strong>Expected energy savings: &lt;15% per year</strong></li>
+    <li><strong>Expected emissions reductions: &lt;15% per year</strong></li>
+</ul>
+<p>The non-monetary benefits include greater comfort in both the winter and summer along with better sound-proofing. Depending on the size of the project, homeowners should count on the work taking from a few days to a week or longer in some cases. Preparatory work by the homeowner to move furniture and wall hangings away will almost certainly be required and will save money not to have the contractor be responsible for this.</p>
+
+<p>Natural Resources Canada has a helpful guide on home and wall insulation:
+    <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/15768\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/15768</a>
+    <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/chapter-7-insulating-walls/15641\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/chapter-7-insulating-walls/15641</a>
+</p>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>Check licenses and certifications (i.e. in Ontario, although contractors are required to adhere to the regulations in the Ontario Building Code, they can choose to obtain voluntary certifications or memberships with industry associations such as the Insulation Contractors Association of Canada (ICAC) to demonstrate their expertise and commitment to quality workmanship)</li>
+    <li>Ensure that the contractor has liability insurance and workers' compensation</li>
+    <li>The contractor should be able to demonstrate their expertise and experience (e.g. ask for their experience in working with different kinds of insulation material (fibreglass, cellulose, spray foam or rigid foam, and their areas of expertise similar to homeowner's need (e.g. attics, walls, basements or crawl spaces))</li>
+    <li>Ask how they investigate the wall's construction and existing insulation if any (e.g. ask how they will determine what's in the home's walls, how they would apply insulation to the walls, etc.)</li>
+    <li>Ask for references</li>
+    <li>Test the contractor's knowledge of their ability to assess the impact of installing insulation in your home</li>
+    <li>Assess the contractor's level of professionalism (e.g. how they communicate, do they explain the installation process clearly, do they explain clearly the impacts of the insulation on the home's performance, do they respond in a timely manner)</li>
+    <li>Are proposals and contracts provided in writing and clearly and comprehensively?</li>
+</ul>
+
+<h3>A word to homeowners with bedrooms over a garage:</h3>
+<p>Many homes are designed with car garages built into the footprint of the building's perimeter meaning that living spaces are located right above the garage. And it's often the case that the temperatures in these rooms in the winter can be uncomfortably cool. Homeowners in the situation should consider exploring the following measures to help improve the situation:
+<ul class=\""inline-bullets\"">
+    <li>Improve insulation which can involve shoring up the insulation in the garage's walls as well as ceiling</li>
+    <li>Upgrade the heating system in the room(s) in-question (e.g. install a supplemental baseboard heater or ductless (a.k.a. mini-split) heat pump)</li>
+    <li>Seal air leaks (i.e. around windows, garage door)</li>
+    <li>Keep garage door closed as much as possible</li>
+    <li>Replace garage door with an insulated one if not already installed</li>
+    <li>Place a thick rug with an under-carpet in the bedroom(s) to help shield the cold floor</li>
+    <li>Install a slow-moving ceiling fan in the bedroom(s) to push down some of the warm air that can accumulate near the ceiling</li>
+    <li>Consider installing in-floor heating</li>
+    <li>Install thick curtains to slow down the heat transfer through the windows</li>
+    <li>Ensure there is proper ventilation in the bedroom to prevent excess humidity that can exacerbate coldness</li>
+</ul>
+</p>
+",
+U,"<h1>Window and Door Gap Sealing:</h1>
+<p>Poorly sealed windows and doors can consume 10% - 20% annually more energy over a similar home that's well sealed. This can represent &gt;0.5 tonnes per year of CO<sub>2</sub> emissions. In most instances, homeowners should be able to both diagnose and fix the seal problems themselves at a very modest cost. Holding a lit candle or incense stick near the sealed area will reveal where the gaps are the most pronounced. If the flame or smoke is pulled into the gap or blown into the room, this will indicate where there's a seal problem. Remedies can include applying caulking, foam sealant, heat-shrink film with double-sided tape, clear rigid acrylic sheets with magnetic seals and weather stripping. Depending on the material and what quantity of material is required, out-of-pocket costs should mostly be under $100. If one's handy, in just a few hours, most gaps can be successfully sealed. If one sees condensation in between the two (or more) layers of panes of glass, it is usually a sign that the window's seal has failed. It is recommended that the homeowner should seek professional advice to confirm the state of the window and whether it needs to be replaced.</p>
+<ul class=\""inline-bullets\"">
+    <li><strong>Expected energy savings: 10% - 20% annually</strong></li>
+    <li><strong>Expected emissions reductions: &gt;0.5 tonnes per year of CO<sub>2</sub></strong></li>
+</ul>
+<p>Natural Resources Canada has a helpful guide on window and door sealing: <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643</a></p>
+
+<p>There are plenty of YouTube videos one can watch to see examples of how this work is done. These are just a small sampling:
+    <ul class=\""inline-bullets\"">
+        <li><a href=\""https://www.youtube.com/watch?v=tbq6uZ9Y0nQ\"">https://www.youtube.com/watch?v=tbq6uZ9Y0nQ</a></li>
+        <li><a href=\""https://www.youtube.com/watch?v=fy6SCl7iKgE\"">https://www.youtube.com/watch?v=fy6SCl7iKgE</a></li>
+        <li><a href=\""https://www.youtube.com/watch?v=heizjoK2cHA\"">https://www.youtube.com/watch?v=heizjoK2cHA</a></li>
+        <li><a href=\""https://www.youtube.com/watch?v=xzPit2Jf1zg\"">https://www.youtube.com/watch?v=xzPit2Jf1zg</a></li>
+    </ul>
+</p>
+",
+V,"<h1>Window Replacement:</h1>
+<p>If your home has single pane windows, you notice condensation between the panes of glass, feel drafts from the window, or are having difficulties being able to close the window tightly (e.g. winding mechanism doesn't work properly), then it may be time to replace the window altogether. Window replacements are a significant investment (e.g. &gt;$1,000/window including labour) which will depend on factors such as the type of windows (e.g. level of efficiency, 3x vs. 2x pane, opening mechanism, encasement material (e.g. wood, fibreglass, aluminum, vinyl), etc.) and the complexity of the installation including trimwork. Depending on the number and complexity of the windows being replaced, homeowners should plan for approximately up to a week to complete.</p>
+
+<ul class=\""inline-bullets\"">
+    <li><strong>Expected energy savings: &lt;25% per year</strong></li>
+    <li><strong>Expected emissions reductions: &lt;25% per year</strong></li>
+</ul>
+
+<p>Higher performing windows will also improve the comfort level in the home in both the winter and summer seasons and reduce the wear and tear on the home's heating and cooling systems.</p>
+
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of windows: <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643</a></p>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has a solid understanding of how windows and their installation are treated in the Ontario Building Code</li>
+    <li>Contractor is well versed on the different materials (e.g. wood, fibreglass, aluminum) and designs (e.g. single vs. double sash designs) of windows</li>
+    <li>Can provide a written contract including but not limited to a clear layout of the payment schedule</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
+</ul>
+<p>Make certain to ask about warranties (i.e. materials, glass, seal failure, hardware, finish and installation - whether the manufacturer's warranty is voided if the window is not installed or maintained according to the manufacturer's recommendations), ask about timelines to get the work done, get customer references and seek multiple quotes. Consider visiting showrooms to gain a better feel for the different styles, materials, technologies as well as prices.</p>
+
+<h3>The performance of a window in a home is defined by the following:</h3>
+<ul class=\""inline-bullets\"">
+    <li>U-factor: measures how well a window prevents heat from escaping. The lower the number, the better. Invest in a window with the lowest U-factor that you can afford; 0.15 or lower is best for Canadian climates. Windows whose U-factor is 1.0 or higher are considered as poor performers.</li>
+    <li>Solar heat gain coefficient (SHGC): measures how much solar heat is transmitted through the window. It measures the fraction of solar radiation that enters the house, so a lower number is beneficial in hotter, sunnier climates. For Southern Ontario, a window within the range of 0.30 - 0.60 would be best.</li>
+    <li>Visible transmittance (VT): measures the amount of visible light transmitted through the glass on a scale between 0 - 1. The higher the number, the greater the amount of daylight that can come into the home through the window. In general, &gt;0.40 is considered reasonable.</li>
+    <li>Air-leakage (AL): measure of how much air passes through the window's mechanisms (i.e. cubic feet of air leakage per square feet of window surface per minute). The lower the number, the better. Consult the window expert, since the ideal number will depend on a variety of factors such as climate and building code. Ask the window specialist what the minimum AL requirement is for your location.</li>
+    <li>Condensation resistance (CR): measures how well the window can resist condensation forming on its surface on a scale from 1 to 100. The higher the number: 1-20 is poor, 21-40 is fair, 41-60 is good, 61-80 is very good and 81-100 is excellent. For Ontario where condensation can be an issue, consider windows with a CR rating &gt;60 as the best starting point.</li>
+    <li>Energy-Star Certification: Energy Star is a program jointly operated by the United States Environmental Protection Agency (EPA) and Natural Resources Canada (NRCan) that sets energy efficiency standards for various products, including windows. Energy Star-certified windows meet specific performance criteria for energy efficiency and may qualify for incentives or rebates.</li>
+</ul>
+
+<p>There are many helpful videos on what to look for when choosing home windows on Youtube that are worth watching. Here are just a few:
+    <ul class=\""inline-bullets\"">
+        <li><a href=\""https://www.youtube.com/watch?v=rv-TCm90DHg\"">https://www.youtube.com/watch?v=rv-TCm90DHg</a></li>
+        <li><a href=\""https://www.youtube.com/watch?v=wyyM5es8MeI\"">https://www.youtube.com/watch?v=wyyM5es8MeI</a></li>
+        <li><a href=\""https://www.youtube.com/watch?v=T_oU0orKUz0\"">https://www.youtube.com/watch?v=T_oU0orKUz0</a></li>
+    </ul>
+</p>
+",
+W,"<h1>Door Replacement:</h1>
+<p>Over the years with constant use, extremes in weather and potential shifting in the home's foundation, doors can begin to get out of alignment within their frames. At the extreme, replacing the seal around the door may be insufficient to fix the gap problems; a door replacement will be needed. Apart from different styles, these are the fundamentals a homeowner should consider when selecting a replacement door from an energy efficiency perspective:</p>
+<ul class=\""inline-bullets\"">
+    <li>Material select (i.e. fibreglass and insulated doors (foam insulation in the core) are recommended for their insulation properties over wooden doors that are also prone to warping)</li>
+    <li>Weatherstripping (i.e. make sure that there is proper high quality weatherstripping around the entire frame to prevent gaps)</li>
+    <li>Thresholds (i.e. choose a door with an adjustable threshold or one that incorporates a thermal break to minimize outside air entry at the bottom of the door)</li>
+    <li>Low-E coating (i.e. for doors with glass, consider doors whose glass has a low-E coating to help reflect infrared heat while allowing visible light to pass through resulting in better insulation and energy efficiency)</li>
+    <li>Multi-pane glass (i.e. double or triple pane glass vs. a single pane of glass provides better insulation)</li>
+    <li>Energy Star Certification (i.e. even though it is not a requirement in Canada, homeowners should definitely only install doors which are Energy Star rated to ensure they perform well)</li>
+</ul>
+
+<p>Natural Resources Canada has a helpful resource guide on the fundamentals of windows: <a href=\""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643\"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-8-upgrading-windows-and-exterior-doors/15643</a></p>
+
+<h3>How to find a reputable contractor should consider the following aspects:</h3>
+<ul class=\""inline-bullets\"">
+    <li>On-line research and personal recommendations</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Contractor has a solid understanding of the different types (including materials) of doors and their installation for different applications (e.g. main entry doors, patio doors vs. interior doors)</li>
+    <li>Contractor is well versed on how to properly insulate, seal and trim-finish doors</li>
+    <li>Can provide a written contract including but not limited to a clear layout of the payment schedule</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
+</ul>
+<p>Make certain to ask about warranties (i.e. materials, finish, structural, glass (if applicable), and installation - whether the manufacturer's warranty is voided unless the door is installed and maintained according to the manufacturer's recommendations), ask about timelines to get the work done, get customer references and seek multiple quotes. As many exist, consider visiting showrooms to gain a better feel for the different styles, materials as well as their prices.</p>
+",
+Y,"<h1>Floor Vent Deflectors:</h1>
+<p>For ductwork heated and cooled homes, installation of floor-vent air-deflectors in spaces that can become uncomfortably cool in the winter or warm in the summer is a very simple and cost-effective way to improve air circulation, increase comfort level and provide the homeowner with the ability to regulate temperature. Being able to deflect the air from the floor vents more into the centre of a space will help make the home perform better and improve comfort. These simple inexpensive devices, that are available at most hardware stores and online, can be installed by the homeowner themselves in just a few minutes. They range in price from &lt;$10/piece to $20/piece depending on the style and design complexity.</p>
+
+<p>Should the volume of air coming through the vents be mostly inadequate, however, it is recommended that the homeowner check with an HVAC specialist to see if the low flow is a sign of a larger problem (e.g. blower fan too small, set at too low a speed, section of ductwork is undersized, blocked, etc.) and can be remedied. A well-designed and operating ductwork system should really be bathing the room's outside wall with warm or cool air depending on the season. The air from the vent aimed at the wall and running up it towards the ceiling is designed to be an 'air-curtain' to shield the room from the extreme temperature elements from outside and the space and hence the home's occupants.</p>
+
+<p>Natural Resources Canada has a helpful guide on home ventilation: <a href=""https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-5-roofs-and-attics/15637"">https://natural-resources.canada.ca/energy-efficiency/homes/make-your-home-more-energy-efficient/keeping-the-heat/section-5-roofs-and-attics/15637</a></p>
+
+<h3>Installation Tips:</h3>
+<ul class=""inline-bullets"">
+    <li>Ensure the deflectors are the correct size for your vents.</li>
+    <li>Place the deflectors in such a way that the air is directed towards the centre of the room.</li>
+    <li>Check and clean the deflectors regularly to ensure optimal performance.</li>
+</ul>
+
+<h3>Additional Considerations:</h3>
+<ul class=""inline-bullets"">
+    <li>If the deflectors do not sufficiently improve comfort, consider consulting an HVAC specialist.</li>
+    <li>A professional can check for larger issues within the HVAC system such as blower fan size, ductwork design, and blockages.</li>
+</ul>
+",
+4,"<h1>Replace Electric or Gas Clothes Dryer with a Heat Pump Clothes Dryer:</h1>
+<p>Heat pump clothes dryers recycle the air that is heated up to dry clothes rather than constantly heating up the air from consuming electricity to run an electric element or burning natural gas to create a flame. This results in a number of very favourable advantages over traditional clothes dryers:</p>
+<ul class=""inline-bullets"">
+    <li><strong>&lt;50% more energy efficient</strong> meaning lower energy costs and emissions</li>
+    <li>Much gentler on clothes since the heat pump is 'removing moisture' with dehumidification from the clothes rather than 'heating the water' for it to evaporate from the clothes</li>
+    <li>Reduced risk of overheating the clothes which would otherwise shrink and fade them</li>
+    <li>Negates the need for a vent in the home's exterior wall which also vastly reduces the amount of make-up air that the home's furnace, heat pump and air conditioner would need to condition</li>
+    <li>Reduces the risk of lint fires in clogged vent pipes since heat pump dryers don't have vents and generate very little lint in the first place</li>
+    <li>Some models can operate on a 120V plug which means they can be located anywhere in the home</li>
+</ul>
+
+<p>There are some downsides, however:</p>
+<ul class=""inline-bullets"">
+    <li>Most of the current models available in North America tend to have smaller drums meaning that an extra drying cycle may be necessary depending on the volume of clothes needed to be dried</li>
+    <li>The drying cycle takes longer than a traditional clothes dryer (i.e. &lt;2x longer)</li>
+    <li>Maintenance required to clean the condenser coil from lint</li>
+    <li>The purchase cost can be 2 to 3 times more than a traditional electric dryer and &lt;2 times more than a gas dryer</li>
+</ul>
+
+<p>Over time, however, as North Americans become more familiar with heat pump clothes dryers, the case for this technology will improve with more offerings and features. In either case, however, their amazing energy efficiency and being far gentler on clothes are hard to ignore even with the immediate offerings in the marketplace today.</p>
+
+<p>Here are some helpful sources to better understand heat pump clothes dryers:</p>
+<ul class=""inline-bullets"">
+    <li><a href=""https://goclean.masscec.com/article/how-heat-pump-clothes-dryers-work/"">How Heat Pump Clothes Dryers Work</a></li>
+    <li><a href=""https://www.familyhandyman.com/article/heat-pump-dryer/"">Heat Pump Dryer: What is it and How Does it Work?</a></li>
+    <li><a href=""https://www.youtube.com/watch?v=_3lITyF2zwk&t=6s"">Heat Pump Dryer Explained</a></li>
+</ul>
+",
+5,"<h1>Replacing a Clothes Washer:</h1>
+<p>When it comes time to replace a top-loading clothes washer, all homeowners should lean towards doing so with a front-loading machine. The benefits of front-loaders far outweigh the deliverables of the top-loaders:</p>
+<ul class=""inline-bullets"">
+    <li><strong>Use &lt;75% less water</strong></li>
+    <li>Gentler on clothes since the washing action tumbles the clothes rather than using an agitator that wears on clothes</li>
+    <li>Tumbling clothes allows a better, more even mixing of water and detergent</li>
+    <li>Reduced use of detergent which is better for the environment and pocketbook</li>
+    <li>More energy efficient since them spinning clothes at a much higher speed during the spin-cycle extracts more water from the clothes thereby reducing the load on the clothes dryer</li>
+    <li>Are stackable with the clothes dryer being able to be mounted on top of the washer should space be at a premium</li>
+</ul>
+<p>Prices for front loaders are comparable with top loaders. The technology has been in use in homes and commercial applications for decades.</p>
+
+<p>Here are some helpful sources to better understand front loading clothes washers:</p>
+<ul class=""inline-bullets"">
+    <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/appliances-for-residential-use/clothes-washers/13984"">Natural Resources Canada: Clothes Washers</a></li>
+    <li><a href=""https://www.consumerreports.org/appliances/washing-machines/5-things-to-know-about-front-load-washers-a6585182686/#:~:text=Front%2Dload%20washers%20not%20only,dryer%20time%20and%20energy%20use."">Consumer Reports: 5 Things to Know About Front-Load Washers</a></li>
+</ul>
+",
+6,"<h1>Replace Electric or Gas Stove with an Induction Stove:</h1>
+<p>Induction stoves are estimated to be 80% - 90% energy efficient as compared to gas stoves that are 40% - 60% and traditional coil and glass-surface electric stoves that are 70% - 80%. This superior efficiency comes about because induction stoves use electromagnetic technology to directly heat the pots/pans rather than needing a burner (gas) or element (electric) to heat an element and then transfer the heat to the pots/pans. Simply put, a lot of the heat from gas and electric stoves escapes to the surrounding space within the kitchen rather than being fully directed to heat up the pots/pans. The induction stove means less hood ventilation is required, especially in the case of gas stoves. In the summer, the induction stove tends not to heat up the kitchen like gas and electric stoves do which means that the home's air conditioner doesn't have to work as hard. Induction cooking provides precise heating controls where heating up and also cooling down the food in the pots/pans is almost instant.</p>
+
+<p>Induction technology for cooking has been around for over a century with Europe as the biggest user. But North Americans have been catching on to the technology, which is bringing down the costs of induction stoves. In many cases, they can be comparable in price to their gas and electric counterparts.</p>
+
+<h3>Further Points for Consideration:</h3>
+<ul class=""inline-bullets"">
+    <li>Pots/pans with iron work are required for induction cooking. Two ways a homeowner can use to determine whether their cooking equipment will work are to look underneath each pot/pan to see if there's an induction symbol printed on the bottom or seeing whether an ordinary magnet sticks to the bottom of the pot/pan; if yes, then the cooking equipment will work. If, however, there is no induction symbol to be found or the pots/pans are not magnetic, homeowners can purchase a 'heat diffuser' (&lt;$30) that is placed on the induction stove's unit onto which the pot/pan is placed. Diffusers that can be purchased at many appliance stores, hardware stores or online, are a very cost-effective way for a homeowner not to have to invest in a whole new set of pots/pans.</li>
+    <li>Whenever possible, consider selecting induction stoves which have a convection-feature for the oven over conventional radiant heated oven. Convection cooking is faster and cooks at a lower temperature which results in more even cooking and lower energy consumption.</li>
+    <li>For homeowners who are still too skeptical to make a large investment to replace their existing gas or electric stove, but are still curious to learn more about this technology, a good way to try induction first hand without making a major investment is to consider purchasing a portable single or double countertop induction cooker. Available online or in most hardware and appliance stores, these units can simply be plugged into any normal 120V plug with most costing &lt;$100.</li>
+</ul>
+
+<p>The following are useful resources:</p>
+<ul class=""inline-bullets"">
+    <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/product-information/appliances-for-residential-use/cooking-appliances/13987"">Natural Resources Canada: Cooking Appliances</a></li>
+    <li><a href=""https://www.goodhousekeeping.com/appliances/a28435170/induction-stove-cooktop-pros-cons/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_md_pmx_hybd_mix_ca_20317666538&gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU71XeUIRDDd1P3rIY0F8779ar51EZOARMdUu2WUZwpiS95kGpyuHfDRoChwsQAvD_BwE"">Good Housekeeping: Induction Stove Cooktop Pros and Cons</a></li>
+    <li><a href=""https://ca.bestreviews.guide/heat-diffuser-for-induction-cooktop?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU77cf_DNUOFKrRipuQe19snBXPReLTuiLlY4LH54x-r2DiRByLASGBhoCO-IQAvD_BwE"">Best Reviews: Heat Diffuser for Induction Cooktop</a></li>
+</ul>
+",
+7,"Upgrade Lighting:
+LED lighting is a gamechanging technology that everyone needs to embrace, and fortunately most are. Statistics Canada reported in a recent concensus that over 50% of Canadians are now using LED lighting.
+
+Compared to the traditional incandescent lights, LED's can be up to 90% more efficient which will certainly save homeowners money on their electricity bills as well as lighten the electrical load on the home's electrical panel, especially on lights constantly in use. The technology also has other amazing benefits such as 1) longer lifespan (e.g. able to last multiple years), 2) increased durability being resistant to shocks and vibrations, 3) being able to instantly light up when turned on unlike CFL's, 4) offer flexibility in design and features (e.g. available in different shapes and sizes, wide range of different colours), 5) ability to focus light where directional lighting is needed, and 6) generate low heat which improves comfort and safety (i.e. lower fire risk).
+
+Prices of LED's continue to decrease over time making them even more affordable. They are available in most hardware stores, supermarkets and on-line. Homeowners should look for the ENERGYSTAR symbol on the product or packaging to ensure that the lighting is officially efficient.
+
+Homeowners may find that some of their permanent light fixtures (e.g. potlights, flourescents strips) need to be replaced to accommodate the use of LED lighting. The costs will depend on the fixture and the installation cost.
+
+Here are a couple of helpful resources:
+https://www.youtube.com/watch?v=Yo6JI_bzUzo 
+https://natural-resources.canada.ca/energy-efficiency/products/lighting/13730 
+https://www.energystar.gov/products/light_bulbs/learn-about-led-lighting#:~:text=LED%20stands%20for%20light%20emitting,the%20result%20is%20visible%20light.",
+8,"<h1>Efficient Water Fixtures:</h1>
+<p>Sink faucets in the home's bathrooms and kitchen, as well as shower-heads, present an opportunity for homeowners to save on the cost of water and energy to heat water by implementing very modest measures. For water valves whose volume of water can be controlled, homeowners can often install an aerator inside the end of most faucets and showerheads. This simple washer-like device automatically introduces small bubbles into the water stream that gives the impression to the user that more water is coming out than actually is. For an average shower, this can represent up to 30% less water consumption as well as less energy needed for water heating. Faucet aerators are very inexpensive (i.e. &lt;$20 for a multi-pack), available in most hardware stores and are simple for most homeowners to install themselves.</p>
+
+<p>If the shower faucet is due to be replaced, consider doing so with one that allows the user to control the flow of water (i.e. not just an on/off).</p>
+
+<p>Here are a couple of helpful resources:</p>
+<ul class=""inline-bullets"">
+    <li><a href=""https://www.thespruce.com/why-you-need-to-install-faucet-aerators-1821314"">Why You Need to Install Faucet Aerators - The Spruce</a></li>
+    <li><a href=""https://publications.gc.ca/collections/collection_2016/schl-cmhc/NH15-362-2014-eng.pdf"">Efficient Water Use in the Home - Government of Canada</a></li>
+    <li><a href=""https://natural-resources.canada.ca/energy-efficiency/homes/make-small-changes-add/21850"">Make Small Changes, Add Up - Natural Resources Canada</a></li>
+</ul>
+
+<p>In the meantime, make certain to replace washers in sinks, showers, bathtubs, and outside faucets that are leaking. With leaking hot water valves, the homeowner's losing on the unnecessary cost of water and energy! Similarly, leaking toilets should be fixed or replaced as soon as possible. The Government of Canada reports that a leak of just one drop per second can waste 10,000 litres of water, which is more than one needs for cooking in a whole year!! A leaking toilet alone can consume &gt;300 litres of water each day. In the City of Markham, with the current water rates, that works out to ~ $0.08/day or $2.50/mth.</p>
+",
+Z,"<h1>Electrical Panel and Electrical Service:</h1>
+<p>As our society electrifies the transportation and heating sectors, our electricity networks will need to be upgraded considerably to be able to deliver the massive amount of electrical energy we will need. A home is no different. A household deciding to purchase and charge an electric vehicle (EV) at home will at a minimum be adding another 30A appliance to their electric panel. Likewise, a new cold climate heat pump that completely replaces a gas furnace and AC could add an incremental 60A to the home. A heat pump water heater would require a new 30A if it replaced a gas water heater, or 50A for an induction range if it replaced a gas range. For a home that currently has a 100A service, it's not difficult to see that its electrical panel will quickly be under capacity as more of these appliances are electrified.</p>
+
+<p>If the homeowner does decide to upgrade their electrical panel, they should strongly consider having the electrician include installing a conduited 30A - 60A dedicated wire from the panel to the garage or driveway in anticipation of an EV charger being installed one day in the future. (An actual EV charger need not be purchased at this stage, however). This is the perfect time to get this work done. Even if the homeowner does not have any immediate plans to purchase an electric car, this is an investment in the home. EV-Ready homes will be a feature more and more future homeowners will be looking for.</p>
+
+<p>Most homeowners should be aiming to make an investment to upgrade their electrical service to 200A if they don't have it already. The typical cost is $2,000 - $4,000 and must be completed by a certified electrician.</p>
+
+<h3>How to find a reputable electrician should consider the following aspects:</h3>
+<ul class=""inline-bullets"">
+    <li>Ask for recommendations (family, friends, neighbours, etc.)</li>
+    <li>Online research and reviews</li>
+    <li>Verify contractor is licensed, bonded and insured</li>
+    <li>Ask the electrician about their experience in electrical panel upgrades in residential applications</li>
+    <li>Ask for customer references</li>
+    <li>Ask for multiple quotes, all of which should include a description of warranties (parts and labour)</li>
+    <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
+</ul>
+",
+2,"<h1>Solar Generation:</h1>
+<p>Homeowners are permitted to install solar panels on the roof of their home to generate either hot water or electricity.</p>
+
+<h2>Solar Water Heaters:</h2>
+<p>In most cases, the solar array, which takes on different forms (e.g. plate, evacuated tubes), is installed in such a way as to pre-heat the water being fed into the home's main hot water heater. Increasing the inbound water temperature reduces the amount of work, hence energy (e.g. gas, electricity), that the home's water heater has to expend. Depending on the system's design and size, energy savings can easily approach and exceed 50% per year; the savings are not surprisingly greater in the spring, summer and early fall months than the balance of the year. The big feature to keep in mind when choosing a system is how robust and maintenance-prone it will be. Counterintuitively, the biggest test a solar water heater will go through is not when it is being used, but rather when it will not be used (e.g. family takes a two-week holiday in the middle of the summer when there is no demand for hot water in the home). With constant daily sun, no demand for hot water and possibly a power failure, how is the system designed to cope with the very hot water temperatures?</p>
+<ul class=""inline-bullets"">
+    <li>As most systems will include one, make sure that there is room to have a 50 - 75 US gallon storage water tank near the home's main water heater.</li>
+    <li>Check with professional installers who specialize in the solar water heaters to assess the suitability and compliance of your home to integrate in this system including roof space and structural integrity.</li>
+</ul>
+<p>Typical systems can range from $5,000 - $15,000.</p>
+
+<h2>Photo-voltaic (PV) Solar Arrays:</h2>
+<p>These are the most common systems seen. They generate electricity. In Ontario, the name of the program that enables homeowners to install PV arrays whilst still being connected to the local electric utility is 'Net Metering'. The homeowner can generate renewable energy for their own use while sending any excess power to the electric grid for a credit on their future electricity bills up to a 12-month period. The system's annual generation must not exceed the home's annual electricity consumption, however. The first two critical steps for homeowners are:</p>
+<ul class=""inline-bullets"">
+    <li>Have a solar contractor estimate the size of a potential array on your roof, its estimated annual generation yield, the cost of the installation, and its expected ROI; this can all be done online with simply your home's address and 12 months' worth of monthly electricity bills.</li>
+    <li>Complete a simple online form with Alectra Utilities requesting that they verify that there is sufficient capacity for you to connect to their local electric network; this is usually a free service and something the contractor who prepared the proposal can assist you with.</li>
+</ul>
+<p>As a general rule, in southern Ontario, the yield from PV solar is ~ 1,200 kWh/kW of installed capacity per year. For more information, visit the Ontario Energy Board's website: <a href=""https://www.oeb.ca/consumer-information-and-protection/net-metering"">https://www.oeb.ca/consumer-information-and-protection/net-metering</a>. Also visit Alectra Utilities at: <a href=""https://alectrautilities.com/connecting-generation#:~:text=If%20you%20generate%20electricity%20from,credit%20toward%20your%20energy%20costs"">https://alectrautilities.com/connecting-generation#:~:text=If%20you%20generate%20electricity%20from,credit%20toward%20your%20energy%20costs</a>.</p>
+<p>Very high-level cost of installation is $2,500/kW. 5 kW size systems (~ 20 panels) are a pretty common size on many homes. The expected generation yield would be 1,200 kWh/kW/yr x 5 kW = 6,000 kWh/yr range or ~ 50% - 75% of an average home's annual electricity consumption.</p>
+
+<p>US Gov't's NREL has posted a helpful 'Solar Energy Basics' primer on their website: <a href=""https://www.nrel.gov/research/re-solar.html"">https://www.nrel.gov/research/re-solar.html</a></p>
+
+<h3>How to Find a Reputable Solar Contractor:</h3>
+<ul class=""inline-bullets"">
+    <li>Find out on Google Earth or even walking or driving around who in your community already has solar arrays on their home. Consider introducing yourself and asking them about their experience with the system and the contractor they used.</li>
+    <li>Depending on your findings from a few solar homeowners, reach out to their contractors to ask for a preliminary assessment of solar on your home and what the costs would be.</li>
+    <li>Other tactics include visiting Canadian Solar Industries Association (CanSIA)'s website to learn more about their solar industry members: <a href=""https://www.cansia.ca/"">https://www.cansia.ca/</a></li>
+</ul>
+
+<p>The homeowner must check their local city bylaws (e.g. height restrictions), local electric utility (Alectra Utilities for connection assessment and agreement which will automatically engage the Electrical Safety Authority (ESA)) and the Provincial Building Code (e.g. roof structure) to ensure that any work they plan to have done is in full compliance with the regulations.</p>
+",
+3,"<h1>Grey-Water Heat-Recovery Drains:</h1>
+<p>For households who take showers rather than baths, there is a potential to reduce the home's energy to heat their water by &lt;50% per year with a specially designed and built heat-recovery drain pipe. This device typically replaces a 3' to 4' 3"" to 4"" diameter section of the home's main drain stack. The temperature of the water going down the drain from a shower or the kitchen sink still contains considerable heat that can be recovered to pre-heat the temperature of the inbound city water entering into the home's hot water heater, thereby reducing the amount of energy the heater needs to meet the household's demand for hot water. Ideally, the drain stack and hot water heater are located close together such as within 10' to be able to utilize as much of the recovered heat as possible. The pipe can be installed in conjunction with any type of water heater (tank-based or tankless).</p>
+
+<p>The heat-recovery drain pipes can be bought at many hardware and plumbing stores or even online. Handy homeowners can install them themselves as can plumbers in just a couple of hours.</p>
+
+<p>Natural Resources Canada has posted helpful information on their website: <a href=""https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568"">https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568</a></p>
+",

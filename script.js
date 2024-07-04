@@ -1,5 +1,5 @@
-const csvUrl = 'https://raw.githubusercontent.com/MatthewBHShort/EnergyCoaching/main/answersFormatting5.csv';
-const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/EnergyCoaching/main/questions3.txt';
+const csvUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.github.io/main/answersFormatting.csv';
+const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.github.io/main/questions.txt';
 
 
 

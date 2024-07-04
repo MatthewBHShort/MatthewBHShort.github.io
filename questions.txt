@@ -1,9 +1,9 @@
-const questions = {
+questions = {
     start: {
         question: "What is your driver? \n Please choose all that apply then click Next.",
         answers: {
             "Reducing Costs": { next: "start", action: () => addRemoveDriver('costs')},
-            "Reducing GHGs": { next: "start", action: () => addRemoveDriver('ghgs')},
+            "Reducing Emissions": { next: "start", action: () => addRemoveDriver('ghgs')},
             "Thermal Comfort": { next: "start", action: () => addRemoveDriver('comfort')},
             "Equipment at End of Life": { next: "start", action: () => addRemoveDriver('equipment')},
             "Next": { next: "ductWork", action: () => console.log(result.driver)},
