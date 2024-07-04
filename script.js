@@ -248,7 +248,7 @@ function handleAnswer(answer) {
 
         const yesButton = document.createElement('button');
         yesButton.innerText = 'Yes';
-        yesButton.onclick = () => {saveResponses(true), saveData()};
+        yesButton.onclick = () => {saveResponses(true)};
         answersElem.appendChild(yesButton);
 
         const noButton = document.createElement('button');
@@ -270,6 +270,7 @@ function saveResponses(yesOrNo) {
         replies = formatResponses(replies);
         console.log(replies);
         // sendEmail(replies);
+        saveData(relpies);
         askForLetter(result.answerString); 
     }
 }
@@ -316,8 +317,8 @@ function sendEmail(r) {
 
 
 
-function saveData(){
-    const data = {content: replies};
+function saveData(r){
+    const data = {content: r};
     database.ref('data/').push(data)
         .then(() => {
             console.log("Data saved successfully");
