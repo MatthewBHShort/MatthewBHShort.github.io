@@ -317,7 +317,7 @@ function sendEmail(r) {
 
 
 function saveData(){
-    const data = {content: 'My data here!'};
+    const data = {content: replies};
     database.ref('data/').push(data)
         .then(() => {
             console.log("Data saved successfully");
