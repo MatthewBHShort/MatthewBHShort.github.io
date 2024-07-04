@@ -335,11 +335,86 @@ questions = {
     baseboard: {
         question: "Does your home have electric baseboard heating?",
         answers: {
-            "Yes": { next: "end", action: () => stringFunction("end","baseboard","")}, /////////////////////////////////////////////////////////////////////////////////////// FIX THE ROUTING
+            "Yes": { next: "baseboardAge", action: () => stringFunction("baseboardAge","baseboard","")}, /////////////////////////////////////////////////////////////////////////////////////// FIX THE ROUTING
             "No": { next: "ductlessHeatPump", action: () => stringFunction("ductlessHeatPump","baseboard","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","baseboard","")},
         }
     },
+
+baseboardAge: {
+        question: "What is the age of your electric baseboard heating system?",
+        answers: {
+            "0 - 5 years": { 
+                next: "waterHeating", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("waterHeating","baseboardAge","");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("waterHeating","baseboardAge","");
+                            case result.driver.includes('comfort'):
+                                stringFunction("waterHeating","baseboardAge","");
+                            case result.driver.includes('equipment'):
+                                stringFunction("waterHeating","baseboardAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "waterHeating",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","baseboardAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","baseboardAge","");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","baseboardAge","");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","baseboardAge","");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+
+
+
+
     ductlessHeatPump: {
         question: "Does your home have a ductless heat pump?",
         answers: {

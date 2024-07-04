@@ -29,11 +29,9 @@ lastQuestion = "start";
 
 
 function saveString(passedThroughString) {
-    // const inputString = document.getElementById('inputString').value;
     console.log(passedThroughString);
     const inputString = passedThroughString;
     localStorage.setItem('sharedString', inputString);
-    // window.location.href = 'http://localhost:8000/results.html';
     window.location.href = 'https://matthewbhshort.github.io/results.html';
     
 
