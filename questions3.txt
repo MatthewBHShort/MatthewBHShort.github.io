@@ -1,0 +1,651 @@
+questions = {
+    start: {
+        question: "What is your driver? \n Please choose all that apply then click Next.",
+        answers: {
+            "Reducing Costs": { next: "start", action: () => addRemoveDriver('costs')},
+            "Reducing GHGs": { next: "start", action: () => addRemoveDriver('ghgs')},
+            "Thermal Comfort": { next: "start", action: () => addRemoveDriver('comfort')},
+            "Equipment at End of Life": { next: "start", action: () => addRemoveDriver('equipment')},
+            "Next": { next: "ductWork", action: () => console.log(result.driver)},
+        }
+    },
+    ductWork: {
+        question: "Does your home have duct work?",
+        answers: {
+            "Yes": { next: "furnace", action: () => stringFunction("furnace","ductWork","")},
+            "No": { next: "hydronicHeating", action: () => stringFunction("hydronicHeating","ductWork","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductWork","")},
+            "Back": { next: lastQuestion},
+        }
+    },
+    furnace: {
+        question: "Do you have a gas/propane/oil/wood furnace?",
+        answers: {
+            "Yes": { next: "furnaceAge", action: () => stringFunction("furnaceAge","furnace","")},
+            "No": { next: "ductedHeatPump", action: () => stringFunction("ductedHeatPump","furnace","")},
+            "I don't know": {next: "virtualConsultation", action: () => stringFunction("virtualConsultation","furnace","")},
+        }
+    },
+    furnaceAge: {
+        question: "What is the age of your furnace?",
+        answers: {
+            "0 - 5 years": { 
+                next: "AC", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("AC","furnaceAge","EF");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("AC","furnaceAge","EF");
+                            case result.driver.includes('comfort'):
+                                    stringFunction("AC","furnaceAge","F");
+                            case result.driver.includes('equipment'):
+                                stringFunction("AC","furnaceAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "AC",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","furnaceAge","EF");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","furnaceAge","EF");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","furnaceAge","F");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","furnaceAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "AC", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","furnaceAge","EFM");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","furnaceAge","EFM");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","furnaceAge","EFM");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","furnaceAge","EFM");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "AC", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","furnaceAge","EFMZ");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","furnaceAge","EFMZ");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","furnaceAge","EFMZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","furnaceAge","EFMZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+    AC: {
+        question: "Does your home have Air Conditioning?",
+        answers: {
+            "Yes": { next: "ACAge", action: () => stringFunction("ACAge","AC","")},
+            "No": { next: "hydronicHeating", action: () => stringFunction("hydronicHeating","AC","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virutalConsultation","AC","")},
+        }
+    },
+    ACAge: {
+        question: "What is the age of your Air Conditioner?",
+        answers: {
+            "0 - 5 years": { 
+                next: "waterHeating", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("waterHeating","ACAge","EF");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("waterHeating","ACAge","EF");
+                            case result.driver.includes('comfort'):
+                                stringFunction("waterHeating","ACAge","F");
+                            case result.driver.includes('equipment'):
+                                stringFunction("waterHeating","ACAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "waterHeating",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ACAge","EF");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ACAge","EF");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ACAge","F");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ACAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ACAge","EF");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ACAge","EF");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ACAge","F");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ACAge","");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ACAge","EFP");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ACAge","EFP");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ACAge","EFP");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ACAge","EFP");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+    ductedHeatPumpAge: {
+        question: "What is the age of your ducted heat pump?",
+        answers: {
+            "0 - 5 years": { 
+                next: "AC", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("AC","ductedHeatPumpAge","H");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("AC","ductedHeatPumpAge","H");
+                            case result.driver.includes('comfort'):
+                                stringFunction("AC","ductedHeatPumpAge","H");
+                            case result.driver.includes('equipment'):
+                                stringFunction("AC","ductedHeatPumpAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "AC",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","ductedHeatPumpAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "AC", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","ductedHeatPumpAge","H");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","ductedHeatPumpAge","");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "AC", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("AC","ductedHeatPumpAge","HMZ");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("AC","ductedHeatPumpAge","HMZ");
+                        case result.driver.includes('comfort'):
+                            stringFunction("AC","ductedHeatPumpAge","HMZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("AC","ductedHeatPumpAge","HMZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+    ductlessHeatPumpAge: {
+        question: "What is the age of your ductless heat pump?",
+        answers: {
+            "0 - 5 years": { 
+                next: "waterHeating", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                            case result.driver.includes('comfort'):
+                                stringFunction("waterHeating","ductlessHeatPumpAge","H");
+                            case result.driver.includes('equipment'):
+                                stringFunction("waterHeating","ductlessHeatPumpAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "waterHeating",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","H");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EH");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","H");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EHOZ");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EHOZ");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EHOZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","ductlessHeatPumpAge","EHOZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+
+
+    
+    ductedHeatPump: {
+        question: "Does your home have a ducted heat pump?",
+        answers: {
+            "Yes": { next: "ductedHeatPumpAge", action: () => stringFunction("ductedHeatPumpAge","ductedHeatPump","")},
+            "No": { next: "virtualConsultaion", action: () => stringFunction("virtualConsultation","ductedHeatPump","")},
+            "I don't know": { next: "virutalConsultation", action: () => stringFunction("virtualConsultation","ductedHeatPump","")},
+        }
+    },
+    hydronicHeating: {
+        question: "Does your home have hot water radiators/in-floor?",
+        answers: {
+            "Yes": { next: "boiler", action: () => stringFunction("boiler","hydronicHeating","")},
+            "No": { next: "baseboard", action: () => stringFunction("baseboard","hydronicHeating","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","hydronicHeating","")},
+        }
+    },
+    baseboard: {
+        question: "Does your home have electric baseboard heating?",
+        answers: {
+            "Yes": { next: "end", action: () => stringFunction("end","baseboard","")}, /////////////////////////////////////////////////////////////////////////////////////// FIX THE ROUTING
+            "No": { next: "ductlessHeatPump", action: () => stringFunction("ductlessHeatPump","baseboard","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","baseboard","")},
+        }
+    },
+    ductlessHeatPump: {
+        question: "Does your home have a ductless heat pump?",
+        answers: {
+            "Yes": { next: "ductlessHeatPumpAge", action: () => stringFunction("ductlessHeatPumpAge","ductlessHeatPump","")},
+            "No": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductlessHeatPump","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductlessHeatPump","")},
+        }
+    },
+    boiler: {
+        question: "Does your home have gas/propane/oil/wood boiler",
+        answers: {
+            "Yes": { next: "boilerAge", action: () => stringFunction("boilerAge","boiler","")},
+            "No": { next: "end", action: () => stringFunction("waterHeating","boiler","")}, 
+            "I don't know": { next: "virutalConsultation", action: () => stringFunction("virtualConsultation","boiler","")},
+        }
+    },
+    boilerAge: {
+        question: "What is the age of your boiler?",
+        answers: {
+            "0 - 5 years": { 
+                next: "waterHeating", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("waterHeating","boilerAge","EG");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("waterHeating","boilerAge","EG");
+                            case result.driver.includes('comfort'):
+                                stringFunction("waterHeating","boilerAge","G");
+                            case result.driver.includes('equipment'):
+                                stringFunction("waterHeating","boilerAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "waterHeating",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","boilerAge","EG");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","boilerAge","EG");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","boilerAge","G");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","boilerAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","boilerAge","EG");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","boilerAge","EG");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","boilerAge","G");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","boilerAge","");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "waterHeating", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("waterHeating","boilerAge","EGNZ");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("waterHeating","boilerAge","EGNZ");
+                        case result.driver.includes('comfort'):
+                            stringFunction("waterHeating","boilerAge","EGNZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("waterHeating","boilerAge","EGNZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+    waterHeating: {
+        question: "How do you heat your water?",
+        answers: {
+            "Gas Fired Tank": { next: "waterHeatingAge"},
+            "Electric Tank": { next: "waterHeatingAge"},
+            "Gas Fired Tankless": { next: "waterHeatingAge"},
+            "Electric Tankless": { next: "waterHeatingAge"},
+            "Other": { next: "waterHeatingAge"},
+            "I don't know": { next: "virtualConsultation"},
+        }
+    },
+    waterHeatingAge: {
+        question: "What is the age of your water heating system?",
+        answers: {
+            "0 - 5 years": { 
+                next: "end", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("end","waterHeatingAge","JK2");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("end","waterHeatingAge","JK2");
+                            case result.driver.includes('comfort'):
+                                stringFunction("end","waterHeatingAge","JK");
+                            case result.driver.includes('equipment'):
+                                stringFunction("end","waterHeatingAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "end",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("end","waterHeatingAge","JK2");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("end","waterHeatingAge","JK2");
+                        case result.driver.includes('comfort'):
+                            stringFunction("end","waterHeatingAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("end","waterHeatingAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "end", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("end","waterHeatingAge","JK2");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("end","waterHeatingAge","JK2");
+                        case result.driver.includes('comfort'):
+                            stringFunction("end","waterHeatingAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("end","waterHeatingAge","JKQR");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "end", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("end","waterHeatingAge","JKQRZ2");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("end","waterHeatingAge","JKQRZ2");
+                        case result.driver.includes('comfort'):
+                            stringFunction("end","waterHeatingAge","JKQRZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("end","waterHeatingAge","JKQRZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+
+    electricalPanel: {
+        question: "What is the size of your electrical panel?",
+        answers: {
+            "100 amps or less": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductlessHeatPump","Z")},
+            "100 - 200 amps": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductlessHeatPump","")},
+            "200 amps or more": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductlessHeatPump","")},
+        }
+    },
+
+    solar: {
+        question: "Are you interested in solar?",
+        answers: {
+            "Yes": { next: "washer", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("washer","solar","3");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("washer","solar","3");
+                    case result.driver.includes('comfort'):
+                        stringFunction("washer","solar","");
+                    case result.driver.includes('equipment'):
+                        stringFunction("washer","solar","3");
+                            break;
+                }
+            }},
+            "No": { next: "washer", action: () => stringFunction("washer","solar","")},
+        }
+    },
+    washer: {
+        question: "Does your clothes washer need replacing?",
+        answers: {
+            "Yes": { next: "dryer", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("dryer","washer","5");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("dryer","washer","");
+                    case result.driver.includes('comfort'):
+                        stringFunction("dryer","washer","5");
+                    case result.driver.includes('equipment'):
+                        stringFunction("dryer","washer","5");
+                            break;
+                }
+            }},
+            "No": { next: "dryer", action: () => stringFunction("dryer","washer","")},
+        }
+    },
+    dryer: {
+        question: "Does your dryer need replacing?",
+        answers: {
+            "Yes": { next: "cooking", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("cooking","dryer","");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("cooking","dryer","4");
+                    case result.driver.includes('comfort'):
+                            stringFunction("cooking","dryer","");
+                    case result.driver.includes('equipment'):
+                        stringFunction("cooking","dryer","4");
+                            break;
+                }
+            }},
+            "No": { next: "cooking", action: () => stringFunction("cooking","dryer","")},
+        }
+    },
+
+    cooking: {
+        question: "Does your cooking range need replacing?",
+        answers: {
+            "Yes": { next: "lighting", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("lighting","cooking","6");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("lighting","cooking","6");
+                    case result.driver.includes('comfort'):
+                        stringFunction("lighting","cooking","");
+                    case result.driver.includes('equipment'):
+                        stringFunction("lighting","cooking","6");
+                            break;
+                }
+            }},
+            "No": { next: "lighting", action: () => stringFunction("lighting","cooking","")},
+        }
+    },
+
+    lighting: {
+        question: "Do you need to replace or upgrade your lighting?",
+        answers: {
+            "Yes": { next: "shower", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("shower","lighting","7");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("shower","lighting","7");
+                    case result.driver.includes('comfort'):
+                        stringFunction("shower","lighting","");
+                    case result.driver.includes('equipment'):
+                        stringFunction("shower","lighting","7");
+                            break;
+                }
+            }},
+            "No": { next: "shower", action: () => stringFunction("shower","lighting","")},
+        }
+    },
+    shower: {
+        question: "Do you need to fix or replace a faucet or showhead?",
+        answers: {
+            "Yes": { next: "electricalPanel", action: ()=> {
+                switch (true) {
+                    case result.driver.includes('costs'):
+                        stringFunction("electricalPanel","shower","8");
+                    case result.driver.includes('ghgs'):
+                        stringFunction("electricalPanel","shower","8");
+                    case result.driver.includes('comfort'):
+                        stringFunction("electricalPanel","shower","");
+                    case result.driver.includes('equipment'):
+                        stringFunction("electricalPanel","shower","8");
+                            break;
+                }
+            }},
+            "No": { next: "electricalPanel", action: () => stringFunction("electricalPanel","shower","")},
+        }
+    },
+
+
+
+
+
+    virtualConsultation: {
+        question: "Would you like to book a virtual consultation?",
+        answers: {
+            "Yes": { next: "end"},
+            "No": { next: "end"},
+        }
+    },
+    end: {
+        question: "Would you like to save your responses?"
+    }
+};

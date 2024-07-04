@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/c65bae_c025adfb8f9b4d819125b5177346b83f%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c65bae_c025adfb8f9b4d819125b5177346b83f%7Emv2.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Coaching</title>
+    <div class="button-container">
+        <button class="nav" onclick="location.href='index.html'">Energy Coach</button>
+        <button class="nav" onclick="location.href='guide.html'">Guide</button>
+        <button class="nav" onclick="location.href='results.html'">Results</button>
+    </div>
+    <style>
+
+
+        .nav{
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        .nav:hover{
+            background-color: #7db3f5;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        .answers button {
+            margin: 5px;
+        }
+        
+        button {
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #5A8C2A; /* Darker green color for hover effect */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+        }
+        .question {
+            /* background-image: url('path_to_your_background_image.jpg');  */
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 48px;
+            font-weight: bold;
+
+        }
+        
+        
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            width: fit-content; /* Adjusts the width to fit the content */
+            border-radius: 10px;
+        }
+        .header img {
+            height: 100px; /* Adjust the height as needed */
+            border-radius: 10px;
+        }
+
+
+
+    </style>
+    <div class="header">
+        <!-- <img src="logo.png" alt="Logo"> -->
+    </div> 
+</head>
+<body>
+    
+
+
+    <div id="app">
+        <div class="question" id="question"></div>
+        <div class="button-container">
+        <div class="answers" id="answers"></div>
+        </div>
+    </div>
+    <div id="content">
+
+
+    </div>
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js" defer>
+
+        if (answer == 'Reducing Costs' && result.driver.includes('costs')) {
+            button.style.backgroundColor = '#5A8C2A'; 
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/c65bae_c025adfb8f9b4d819125b5177346b83f%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c65bae_c025adfb8f9b4d819125b5177346b83f%7Emv2.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <script src="script2.js" defer></script>
+</head>
+<div class="button-container">
+    <button class="nav" onclick="location.href='index.html'">Energy Coach</button>
+        <button class="nav" onclick="location.href='guide.html'">Guide</button>
+        <button class="nav" onclick="location.href='results.html'">Results</button>
+</div>
+<body>
+    <!-- <label class="switch">
+        <input type="checkbox" onclick="toggleContent()">
+        <span class="slider"></span>
+    </label> -->
+    <div id="formatted-output">
+  
+    </div>
+    <div id="guideContent" class ="hidden">
+        <div class="container">
+            <div class="section">
+                <img src="heatpump.jpg" alt="Heat Pump">
+                <div class="text">
+                    <h2>What is a Heat Pump?</h2>
+                    <p>A heat pump is a device that transfers heat energy from a source of heat to a destination called a "heat sink". Heat pumps are designed to move thermal energy opposite to the direction of spontaneous heat flow by absorbing heat from a cold space and releasing it to a warmer one.</p>
+                </div>
+            </div>
+            <div class="section">
+                <img src="furnace.jpg" alt="Furnace">
+                <div class="text">
+                    <h2>What is a Furnace?</h2>
+                    <p>A furnace is a device used for high-temperature heating. The name derives from Latin fornax, which means oven. Furnaces are commonly used as a major component of a central heating system. The most common fuel source for modern furnaces in the United States is natural gas; other common fuel sources include propane (LP), fuel oil, coal or wood.</p>
+                </div>
+            </div>
+        <div class="section">
+            <img src="electricalpanel.jpg" alt="electricalpanel">
+            <div class="text">
+                <h2>Identify the Amp Rating of your Electrical Panel</h2>
+                <p>To identify the amperage of your electrical panel, look for the largest breaker switch inside the panel, usually located at the top or bottom and separate from the rows of smaller breakers. This main breaker controls the power to the entire panel. The amperage rating, commonly 100, 150, or 200 amps, is typically printed on the handle of the main breaker. If the rating isn’t visible on the breaker, check for a label inside the panel door or on the side of the panel.</p>
+            </div>
+        </div>
+                    <div class="section">
+                <img src="ductedheatpump.jpeg" alt="Ducted Heat Pump">
+                <div class="text">
+                    <h2>What is a Ducted Heat Pump?</h2>
+                    <p>A ducted heat pump system uses air ducts to distribute heated or cooled air throughout a building. These systems are often used in larger buildings and homes to provide even and efficient heating and cooling. They can be an energy-efficient alternative to traditional heating and cooling systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+        .nav{
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        .nav:hover{
+            background-color: #7db3f5;
+        }
+        button {
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #5A8C2A; /* Darker green color for hover effect */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .section img {
+            max-width: 200px;
+            margin: 0 20px;
+        }
+        .section .text {
+            flex: 1;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .hidden {
+                display: none;
+            }
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        .styled-bullets {
+            margin: 0 0 20px 20px; /* Indent and spacing */
+            padding: 0;
+        }
+
+        .styled-bullets li {
+            margin-bottom: 10px; /* Space between bullet points */
+            list-style-type: disc; /* Use bullet points */
+        }
+
+
+
+
+
+</style>
+</html>
