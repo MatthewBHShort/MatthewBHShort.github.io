@@ -5,7 +5,16 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 
-
+const firebaseConfig = {
+    apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
+    authDomain: "energy-coaching-cbbc5.firebaseapp.com",
+    databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
+    projectId: "energy-coaching-cbbc5",
+    storageBucket: "energy-coaching-cbbc5.appspot.com",
+    messagingSenderId: "85932482016",
+    appId: "1:85932482016:web:9852865b84481d33f41f85",
+    measurementId: "G-DWJ540T6WE"
+};
 
 
 
@@ -26,16 +35,7 @@ auth.signInWithEmailAndPassword("user@example.com", "password")
         console.error("Error signing in: ", error);
     });
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
-        authDomain: "energy-coaching-cbbc5.firebaseapp.com",
-        databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
-        projectId: "energy-coaching-cbbc5",
-        storageBucket: "energy-coaching-cbbc5.appspot.com",
-        messagingSenderId: "85932482016",
-        appId: "1:85932482016:web:9852865b84481d33f41f85",
-        measurementId: "G-DWJ540T6WE"
-    };
+    
 
 
 
