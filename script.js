@@ -130,13 +130,6 @@ async function askForLetter(stringAnswer) {
 }
 
 
-
-// ---------------
-
-// This is where questions object was
-
-// ---------------
-
         
 let current = "start";
 let result = {
@@ -172,10 +165,15 @@ function askQuestion() {
         if (answer == 'Equipment at End of Life' && result.driver.includes('equipment')) {
             button.style.backgroundColor = '#5A8C2A'; 
         }
-        if(answer == 'Equipment at End of Life'){
-            const space = document.createElement('br');
-            answersElem.appendChild(space);
-        }
+
+
+        // if(answer == 'Equipment at End of Life'){
+        //     const space = document.createElement('br');
+        //     answersElem.appendChild(space);
+        // }
+
+
+
         if (answer == 'Next' && result.driver.length == 0) {
             button.style.backgroundColor = 'grey'; 
             questions["start"].answers["Next"].next = 'start';
