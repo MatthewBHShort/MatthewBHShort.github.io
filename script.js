@@ -3,7 +3,16 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 
-
+const firebaseConfig = {
+    apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
+    authDomain: "energy-coaching-cbbc5.firebaseapp.com",
+    databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
+    projectId: "energy-coaching-cbbc5",
+    storageBucket: "energy-coaching-cbbc5.appspot.com",
+    messagingSenderId: "85932482016",
+    appId: "1:85932482016:web:9852865b84481d33f41f85",
+    measurementId: "G-DWJ540T6WE"
+};
 
 
 
@@ -26,19 +35,7 @@ auth.signInWithEmailAndPassword("user@example.com", "password")
         console.error("Error signing in: ", error);
     });
 
-// Add event listener to the save button
-document.getElementById('saveButton').addEventListener('click', () => {
-    const data = { content: 'Your data here' }; // Replace with actual data
 
-    // Add data to Firebase Realtime Database
-    database.ref('data/').push(data)
-        .then(() => {
-            console.log("Data saved successfully");
-        })
-        .catch((error) => {
-            console.error("Error saving data: ", error);
-        });
-});
 
 
 
@@ -251,7 +248,7 @@ function handleAnswer(answer) {
 
         const yesButton = document.createElement('button');
         yesButton.innerText = 'Yes';
-        yesButton.onclick = () => {saveResponses(true)};
+        yesButton.onclick = () => {saveResponses(true), saveData()};
         answersElem.appendChild(yesButton);
 
         const noButton = document.createElement('button');
@@ -316,19 +313,33 @@ function sendEmail(r) {
 // --------------------------------------------
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
-    authDomain: "energy-coaching-cbbc5.firebaseapp.com",
-    databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
-    projectId: "energy-coaching-cbbc5",
-    storageBucket: "energy-coaching-cbbc5.appspot.com",
-    messagingSenderId: "85932482016",
-    appId: "1:85932482016:web:9852865b84481d33f41f85",
-    measurementId: "G-DWJ540T6WE"
-};
 
 
 
 
 
+// // Add event listener to the save button
+// document.getElementById('saveButton').addEventListener('click', () => {
+//     const data = { content: 'Your data here' }; // Replace with actual data
+
+//     // Add data to Firebase Realtime Database
+//     database.ref('data/').push(data)
+//         .then(() => {
+//             console.log("Data saved successfully");
+//         })
+//         .catch((error) => {
+//             console.error("Error saving data: ", error);
+//         });
+// });
+
+function saveData(){
+    const data = {content: 'My data here!'};
+    database.ref('data/').push(data)
+        .then(() => {
+            console.log("Data saved successfully");
+        })
+        .catch((error) => {
+            console.error("Error saving data: ", error);
+        })
+}
 
