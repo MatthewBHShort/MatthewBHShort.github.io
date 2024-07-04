@@ -316,22 +316,6 @@ function sendEmail(r) {
 
 
 
-
-
-// // Add event listener to the save button
-// document.getElementById('saveButton').addEventListener('click', () => {
-//     const data = { content: 'Your data here' }; // Replace with actual data
-
-//     // Add data to Firebase Realtime Database
-//     database.ref('data/').push(data)
-//         .then(() => {
-//             console.log("Data saved successfully");
-//         })
-//         .catch((error) => {
-//             console.error("Error saving data: ", error);
-//         });
-// });
-
 function saveData(){
     const data = {content: 'My data here!'};
     database.ref('data/').push(data)
