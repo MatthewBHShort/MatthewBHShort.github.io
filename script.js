@@ -12,7 +12,33 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+const auth = firebase.auth();
 
+// Sign in user (example with Email/Password)
+auth.signInWithEmailAndPassword("user@example.com", "password")
+    .then((userCredential) => {
+        console.log("User signed in: ", userCredential.user);
+    })
+    .catch((error) => {
+        console.error("Error signing in: ", error);
+    });
+
+// Add event listener to the save button
+document.getElementById('saveButton').addEventListener('click', () => {
+    const data = { content: 'Your data here' }; // Replace with actual data
+
+    // Add data to Firebase Realtime Database
+    database.ref('data/').push(data)
+        .then(() => {
+            console.log("Data saved successfully");
+        })
+        .catch((error) => {
+            console.error("Error saving data: ", error);
+        });
+});
 
 
 
@@ -303,32 +329,6 @@ const firebaseConfig = {
 
 
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-const auth = firebase.auth();
 
-// Sign in user (example with Email/Password)
-auth.signInWithEmailAndPassword("user@example.com", "password")
-    .then((userCredential) => {
-        console.log("User signed in: ", userCredential.user);
-    })
-    .catch((error) => {
-        console.error("Error signing in: ", error);
-    });
-
-// Add event listener to the save button
-document.getElementById('saveButton').addEventListener('click', () => {
-    const data = { content: 'Your data here' }; // Replace with actual data
-
-    // Add data to Firebase Realtime Database
-    database.ref('data/').push(data)
-        .then(() => {
-            console.log("Data saved successfully");
-        })
-        .catch((error) => {
-            console.error("Error saving data: ", error);
-        });
-});
 
 
