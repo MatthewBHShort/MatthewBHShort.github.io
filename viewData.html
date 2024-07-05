@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View and Save Data to Firebase</title>
+    <!-- Add Firebase SDKs from the CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <button id="createUserButton">Create User</button>
+    <button id="saveButton">Save Data</button>
+    <button id="loadDataButton">Load Data</button>
+    <button id="downloadCsvButton">Download CSV</button>
+    <div id="dataContainer"></div>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
+            authDomain: "energy-coaching-cbbc5.firebaseapp.com",
+            databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
+            projectId: "energy-coaching-cbbc5",
+            storageBucket: "energy-coaching-cbbc5.appspot.com",
+            messagingSenderId: "85932482016",
+            appId: "1:85932482016:web:9852865b84481d33f41f85",
+            measurementId: "G-DWJ540T6WE"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        const auth = firebase.auth();
+
+        // Function to sign in user
+        function signInUser() {
+            return auth.signInWithEmailAndPassword("newuser@example.com", "newpassword")
+                .then((userCredential) => {
+                    console.log("User signed in: ", userCredential.user);
+                })
+                .catch((error) => {
+                    console.error("Error signing in: ", error);
+                    alert("Error signing in: " + error.message);
+                });
+        }
+
+        // Function to convert JSON to CSV
+        function jsonToCsv(jsonData) {
+            const csvRows = [];
+            const headers = Object.keys(jsonData[0]);
+            csvRows.push(headers.join(','));
+
+            for (const row of jsonData) {
+                const values = headers.map(header => {
+                    const escape = ('' + row[header]).replace(/"/g, '\\"');
+                    return `"${escape}"`;
+                });
+                csvRows.push(values.join(','));
+            }
+
+            return csvRows.join('\n');
+        }
+
+        // Function to download CSV
+        function downloadCsv(csvContent, filename = 'data.csv') {
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+
+            link.setAttribute('href', url);
+            link.setAttribute('download', filename);
+            link.style.visibility = 'hidden';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Create user (example with Email/Password)
+        document.getElementById('createUserButton').addEventListener('click', () => {
+            const email = 'newuser@example.com'; // Replace with desired email
+            const password = 'newpassword'; // Replace with desired password
+
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    console.log("User created: ", userCredential.user);
+                    alert("User created successfully");
+                })
+                .catch((error) => {
+                    console.error("Error creating user: ", error);
+                    alert("Error creating user: " + error.message);
+                });
+        });
+
+        // Add event listener to the save button
+        document.getElementById('saveButton').addEventListener('click', () => {
+            signInUser().then(() => {
+                const data = { content: 'Your data here' }; // Replace with actual data
+
+                // Add data to Firebase Realtime Database
+                database.ref('data/').push(data)
+                    .then(() => {
+                        console.log("Data saved successfully");
+                    })
+                    .catch((error) => {
+                        console.error("Error saving data: ", error);
+                        alert("Error saving data: " + error.message);
+                    });
+            });
+        });
+
+        // Add event listener to the load data button
+        document.getElementById('loadDataButton').addEventListener('click', () => {
+            signInUser().then(() => {
+                database.ref('data/').once('value')
+                    .then((snapshot) => {
+                        const dataContainer = document.getElementById('dataContainer');
+                        dataContainer.innerHTML = '';
+                        snapshot.forEach((childSnapshot) => {
+                            const data = childSnapshot.val();
+                            const dataElement = document.createElement('div');
+                            dataElement.textContent = JSON.stringify(data);
+                            dataContainer.appendChild(dataElement);
+                        });
+                    })
+                    .catch((error) => {
+                        console.error("Error loading data: ", error);
+                        alert("Error loading data: " + error.message);
+                    });
+            });
+        });
+
+        // Add event listener to the download CSV button
+        document.getElementById('downloadCsvButton').addEventListener('click', () => {
+            signInUser().then(() => {
+                database.ref('data/').once('value')
+                    .then((snapshot) => {
+                        const data = [];
+                        snapshot.forEach((childSnapshot) => {
+                            data.push(childSnapshot.val());
+                        });
+                        const csvContent = jsonToCsv(data);
+                        downloadCsv(csvContent);
+                    })
+                    .catch((error) => {
+                        console.error("Error downloading data: ", error);
+                        alert("Error downloading data: " + error.message);
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
