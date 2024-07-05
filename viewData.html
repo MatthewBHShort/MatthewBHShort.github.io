@@ -10,7 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>Loginnn</h2>
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
     <button id="loginButton">Login</button>
@@ -74,7 +74,7 @@
                 const tallyRef = database.ref(`${point}/${userId}`);
 
                 tallyRef.transaction((currentValue) => {
-                    return (currentValue || 0) + 1;
+                    return (currentValue ) + 1;
                 }).then(() => {
                     console.log(`${point.charAt(0).toUpperCase() + point.slice(1)} tally updated successfully`);
                 }).catch((error) => {
@@ -137,7 +137,7 @@
                 Promise.all(promises)
                     .then(snapshots => {
                         snapshots.forEach((snapshot, index) => {
-                            const value = snapshot.val() || 0;
+                            const value = snapshot.val() ;
                             const dataElement = document.createElement('div');
                             dataElement.textContent = `${points[index].charAt(0).toUpperCase() + points[index].slice(1)}: ${value}`;
                             dataContainer.appendChild(dataElement);
@@ -164,7 +164,7 @@
                     .then(snapshots => {
                         const data = {};
                         snapshots.forEach((snapshot, index) => {
-                            data[points[index]] = snapshot.val() || 0;
+                            data[points[index]] = snapshot.val() ;
                         });
                         const csvContent = jsonToCsv([data]);
                         downloadCsv(csvContent);
