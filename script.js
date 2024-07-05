@@ -269,10 +269,11 @@ function saveResponses(yesOrNo) {
     if(yesOrNo == true){
         var replies = JSON.stringify(responses,null,2);
         replies = formatResponses(replies);
-        saveData(replies);
+        saveData(replies,result.driver);
         console.log(replies);
         // sendEmail(replies);
         askForLetter(result.answerString); 
+        
     }
 }
 
@@ -319,7 +320,21 @@ function sendEmail(r) {
 
 
 
-function saveData(stringResponses){
+function saveData(stringResponses,drivers){
+
+    const ghgsRef = database.ref('ghgs/' + userId);
+
+
+    ghgsRef.transaction((currentValue) => {
+        return (currentValue || 0) + 1;
+    }).then(() => {
+        console.log("GHGs tally updated successfully");
+    }).catch((error) => {
+        console.error("Error updating tally: ", error);
+        alert("Error updating tally: " + error.message);
+    });
+
+
 
     const data = {content: stringResponses};
     database.ref('data/').push(data)
@@ -330,4 +345,5 @@ function saveData(stringResponses){
             console.error("Error saving data: ", error);
         })
 }
+
 
