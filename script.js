@@ -323,17 +323,24 @@ function sendEmail(r) {
 function saveData(stringResponses,drivers){
     const user = auth.currentUser;
     const userId = user.uid;
-    const ghgsRef = database.ref('ghgs/' + userId);
+    
+    if(drivers.includes("costs")){
+        addToTally("costs",user);
+    }
+    if(drivers.includes("ghgs")){
+        addToTally("ghgs",user);
+    }
+    if(drivers.includes("comfort")){
+        addToTally("comfort",user);
+    }
+    if(drivers.includes("equipment")){
+        addToTally("equipment",user);
+    }
 
 
-    ghgsRef.transaction((currentValue) => {
-        return (currentValue || 0) + 1;
-    }).then(() => {
-        console.log("GHGs tally updated successfully");
-    }).catch((error) => {
-        console.error("Error updating tally: ", error);
-        alert("Error updating tally: " + error.message);
-    });
+
+
+    
 
 
 
@@ -345,6 +352,20 @@ function saveData(stringResponses,drivers){
         .catch((error) => {
             console.error("Error saving data: ", error);
         })
+}
+
+function addToTally(driver,userID){
+    const Ref = database.ref(driver + '/' + userID);
+    Ref.transaction((currentValue) => {
+        return (currentValue || 0) + 1;
+    }).then(() => {
+        console.log(driver + " tally updated successfully");
+    }).catch((error) => {
+        console.error("Error updating tally: ", error);
+        alert("Error updating tally: " + error.message);
+    });
+
+
 }
 
 
