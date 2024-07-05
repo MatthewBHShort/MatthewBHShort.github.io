@@ -92,41 +92,46 @@
             document.body.removeChild(link);
         }
 
-        // Add event listener to the load data button
-        document.getElementById('loadDataButton').addEventListener('click', () => {
+        // Function to load data
+        function loadData() {
             const user = auth.currentUser;
             if (user) {
-                database.ref('data/' + user.uid).once('value')
-                    .then((snapshot) => {
-                        const dataContainer = document.getElementById('dataContainer');
-                        dataContainer.innerHTML = '';
-                        snapshot.forEach((childSnapshot) => {
-                            const data = childSnapshot.val();
+                const userId = user.uid;
+                const dataContainer = document.getElementById('dataContainer');
+                dataContainer.innerHTML = '';
+                const points = ['cost', 'ghgs', 'comfort', 'equipment'];
+                points.forEach(point => {
+                    database.ref(`${point}/${userId}`).once('value')
+                        .then((snapshot) => {
+                            const value = snapshot.val();
                             const dataElement = document.createElement('div');
-                            dataElement.textContent = `Cost: ${data.cost}, GHGs: ${data.ghgs}, Comfort: ${data.comfort}, Equipment: ${data.equipment}`;
+                            dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${value}`;
                             dataContainer.appendChild(dataElement);
+                        })
+                        .catch((error) => {
+                            console.error(`Error loading ${point}: `, error);
                         });
-                    })
-                    .catch((error) => {
-                        console.error("Error loading data: ", error);
-                        alert("Error loading data: " + error.message);
-                    });
+                });
             } else {
                 alert("You need to be signed in to load the data");
             }
-        });
+        }
 
-        // Add event listener to the download CSV button
-        document.getElementById('downloadCsvButton').addEventListener('click', () => {
+        // Function to download data as CSV
+        function downloadCsvData() {
             const user = auth.currentUser;
             if (user) {
-                database.ref('data/' + user.uid).once('value')
-                    .then((snapshot) => {
-                        const data = [];
-                        snapshot.forEach((childSnapshot) => {
-                            data.push(childSnapshot.val());
+                const userId = user.uid;
+                const points = ['cost', 'ghgs', 'comfort', 'equipment'];
+                const promises = points.map(point => database.ref(`${point}/${userId}`).once('value'));
+
+                Promise.all(promises)
+                    .then(snapshots => {
+                        const data = {};
+                        snapshots.forEach((snapshot, index) => {
+                            data[points[index]] = snapshot.val();
                         });
-                        const csvContent = jsonToCsv(data);
+                        const csvContent = jsonToCsv([data]);
                         downloadCsv(csvContent);
                     })
                     .catch((error) => {
@@ -136,7 +141,13 @@
             } else {
                 alert("You need to be signed in to download the data");
             }
-        });
+        }
+
+        // Add event listener to the load data button
+        document.getElementById('loadDataButton').addEventListener('click', loadData);
+
+        // Add event listener to the download CSV button
+        document.getElementById('downloadCsvButton').addEventListener('click', downloadCsvData);
     </script>
 </body>
 </html>
