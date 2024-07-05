@@ -10,7 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 </head>
 <body>
-    <h2>Loginnn</h2>
+    <h2>Login</h2>
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
     <button id="loginButton">Login</button>
@@ -74,7 +74,7 @@
                 const tallyRef = database.ref(`${point}/${userId}`);
 
                 tallyRef.transaction((currentValue) => {
-                    return (currentValue ) + 1;
+                    return (currentValue || 0) + 1;
                 }).then(() => {
                     console.log(`${point.charAt(0).toUpperCase() + point.slice(1)} tally updated successfully`);
                 }).catch((error) => {
@@ -128,18 +128,21 @@
         function loadData() {
             const user = auth.currentUser;
             if (user) {
-                const userId = user.uid;
                 const dataContainer = document.getElementById('dataContainer');
                 dataContainer.innerHTML = '';
                 const points = ['cost', 'ghgs', 'comfort', 'equipment'];
-                const promises = points.map(point => database.ref(`${point}/${userId}`).once('value'));
+                const promises = points.map(point => database.ref(point).once('value'));
 
                 Promise.all(promises)
                     .then(snapshots => {
-                        snapshots.forEach((snapshot, index) => {
-                            const value = snapshot.val() ;
+                        const totalTallies = {};
+                        points.forEach((point, index) => {
+                            totalTallies[point] = 0;
+                            snapshots[index].forEach((childSnapshot) => {
+                                totalTallies[point] += childSnapshot.val() || 0;
+                            });
                             const dataElement = document.createElement('div');
-                            dataElement.textContent = `${points[index].charAt(0).toUpperCase() + points[index].slice(1)}: ${value}`;
+                            dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
                             dataContainer.appendChild(dataElement);
                         });
                     })
@@ -156,15 +159,17 @@
         function downloadCsvData() {
             const user = auth.currentUser;
             if (user) {
-                const userId = user.uid;
                 const points = ['cost', 'ghgs', 'comfort', 'equipment'];
-                const promises = points.map(point => database.ref(`${point}/${userId}`).once('value'));
+                const promises = points.map(point => database.ref(point).once('value'));
 
                 Promise.all(promises)
                     .then(snapshots => {
                         const data = {};
-                        snapshots.forEach((snapshot, index) => {
-                            data[points[index]] = snapshot.val() ;
+                        points.forEach((point, index) => {
+                            data[point] = 0;
+                            snapshots[index].forEach((childSnapshot) => {
+                                data[point] += childSnapshot.val() || 0;
+                            });
                         });
                         const csvContent = jsonToCsv([data]);
                         downloadCsv(csvContent);
