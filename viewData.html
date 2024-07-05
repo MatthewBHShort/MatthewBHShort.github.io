@@ -96,18 +96,15 @@
         document.getElementById('loadDataButton').addEventListener('click', () => {
             const user = auth.currentUser;
             if (user) {
-                database.ref('data/').once('value')
+                database.ref('data/' + user.uid).once('value')
                     .then((snapshot) => {
                         const dataContainer = document.getElementById('dataContainer');
                         dataContainer.innerHTML = '';
                         snapshot.forEach((childSnapshot) => {
-                            const userId = childSnapshot.key;
-                            childSnapshot.forEach((dataSnapshot) => {
-                                const data = dataSnapshot.val();
-                                const dataElement = document.createElement('div');
-                                dataElement.textContent = JSON.stringify({ userId: userId, ...data });
-                                dataContainer.appendChild(dataElement);
-                            });
+                            const data = childSnapshot.val();
+                            const dataElement = document.createElement('div');
+                            dataElement.textContent = `Cost: ${data.cost}, GHGs: ${data.ghgs}, Comfort: ${data.comfort}, Equipment: ${data.equipment}`;
+                            dataContainer.appendChild(dataElement);
                         });
                     })
                     .catch((error) => {
@@ -123,14 +120,11 @@
         document.getElementById('downloadCsvButton').addEventListener('click', () => {
             const user = auth.currentUser;
             if (user) {
-                database.ref('data/').once('value')
+                database.ref('data/' + user.uid).once('value')
                     .then((snapshot) => {
                         const data = [];
                         snapshot.forEach((childSnapshot) => {
-                            const userId = childSnapshot.key;
-                            childSnapshot.forEach((dataSnapshot) => {
-                                data.push({ userId: userId, ...dataSnapshot.val() });
-                            });
+                            data.push(childSnapshot.val());
                         });
                         const csvContent = jsonToCsv(data);
                         downloadCsv(csvContent);
