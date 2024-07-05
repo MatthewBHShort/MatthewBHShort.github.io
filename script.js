@@ -321,8 +321,7 @@ function sendEmail(r) {
 
 
 function saveData(stringResponses,drivers){
-    const userId = user.uid;
-    const ghgsRef = database.ref('ghgs/' + userId);
+    const ghgsRef = database.ref('ghgs/');
 
 
     ghgsRef.transaction((currentValue) => {
