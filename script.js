@@ -325,16 +325,16 @@ function saveData(stringResponses,drivers){
     const userId = user.uid;
     
     if(drivers.includes("costs")){
-        addToTally('costs',user,database.ref('costs/' + userID));
+        addToTally('costs',user);
     }
     if(drivers.includes("ghgs")){
-        addToTally('ghgs',user,database.ref('ghgs/' + userID));
+        addToTally('ghgs',user);
     }
     if(drivers.includes("comfort")){
-        addToTally('comfort',user,database.ref('comfort/' + userID));
+        addToTally('comfort',user);
     }
     if(drivers.includes("equipment")){
-        addToTally('equipment',user,database.ref('ghgs/' + userID));
+        addToTally('equipment',user);
     }
 
 
@@ -354,9 +354,10 @@ function saveData(stringResponses,drivers){
         })
 }
 
-function addToTally(driver,userID,dataBaseReference){
+function addToTally(driver,user){
+    const userId = user.uid;
     console.log("hey it worked with the driver: " + driver);
-    const Ref = dataBaseReference;
+    const Ref = database.ref(driver + '/' + userID);
     Ref.transaction((currentValue) => {
         return (currentValue || 0) + 1;
     }).then(() => {
