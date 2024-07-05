@@ -322,7 +322,7 @@ function sendEmail(r) {
 
 function saveData(stringResponses,drivers){
     const user = auth.currentUser;
-    const userId = user.uid;
+    // const userId = user.uid;
     
     if(drivers.includes("costs")){
         addToTally('costs',user);
@@ -355,7 +355,7 @@ function saveData(stringResponses,drivers){
 }
 
 function addToTally(driver,user){
-    const userId = user.uid;
+    const userID = user.uid;
     console.log("hey it worked with the driver: " + driver);
     const Ref = database.ref(driver + '/' + userID);
     Ref.transaction((currentValue) => {
