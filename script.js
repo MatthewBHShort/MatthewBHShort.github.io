@@ -344,14 +344,14 @@ function saveData(stringResponses,drivers){
 
 
 
-    const data = {content: stringResponses};
-    database.ref('data/').push(data)
-        .then(() => {
-            console.log("Data saved successfully");
-        })
-        .catch((error) => {
-            console.error("Error saving data: ", error);
-        })
+    // const data = {content: stringResponses};
+    // database.ref('data/').push(data)
+    //     .then(() => {
+    //         console.log("Data saved successfully");
+    //     })
+    //     .catch((error) => {
+    //         console.error("Error saving data: ", error);
+    //     })
 }
 
 function addToTally(driver,user){
@@ -366,8 +366,6 @@ function addToTally(driver,user){
         console.error("Error updating tally: ", error);
         alert("Error updating tally: " + error.message);
     });
-
-
 }
 
 
