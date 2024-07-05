@@ -16,7 +16,7 @@
     <button id="loginButton">Login</button>
 
     <h2>Update Tally</h2>
-    <button id="updateCostButton">Update Cost</button>
+    <button id="updatecostsButton">Update costs</button>
     <button id="updateGhgsButton">Update GHGs</button>
     <button id="updateComfortButton">Update Comfort</button>
     <button id="updateEquipmentButton">Update Equipment</button>
@@ -66,31 +66,6 @@
             loginUser(email, password);
         });
 
-        // Function to update tally
-        function updateTally(point) {
-            const user = auth.currentUser;
-            if (user) {
-                const userId = user.uid;
-                const tallyRef = database.ref(`${point}/${userId}`);
-
-                tallyRef.transaction((currentValue) => {
-                    return (currentValue || 0) + 1;
-                }).then(() => {
-                    console.log(`${point.charAt(0).toUpperCase() + point.slice(1)} tally updated successfully`);
-                }).catch((error) => {
-                    console.error(`Error updating ${point}: `, error);
-                    alert(`Error updating ${point}: ` + error.message);
-                });
-            } else {
-                alert("You need to be signed in to update the tally");
-            }
-        }
-
-        // Add event listeners to the update tally buttons
-        document.getElementById('updateCostButton').addEventListener('click', () => updateTally('cost'));
-        document.getElementById('updateGhgsButton').addEventListener('click', () => updateTally('ghgs'));
-        document.getElementById('updateComfortButton').addEventListener('click', () => updateTally('comfort'));
-        document.getElementById('updateEquipmentButton').addEventListener('click', () => updateTally('equipment'));
 
         // Function to convert JSON to CSV
         function jsonToCsv(jsonData) {
@@ -130,7 +105,7 @@
             if (user) {
                 const dataContainer = document.getElementById('dataContainer');
                 dataContainer.innerHTML = '';
-                const points = ['cost', 'ghgs', 'comfort', 'equipment'];
+                const points = ['costs', 'ghgs', 'comfort', 'equipment'];
                 const promises = points.map(point => database.ref(point).once('value'));
 
                 Promise.all(promises)
@@ -159,7 +134,7 @@
         function downloadCsvData() {
             const user = auth.currentUser;
             if (user) {
-                const points = ['cost', 'ghgs', 'comfort', 'equipment'];
+                const points = ['costs', 'ghgs', 'comfort', 'equipment'];
                 const promises = points.map(point => database.ref(point).once('value'));
 
                 Promise.all(promises)
