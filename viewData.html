@@ -103,10 +103,12 @@
                 points.forEach(point => {
                     database.ref(`${point}/${userId}`).once('value')
                         .then((snapshot) => {
-                            const value = snapshot.val();
-                            const dataElement = document.createElement('div');
-                            dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${value}`;
-                            dataContainer.appendChild(dataElement);
+                            snapshot.forEach((childSnapshot) => {
+                                const value = childSnapshot.val();
+                                const dataElement = document.createElement('div');
+                                dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${value}`;
+                                dataContainer.appendChild(dataElement);
+                            });
                         })
                         .catch((error) => {
                             console.error(`Error loading ${point}: `, error);
@@ -127,11 +129,14 @@
 
                 Promise.all(promises)
                     .then(snapshots => {
-                        const data = {};
+                        const data = [];
                         snapshots.forEach((snapshot, index) => {
-                            data[points[index]] = snapshot.val();
+                            snapshot.forEach((childSnapshot) => {
+                                const value = childSnapshot.val();
+                                data.push({ point: points[index], value });
+                            });
                         });
-                        const csvContent = jsonToCsv([data]);
+                        const csvContent = jsonToCsv(data);
                         downloadCsv(csvContent);
                     })
                     .catch((error) => {
