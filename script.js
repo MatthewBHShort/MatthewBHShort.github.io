@@ -355,6 +355,8 @@ function saveData(stringResponses,drivers){
 }
 
 function addToTally(driver,user){
+    console.log("---------------------------------------");
+    console.log(user);
     const userID = user.uid;
     console.log("hey it worked with the driver: " + driver);
     const Ref = database.ref(driver + '/' + userID);
