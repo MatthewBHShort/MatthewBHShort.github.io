@@ -273,7 +273,8 @@ function saveResponses(yesOrNo) {
         console.log(replies);
         // sendEmail(replies);
         askForLetter(result.answerString); 
-        
+    }else{
+        askForLetter(result.answerString);
     }
 }
 
