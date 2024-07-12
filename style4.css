@@ -1,0 +1,52 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center; /* Center all content */
+        }
+        
+        button {
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #5A8C2A; /* Darker green color for hover effect */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .intro-paragraph {
+            max-width: 600px; /* Limit the width of the paragraph container */
+            margin: 0 auto; /* Center the paragraph container */
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between images */
+            margin-bottom: 20px;
+        }
+
+        .image-row img {
+            width: 150px; /* Set a fixed width for images */
+            height: 150px; /* Set a fixed height for images */
+            object-fit: cover; /* Ensure images are covered properly */
+            border-radius: 10px; /* Optional: rounded corners for images */
+        }

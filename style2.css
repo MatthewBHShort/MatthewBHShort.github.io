@@ -1,0 +1,125 @@
+       .nav{
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        .nav:hover{
+            background-color: #7db3f5;
+        }
+        button {
+            background-color: #7CB342; /* Green color */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #5A8C2A; /* Darker green color for hover effect */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .section img {
+            max-width: 200px;
+            margin: 0 20px;
+        }
+        .section .text {
+            flex: 1;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .hidden {
+                display: none;
+            }
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        .styled-bullets {
+            margin: 0 0 20px 20px; /* Indent and spacing */
+            padding: 0;
+        }
+
+        .styled-bullets li {
+            margin-bottom: 10px; /* Space between bullet points */
+            list-style-type: disc; /* Use bullet points */
+        }
+
+
+
+
