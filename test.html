@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      display: flex;
+      align-items: center;
+    }
+
+    .popup.fade-out {
+      opacity: 0;
+    }
+
+    .timer {
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      position: relative;
+    }
+
+    .timer::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      height: 2px;
+      background: #fff;
+      transform-origin: left;
+      animation: countdown 5s linear forwards;
+    }
+
+    @keyframes countdown {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="popup" class="popup">
+    This is a pop-up message!
+    <div class="timer"></div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const popup = document.getElementById("popup");
+      
+      // Show the popup
+      popup.style.display = "block";
+
+      // Fade out after 4 seconds (to give 1 second for the fade effect)
+      setTimeout(() => {
+        popup.classList.add("fade-out");
+      }, 4000);
+
+      // Remove the popup from the DOM after 5 seconds
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 5000);
+    });
+  </script>
+</body>
+</html>

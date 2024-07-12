@@ -12,7 +12,10 @@
                 margin: 20px;
             } 
 
-
+            #theOne{
+                background-color: #7db3f5; /* Blue color on hover */
+                border-color: #7db3f5; /* Match border color on hover */
+            }
 
             .navbar {
                 margin: 0;
