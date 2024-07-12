@@ -298,7 +298,7 @@ function formatResponses(r){
 
     
     // askQuestion();
-    setTimeout(askQuestion, 200);
+    setTimeout(askQuestion, 300);
  
 
 
