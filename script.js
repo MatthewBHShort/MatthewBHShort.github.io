@@ -280,7 +280,7 @@ function saveResponses(yesOrNo) {
 
 function formatResponses(r){
     r = r.replaceAll('\"question\"', '');
-    r = r.replaceAll('Please choose all that apply then click Next.', '');
+    r = r.replaceAll('<small>Please</small> choose all that apply then click Next.', '');
     r = r.replaceAll("\\n", '');
     r = r.replaceAll('\"answer\"', '');
     r = r.replaceAll('}', '');
