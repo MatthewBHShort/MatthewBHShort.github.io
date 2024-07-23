@@ -16,9 +16,9 @@ const firebaseConfig = {
     measurementId: "G-DWJ540T6WE"
 };
 
+import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
 
-
-import { createClient } from '@supabase/supabase-js'
+// import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = 'https://zkxvtranfgifoflsytuf.supabase.co'
 const supabaseKey = process.env.SUPABASE_KEY
