@@ -21,9 +21,32 @@ const firebaseConfig = {
 
         const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
+
+        async function insertData(newRecord) {
+            const { data, error } = await supabase
+                .from('your_table_name') // Replace with your actual table name
+                .insert([newRecord]);
+        
+            if (error) {
+                console.error('Error inserting data:', error);
+            } else {
+                console.log('Data inserted:', data);
+            }
+        }
+        
+        // Example usage:
+        const newRecord = {
+            column1: 'value1',
+            column2: 'value2',
+            // Add other columns as needed
+        };
+        
+        insertData(newRecord);
+
+
         async function fetchData() {
             const { data, error } = await supabase
-                .from('your_table_name')
+                .from('Test Table')
                 .select('*');
 
             if (error) {
@@ -34,6 +57,8 @@ const firebaseConfig = {
         }
 
         fetchData();
+
+
 
 
 // Initialize Firebase
