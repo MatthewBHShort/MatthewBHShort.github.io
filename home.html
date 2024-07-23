@@ -39,6 +39,9 @@
 
 
         async function fetchData() {
+
+            console.log("Fethcing Data");
+            
             const { data, error } = await supabase
                 .from('Test Table')
                 .select('*');
