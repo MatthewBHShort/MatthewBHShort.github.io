@@ -17,19 +17,6 @@ const firebaseConfig = {
 };
 
 
-        async function fetchData() {
-            const { data, error } = await supabase
-                .from('your_table_name')
-                .select('*');
-
-            if (error) {
-                console.error('Error fetching data:', error);
-            } else {
-                console.log('Data:', data);
-            }
-        }
-
-        fetchData();
 
 
 // Initialize Firebase
@@ -69,7 +56,7 @@ lastQuestion = "start";
       .then(response => response.text())
       .then(data => {
         eval(data);
-        console.log('Object fetched and assigned:', questions);
+        // console.log('Object fetched and assigned:', questions);
 
       })
       .catch(error => console.error('Error fetching the file:', error));
@@ -369,23 +356,5 @@ function addToTally(driver,user){
     });
 }
 
-
-async function collectData() {
-    const formData = {
-      name: "Matthew",
-      email: "matthewshort09@gmail.com",
-      message: "whadup"
-    };
-  
-    const { data, error } = await supabase
-      .from('your_table')
-      .insert([formData]);
-  
-    if (error) {
-      console.error('Error inserting data:', error);
-    } else {
-      console.log('Data inserted successfully:', data);
-    }
-  }
   
 
