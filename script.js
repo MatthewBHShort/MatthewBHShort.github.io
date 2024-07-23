@@ -16,9 +16,7 @@ const firebaseConfig = {
     measurementId: "G-DWJ540T6WE"
 };
 
-import { createClient } from '@supabase/supabase-js';
-
-// import { createClient } from '@supabase/supabase-js'
+import { createClient } from '/supabase/supabase-js';
 
 const supabaseUrl = 'https://zkxvtranfgifoflsytuf.supabase.co'
 const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpreHZ0cmFuZmdpZm9mbHN5dHVmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjE3NTc1NzIsImV4cCI6MjAzNzMzMzU3Mn0.Zo8rl3sIy3AhzoS2QddLxc7I8dksgMo6Jy8M4SvKdn0
