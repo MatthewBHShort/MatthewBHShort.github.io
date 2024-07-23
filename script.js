@@ -18,6 +18,11 @@ const firebaseConfig = {
 
 
 
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://zkxvtranfgifoflsytuf.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 
 
@@ -338,21 +343,10 @@ function saveData(stringResponses,drivers){
         addToTally('equipment',user);
     }
 
+    collectData();
 
 
 
-    
-
-
-
-    // const data = {content: stringResponses};
-    // database.ref('data/').push(data)
-    //     .then(() => {
-    //         console.log("Data saved successfully");
-    //     })
-    //     .catch((error) => {
-    //         console.error("Error saving data: ", error);
-    //     })
 }
 
 function addToTally(driver,user){
@@ -369,4 +363,23 @@ function addToTally(driver,user){
     });
 }
 
+
+async function collectData() {
+    const formData = {
+      name: "Matthew",
+      email: "matthewshort09@gmail.com",
+      message: "whadup"
+    };
+  
+    const { data, error } = await supabase
+      .from('your_table')
+      .insert([formData]);
+  
+    if (error) {
+      console.error('Error inserting data:', error);
+    } else {
+      console.log('Data inserted successfully:', data);
+    }
+  }
+  
 
