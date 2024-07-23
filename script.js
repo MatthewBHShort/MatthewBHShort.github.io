@@ -16,10 +16,6 @@ const firebaseConfig = {
     measurementId: "G-DWJ540T6WE"
 };
 
-const SUPABASE_URL = 'https://zkxvtranfgifoflsytuf.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpreHZ0cmFuZmdpZm9mbHN5dHVmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjE3NTc1NzIsImV4cCI6MjAzNzMzMzU3Mn0.Zo8rl3sIy3AhzoS2QddLxc7I8dksgMo6Jy8M4SvKdn0';
-
-        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         async function fetchData() {
             const { data, error } = await supabase
