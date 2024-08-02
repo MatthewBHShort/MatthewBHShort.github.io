@@ -166,7 +166,6 @@ async function askForLetter(stringAnswer) {
 
     
     if (result) {
-        surveyResponse.fullResult = fullResult;
         // console.log("FULLRESULTS: " + fullResult);
         saveString(fullResult);
 
@@ -351,15 +350,39 @@ function addToTally(driver,user){
     });
 }
 
+function findValueinResults(n,results){
+    results = "Does your home have duct work?\nYes"
+    // const splitString = n + "\n";
+
+    const splitString = "work?"
+    const parts = input.split(splitString);
+    const answer = parts[1].substring(0,2);
+    console.log("answer: " + anwer);
+    if (answer === "Yes") {
+        return true;
+    }
+    return false;
+    
+    
+
+
+
+
+
+
+    
+}
+
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
+    findValueinResults("n","n");
 
 
     const formattedResponseData = {
         timeStarted: startTime,
         timeFinished: endTime,
         drivers:drivers,
-        heating:"",
+        heating:formatResponseData("heating",fullResult),
         heatingAge: 0,
         cooling:"",
         coolingAge:0,
