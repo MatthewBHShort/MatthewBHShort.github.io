@@ -4,12 +4,6 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 
-
-
-
-
-
-
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
     authDomain: "energy-coaching-cbbc5.firebaseapp.com",
@@ -24,14 +18,10 @@ const firebaseConfig = {
 
 
 
-
-
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const auth = firebase.auth();
 
-// Sign in user (example with Email/Password)
 auth.signInWithEmailAndPassword("user@example.com", "password")
     .then((userCredential) => {
         console.log("User signed in: ", userCredential.user);
@@ -163,6 +153,7 @@ async function askForLetter(stringAnswer) {
 
     
     if (result) {
+        surveyResponse.fullResult = fullResult;
         // console.log("FULLRESULTS: " + fullResult);
         saveString(fullResult);
 
@@ -362,14 +353,53 @@ function addToTally(driver,user){
 
 
 
-  function saveSurveyResponse(response) {
-    const responseId = database.ref('responses').push().key;
+//   function saveSurveyResponse(response) {
+//     const responseId = database.ref('responses').push().key;
+//     const responseData = {
+//       timeStarted: response.timeStarted,
+//       timeFinished: response.timeFinished,
+//       responseID: responseId,
+//       body: response.body,
+//       location: response.location
+//     };
   
+//     const updates = {};
+//     updates['/responses/' + responseId] = responseData;
+  
+//     return database.ref().update(updates)
+//       .then(() => {
+//         console.log('Data saved successfully');
+//       })
+//       .catch((error) => {
+//         console.error('Error saving data:', error);
+//       });
+//   }
+  
+
+//   const surveyResponse = {
+//     timeStarted: "2024-08-02T14:00:00Z",
+//     timeFinished: "2024-08-02T14:30:00Z",
+//     body: [
+//       {
+//         question: "What is your favorite color?",
+//         answer: "Blue"
+//       },
+//       {
+//         question: "What is your favorite food?",
+//         answer: "Pizza"
+//       }
+//     ],
+//     location: "New York, USA"
+//   };
+
+function saveSurveyResponse(response) {
+    const responseId = database.ref('responses').push().key;
     const responseData = {
       timeStarted: response.timeStarted,
       timeFinished: response.timeFinished,
       responseID: responseId,
-      body: response.body,
+      drivers: response.drivers,
+      fullResult: response.fullResult,
       location: response.location
     };
   
@@ -384,22 +414,12 @@ function addToTally(driver,user){
         console.error('Error saving data:', error);
       });
   }
-  
-  // Example usage
   const surveyResponse = {
     timeStarted: "2024-08-02T14:00:00Z",
     timeFinished: "2024-08-02T14:30:00Z",
-    body: [
-      {
-        question: "What is your favorite color?",
-        answer: "Blue"
-      },
-      {
-        question: "What is your favorite food?",
-        answer: "Pizza"
-      }
-    ],
-    location: "New York, USA"
+    drivers:"",
+    fullResult:"",
+    location: "Calgary, AB"
   };
   
 
