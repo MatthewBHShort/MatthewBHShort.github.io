@@ -163,7 +163,7 @@ async function askForLetter(stringAnswer) {
 
     
     if (result) {
-        console.log("FULLRESULTS: " + fullResult);
+        // console.log("FULLRESULTS: " + fullResult);
         saveString(fullResult);
 
     } else {
@@ -361,10 +361,35 @@ function addToTally(driver,user){
 
 
 
-const surveyResponse = {
-    timeStarted: "",
-    timeFinished: "",
-    answers: [
+
+  function saveSurveyResponse(response) {
+    const responseId = database.ref('responses').push().key;
+  
+    const responseData = {
+      timeStarted: response.timeStarted,
+      timeFinished: response.timeFinished,
+      responseID: responseId,
+      body: response.body,
+      location: response.location
+    };
+  
+    const updates = {};
+    updates['/responses/' + responseId] = responseData;
+  
+    return database.ref().update(updates)
+      .then(() => {
+        console.log('Data saved successfully');
+      })
+      .catch((error) => {
+        console.error('Error saving data:', error);
+      });
+  }
+  
+  // Example usage
+  const surveyResponse = {
+    timeStarted: "2024-08-02T14:00:00Z",
+    timeFinished: "2024-08-02T14:30:00Z",
+    body: [
       {
         question: "What is your favorite color?",
         answer: "Blue"
@@ -376,22 +401,8 @@ const surveyResponse = {
     ],
     location: "New York, USA"
   };
+  
 
-
-
-
-
-// Function to save a survey response
-function saveSurveyResponse(response) {
-    const responseId = database.ref('responses').push().key;
-    const responseData = {
-      timeStarted: response.timeStarted,
-      timeFinished: response.timeFinished,
-      responseID: responseId,
-      body: response.body,
-      location: response.location
-    };
-}
 
 
 
