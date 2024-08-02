@@ -4,6 +4,7 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 const startTime = new Date().toISOString();
 console.log(new Date().toISOString());
+console.log(startTime);
 
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
