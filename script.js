@@ -3,7 +3,6 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 const startTime = new Date().toISOString();
-fullResult = "";
 console.log("Survey Started at: " + startTime);
 
 const firebaseConfig = {
@@ -22,6 +21,10 @@ const firebaseConfig = {
 //     timeStarted: "2024-08-02T14:00:00Z",
 //     timeFinished: "2024-08-02T14:30:00Z",
 //     drivers:"",
+//     heating:"",
+//     heatingAge: 0,
+//     cooling:"",
+//     coolingAge:0,
 //     fullResult:"",
 //     location: "Calgary, AB"
 //   };
@@ -78,7 +81,6 @@ lastQuestion = "start";
 function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
-    fullResult = passedThroughString;
     localStorage.setItem('sharedString', inputString);
     // window.location.href = 'https://matthewbhshort.github.io/results.html';
     
@@ -92,24 +94,24 @@ function backButtonRemoveString(str){
 }
 
 
-async function saveLast (nextQuestion,currentQuestion, str){
-    lastQuestionStrAdded = str;
-    if(questions[nextQuestion].answers["Back"]){
-        questions[nextQuestion].answers["Back"].next = currentQuestion;
-    }else{
-        questions[nextQuestion].answers["Back"] = { next: currentQuestion, action: () => {
-            backButtonRemoveString(lastQuestionStrAdded);
-        }};
-    }
-}
+// async function saveLast (nextQuestion,currentQuestion, str){
+//     lastQuestionStrAdded = str;
+//     if(questions[nextQuestion].answers["Back"]){
+//         questions[nextQuestion].answers["Back"].next = currentQuestion;
+//     }else{
+//         questions[nextQuestion].answers["Back"] = { next: currentQuestion, action: () => {
+//             backButtonRemoveString(lastQuestionStrAdded);
+//         }};
+//     }
+// }
 
 
 
-async function stringFunction(nextQuestion,currentQuestion, str){
-    saveLast(nextQuestion, currentQuestion, str);
-    result.answerString += str;
-    // console.log("STRING: " + result.answserString);
-}
+// async function stringFunction(nextQuestion,currentQuestion, str){
+//     saveLast(nextQuestion, currentQuestion, str);
+//     result.answerString += str;
+//     // console.log("STRING: " + result.answserString);
+// }
 
 async function addRemoveDriver (s){
     const driverString = s;
@@ -147,7 +149,6 @@ async function askForLetter(stringAnswer) {
   try {
     const csvData = await fetchAndParseCSV(csvUrl);
     const letter = removeRepeatingCharacters(stringAnswer);
-    // const letter = "Z345";
    
     console.log(stringAnswer + "    ->    " + letter)
 
@@ -159,7 +160,8 @@ async function askForLetter(stringAnswer) {
     for(let i = 0; i < letter.length; i++){
         result = csvData.find(row => row.identifier && row.identifier.toLowerCase() === letter[i].toLowerCase());
         fullResult += result.paragraph;
-        fullResult += "\n\n\n\n\n\n";
+        fullResult += "\n";
+        // fullResult += "\n\n\n\n\n\n";
     }
 
     
@@ -256,16 +258,14 @@ function handleAnswer(answer) {
         const yesButton = document.createElement('button');
         yesButton.innerText = 'Yes';
         yesButton.onclick = () => {saveResponses(true)};
-        // yesButton.onclick = () => {saveResponses(true), saveData()};
+
         answersElem.appendChild(yesButton);
 
         const noButton = document.createElement('button');
         noButton.innerText = 'No';
         noButton.onclick = () => saveResponses(false);
         answersElem.appendChild(noButton);
-
-        
-        
+    
     } else {
         askQuestion();
     }
@@ -279,10 +279,8 @@ function saveResponses(yesOrNo) {
         saveData(replies,result.driver);
         console.log(replies);
         // sendEmail(replies);
-        askForLetter(result.answerString); 
-    }else{
-        askForLetter(result.answerString);
     }
+    askForLetter(result.answerString); 
 }
 
 function formatResponses(r){
@@ -355,13 +353,34 @@ function addToTally(driver,user){
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
+
+
     const formattedResponseData = {
         timeStarted: startTime,
         timeFinished: endTime,
-        drivers: drivers,
-        fullResult: fullResult,
+        drivers:drivers,
+        heating:"",
+        heatingAge: 0,
+        cooling:"",
+        coolingAge:0,
+        fullResult:"",
         location: "Calgary, AB"
       };
+
+      formattedResponseData.heating = "test";
+
+
+
+
+
+
+    // const formattedResponseData = {
+    //     timeStarted: startTime,
+    //     timeFinished: endTime,
+    //     drivers: drivers,
+    //     fullResult: fullResult,
+    //     location: "Calgary, AB"
+    //   };
     saveResponseData(formattedResponseData)
 
 }
