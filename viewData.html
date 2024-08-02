@@ -8,6 +8,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <style>
         input[type="email"], input[type="password"] {
@@ -29,6 +30,9 @@
     <button id="loadDataButton">Load Data</button>
     <br>
     <div id="dataContainer"></div>
+    <div>
+        <canvas id="myBarChart"></canvas>
+    </div>
 
     <h2>Download CSV</h2>
     <button id="downloadCsvButton">Download CSV</button>
@@ -104,36 +108,120 @@
             document.body.removeChild(link);
         }
 
-        // Function to load data
-        function loadData() {
-            const user = auth.currentUser;
-            if (user) {
-                const dataContainer = document.getElementById('dataContainer');
-                dataContainer.innerHTML = '';
-                const points = ['costs', 'ghgs', 'comfort', 'equipment'];
-                const promises = points.map(point => database.ref(point).once('value'));
 
-                Promise.all(promises)
-                    .then(snapshots => {
-                        const totalTallies = {};
-                        points.forEach((point, index) => {
-                            totalTallies[point] = 0;
-                            snapshots[index].forEach((childSnapshot) => {
-                                totalTallies[point] += childSnapshot.val() || 0;
-                            });
-                            const dataElement = document.createElement('div');
-                            dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
-                            dataContainer.appendChild(dataElement);
-                        });
-                    })
-                    .catch((error) => {
-                        console.error("Error loading data: ", error);
-                        alert("Error loading data: " + error.message);
+        
+
+        // Function to load data
+        // function loadData() {
+        //     const user = auth.currentUser;
+        //     if (user) {
+        //         const dataContainer = document.getElementById('dataContainer');
+        //         dataContainer.innerHTML = '';
+        //         const points = ['costs', 'ghgs', 'comfort', 'equipment'];
+        //         const promises = points.map(point => database.ref(point).once('value'));
+
+        //         Promise.all(promises)
+        //             .then(snapshots => {
+        //                 const totalTallies = {};
+        //                 points.forEach((point, index) => {
+        //                     totalTallies[point] = 0;
+        //                     snapshots[index].forEach((childSnapshot) => {
+        //                         totalTallies[point] += childSnapshot.val() || 0;
+        //                     });
+        //                     const dataElement = document.createElement('div');
+        //                     dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
+        //                     dataContainer.appendChild(dataElement);
+        //                 });
+        //             })
+        //             .catch((error) => {
+        //                 console.error("Error loading data: ", error);
+        //                 alert("Error loading data: " + error.message);
+        //             });
+        //     } else {
+        //         alert("You need to be signed in to load the data");
+        //     }
+        // }
+
+
+
+
+
+
+
+
+        //--------------
+        function loadData() {
+    const user = auth.currentUser;
+    if (user) {
+        const dataContainer = document.getElementById('dataContainer');
+        dataContainer.innerHTML = '';
+        const points = ['costs', 'ghgs', 'comfort', 'equipment'];
+        const promises = points.map(point => database.ref(point).once('value'));
+
+        Promise.all(promises)
+            .then(snapshots => {
+                const totalTallies = {};
+                points.forEach((point, index) => {
+                    totalTallies[point] = 0;
+                    snapshots[index].forEach((childSnapshot) => {
+                        totalTallies[point] += childSnapshot.val() || 0;
                     });
-            } else {
-                alert("You need to be signed in to load the data");
+                    const dataElement = document.createElement('div');
+                    dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
+                    dataContainer.appendChild(dataElement);
+                });
+                displayBarChart(totalTallies);
+            })
+            .catch((error) => {
+                console.error("Error loading data: ", error);
+                alert("Error loading data: " + error.message);
+            });
+    } else {
+        alert("You need to be signed in to load the data");
+    }
+}
+
+function displayBarChart(data) {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: Object.keys(data).map(point => point.charAt(0).toUpperCase() + point.slice(1)),
+            datasets: [{
+                label: 'Values',
+                data: Object.values(data),
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
+    });
+}
+
+
+
+
+        //--------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // Function to download data as CSV
         function downloadCsvData() {
