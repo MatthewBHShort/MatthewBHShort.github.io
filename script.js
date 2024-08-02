@@ -3,6 +3,7 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 const startTime = new Date().toISOString();
+fullResult = "";
 console.log("Survey Started at: " + startTime);
 
 const firebaseConfig = {
@@ -77,6 +78,7 @@ lastQuestion = "start";
 function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
+    fullResult = passedThroughString;
     localStorage.setItem('sharedString', inputString);
     // window.location.href = 'https://matthewbhshort.github.io/results.html';
     
