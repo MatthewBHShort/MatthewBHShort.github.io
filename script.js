@@ -16,6 +16,15 @@ const firebaseConfig = {
 };
 
 
+const surveyResponse = {
+    timeStarted: "2024-08-02T14:00:00Z",
+    timeFinished: "2024-08-02T14:30:00Z",
+    drivers:"",
+    fullResult:"",
+    location: "Calgary, AB"
+  };
+
+
 
 
 firebase.initializeApp(firebaseConfig);
@@ -319,12 +328,9 @@ function sendEmail(r) {
 
 function saveData(stringResponses,drivers){
     const user = auth.currentUser;
-    // const userId = user.uid;
-    
     if(drivers.includes("costs")){
         addToTally('costs',user);
         console.log("Saving new Survey Responses");
-        saveSurveyResponse(surveyResponse);
     }
     if(drivers.includes("ghgs")){
         addToTally('ghgs',user);
@@ -335,6 +341,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
+    saveResponseData(surveyResponse,drivers);
 }
 
 function addToTally(driver,user){
@@ -350,49 +357,21 @@ function addToTally(driver,user){
     });
 }
 
+function formatResponseData(surveyResponse,drivers){
+    const formattedResponse = {
+        timeStarted: "2024-08-02T14:00:00Z",
+        timeFinished: "2024-08-02T14:30:00Z",
+        drivers: drivers,
+        fullResult:fullResult,
+        location: "Calgary, AB"
+      };
 
 
+    saveResponseData(formattedResponse)
 
-//   function saveSurveyResponse(response) {
-//     const responseId = database.ref('responses').push().key;
-//     const responseData = {
-//       timeStarted: response.timeStarted,
-//       timeFinished: response.timeFinished,
-//       responseID: responseId,
-//       body: response.body,
-//       location: response.location
-//     };
-  
-//     const updates = {};
-//     updates['/responses/' + responseId] = responseData;
-  
-//     return database.ref().update(updates)
-//       .then(() => {
-//         console.log('Data saved successfully');
-//       })
-//       .catch((error) => {
-//         console.error('Error saving data:', error);
-//       });
-//   }
-  
+}
 
-//   const surveyResponse = {
-//     timeStarted: "2024-08-02T14:00:00Z",
-//     timeFinished: "2024-08-02T14:30:00Z",
-//     body: [
-//       {
-//         question: "What is your favorite color?",
-//         answer: "Blue"
-//       },
-//       {
-//         question: "What is your favorite food?",
-//         answer: "Pizza"
-//       }
-//     ],
-//     location: "New York, USA"
-//   };
-
-function saveSurveyResponse(response) {
+function saveResponseData(response) {
     const responseId = database.ref('responses').push().key;
     const responseData = {
       timeStarted: response.timeStarted,
@@ -414,13 +393,7 @@ function saveSurveyResponse(response) {
         console.error('Error saving data:', error);
       });
   }
-  const surveyResponse = {
-    timeStarted: "2024-08-02T14:00:00Z",
-    timeFinished: "2024-08-02T14:30:00Z",
-    drivers:"",
-    fullResult:"",
-    location: "Calgary, AB"
-  };
+  
   
 
 
