@@ -332,6 +332,7 @@ function saveData(stringResponses,drivers){
     
     if(drivers.includes("costs")){
         addToTally('costs',user);
+        saveSurveyResponse(surveyResponse);
     }
     if(drivers.includes("ghgs")){
         addToTally('ghgs',user);
@@ -346,7 +347,6 @@ function saveData(stringResponses,drivers){
 
 function addToTally(driver,user){
     const userID = user.uid;
-    console.log("hey it worked with the driver: " + driver);
     const Ref = database.ref(driver + '/' + userID);
     Ref.transaction((currentValue) => {
         return (currentValue || 0) + 1;
@@ -357,6 +357,42 @@ function addToTally(driver,user){
         alert("Error updating tally: " + error.message);
     });
 }
+
+
+
+const surveyResponse = {
+    timeStarted: "",
+    timeFinished: "",
+    answers: [
+      {
+        question: "What is your favorite color?",
+        answer: "Blue"
+      },
+      {
+        question: "What is your favorite food?",
+        answer: "Pizza"
+      }
+    ],
+    location: "New York, USA"
+  };
+
+
+
+
+
+// Function to save a survey response
+function saveSurveyResponse(response) {
+    const responseId = database.ref('responses').push().key;
+    const responseData = {
+      timeStarted: response.timeStarted,
+      timeFinished: response.timeFinished,
+      responseID: responseId,
+      body: response.body,
+      location: response.location
+    };
+}
+
+
 
   
 
