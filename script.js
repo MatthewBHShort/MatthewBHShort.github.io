@@ -114,10 +114,10 @@ async function addRemoveDriver (s){
     const driverString = s;
     if(result.driver.includes(driverString)){
         result.driver = result.driver.replace(driverString,'');
-        console.log(driverString + " removed");
+        // console.log(driverString + " removed");
     }else{
         result.driver += driverString;
-        console.log(s + " added");
+        // console.log(s + " added");
     }
     console.log("result.driver: " + result.driver);   
 }
