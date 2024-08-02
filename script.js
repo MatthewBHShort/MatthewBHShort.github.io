@@ -387,15 +387,8 @@ function formatResponseData(drivers){
 
 function saveResponseData(response) {
     const responseId = database.ref('responses').push().key;
-    const responseData = {
-      timeStarted: response.timeStarted,
-      timeFinished: response.timeFinished,
-      responseID: responseId,
-      drivers: response.drivers,
-      fullResult: response.fullResult,
-      location: response.location
-    };
-  
+    const responseData = response;
+
     const updates = {};
     updates['/responses/' + responseId] = responseData;
   
