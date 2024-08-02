@@ -112,103 +112,36 @@
         
 
         // Function to load data
-        // function loadData() {
-        //     const user = auth.currentUser;
-        //     if (user) {
-        //         const dataContainer = document.getElementById('dataContainer');
-        //         dataContainer.innerHTML = '';
-        //         const points = ['costs', 'ghgs', 'comfort', 'equipment'];
-        //         const promises = points.map(point => database.ref(point).once('value'));
-
-        //         Promise.all(promises)
-        //             .then(snapshots => {
-        //                 const totalTallies = {};
-        //                 points.forEach((point, index) => {
-        //                     totalTallies[point] = 0;
-        //                     snapshots[index].forEach((childSnapshot) => {
-        //                         totalTallies[point] += childSnapshot.val() || 0;
-        //                     });
-        //                     const dataElement = document.createElement('div');
-        //                     dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
-        //                     dataContainer.appendChild(dataElement);
-        //                 });
-        //             })
-        //             .catch((error) => {
-        //                 console.error("Error loading data: ", error);
-        //                 alert("Error loading data: " + error.message);
-        //             });
-        //     } else {
-        //         alert("You need to be signed in to load the data");
-        //     }
-        // }
-
-
-
-
-
-
-
-
-        //--------------
         function loadData() {
-    const user = auth.currentUser;
-    if (user) {
-        const dataContainer = document.getElementById('dataContainer');
-        dataContainer.innerHTML = '';
-        const points = ['costs', 'ghgs', 'comfort', 'equipment'];
-        const promises = points.map(point => database.ref(point).once('value'));
+            const user = auth.currentUser;
+            if (user) {
+                const dataContainer = document.getElementById('dataContainer');
+                dataContainer.innerHTML = '';
+                const points = ['costs', 'ghgs', 'comfort', 'equipment'];
+                const promises = points.map(point => database.ref(point).once('value'));
 
-        Promise.all(promises)
-            .then(snapshots => {
-                const totalTallies = {};
-                points.forEach((point, index) => {
-                    totalTallies[point] = 0;
-                    snapshots[index].forEach((childSnapshot) => {
-                        totalTallies[point] += childSnapshot.val() || 0;
+                Promise.all(promises)
+                    .then(snapshots => {
+                        const totalTallies = {};
+                        points.forEach((point, index) => {
+                            totalTallies[point] = 0;
+                            snapshots[index].forEach((childSnapshot) => {
+                                totalTallies[point] += childSnapshot.val() || 0;
+                            });
+                            const dataElement = document.createElement('div');
+                            dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
+                            dataContainer.appendChild(dataElement);
+                        });
+                    })
+                    .catch((error) => {
+                        console.error("Error loading data: ", error);
+                        alert("Error loading data: " + error.message);
                     });
-                    const dataElement = document.createElement('div');
-                    dataElement.textContent = `${point.charAt(0).toUpperCase() + point.slice(1)}: ${totalTallies[point]}`;
-                    dataContainer.appendChild(dataElement);
-                });
-                displayBarChart(totalTallies);
-            })
-            .catch((error) => {
-                console.error("Error loading data: ", error);
-                alert("Error loading data: " + error.message);
-            });
-    } else {
-        alert("You need to be signed in to load the data");
-    }
-}
-
-function displayBarChart(data) {
-    const ctx = document.getElementById('myChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: Object.keys(data).map(point => point.charAt(0).toUpperCase() + point.slice(1)),
-            datasets: [{
-                label: 'Values',
-                data: Object.values(data),
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+            } else {
+                alert("You need to be signed in to load the data");
             }
         }
-    });
-}
 
-
-
-
-        //--------------
 
 
 
