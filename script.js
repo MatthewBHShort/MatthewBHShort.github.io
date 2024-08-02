@@ -3,8 +3,7 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 const startTime = new Date().toISOString();
-console.log(new Date().toISOString());
-console.log(startTime);
+console.log("Survey Started at: " + startTime);
 
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
@@ -336,7 +335,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
-    saveResponseData(drivers);
+    formatResponseDataData(drivers);
 }
 
 function addToTally(driver,user){
