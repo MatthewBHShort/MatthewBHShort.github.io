@@ -335,7 +335,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
-    formatResponseDataData(drivers);
+    formatResponseData(drivers);
 }
 
 function addToTally(driver,user){
