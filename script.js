@@ -2,8 +2,8 @@ const csvUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.github.io/main/questions.txt';
 
 
-
 const startTime = new Date().toISOString();
+console.log(new Date().toISOString());
 
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
@@ -17,13 +17,13 @@ const firebaseConfig = {
 };
 
 
-const surveyResponse = {
-    timeStarted: "2024-08-02T14:00:00Z",
-    timeFinished: "2024-08-02T14:30:00Z",
-    drivers:"",
-    fullResult:"",
-    location: "Calgary, AB"
-  };
+// const surveyResponseData = {
+//     timeStarted: "2024-08-02T14:00:00Z",
+//     timeFinished: "2024-08-02T14:30:00Z",
+//     drivers:"",
+//     fullResult:"",
+//     location: "Calgary, AB"
+//   };
 
 
 
@@ -96,7 +96,6 @@ async function saveLast (nextQuestion,currentQuestion, str){
         questions[nextQuestion].answers["Back"].next = currentQuestion;
     }else{
         questions[nextQuestion].answers["Back"] = { next: currentQuestion, action: () => {
-            console.log("Created back button works!!");
             backButtonRemoveString(lastQuestionStrAdded);
         }};
     }
