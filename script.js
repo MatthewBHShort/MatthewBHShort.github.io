@@ -94,24 +94,24 @@ function backButtonRemoveString(str){
 }
 
 
-// async function saveLast (nextQuestion,currentQuestion, str){
-//     lastQuestionStrAdded = str;
-//     if(questions[nextQuestion].answers["Back"]){
-//         questions[nextQuestion].answers["Back"].next = currentQuestion;
-//     }else{
-//         questions[nextQuestion].answers["Back"] = { next: currentQuestion, action: () => {
-//             backButtonRemoveString(lastQuestionStrAdded);
-//         }};
-//     }
-// }
+async function saveLast (nextQuestion,currentQuestion, str){
+    lastQuestionStrAdded = str;
+    if(questions[nextQuestion].answers["Back"]){
+        questions[nextQuestion].answers["Back"].next = currentQuestion;
+    }else{
+        questions[nextQuestion].answers["Back"] = { next: currentQuestion, action: () => {
+            backButtonRemoveString(lastQuestionStrAdded);
+        }};
+    }
+}
 
 
 
-// async function stringFunction(nextQuestion,currentQuestion, str){
-//     saveLast(nextQuestion, currentQuestion, str);
-//     result.answerString += str;
-//     // console.log("STRING: " + result.answserString);
-// }
+async function stringFunction(nextQuestion,currentQuestion, str){
+    saveLast(nextQuestion, currentQuestion, str);
+    result.answerString += str;
+    // console.log("STRING: " + result.answserString);
+}
 
 async function addRemoveDriver (s){
     const driverString = s;
