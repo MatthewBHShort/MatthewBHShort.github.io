@@ -3,6 +3,7 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 
 
+const startTime = new Date().toISOString();
 
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
@@ -299,10 +300,6 @@ function formatResponses(r){
     console.log(r);
     return r;
 }
-
-
-    
-    // askQuestion();
     setTimeout(askQuestion, 300);
  
 
@@ -319,8 +316,6 @@ function sendEmail(r) {
     window.location.href = mailtoLink;
 }
 
-
-// --------------------------------------------
 
 
 
@@ -341,7 +336,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
-    saveResponseData(surveyResponse,drivers);
+    saveResponseData(drivers);
 }
 
 function addToTally(driver,user){
@@ -357,17 +352,16 @@ function addToTally(driver,user){
     });
 }
 
-function formatResponseData(surveyResponse,drivers){
-    const formattedResponse = {
-        timeStarted: "2024-08-02T14:00:00Z",
-        timeFinished: "2024-08-02T14:30:00Z",
+function formatResponseData(drivers){
+    const endTime = new Date().toISOString();
+    const formattedResponseData = {
+        timeStarted: startTime,
+        timeFinished: endTime,
         drivers: drivers,
-        fullResult:fullResult,
+        fullResult: fullResult,
         location: "Calgary, AB"
       };
-
-
-    saveResponseData(formattedResponse)
+    saveResponseData(formattedResponseData)
 
 }
 
