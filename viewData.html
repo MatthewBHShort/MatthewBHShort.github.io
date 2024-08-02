@@ -11,14 +11,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <style>
-        input[type="email"], input[type="password"] {
-            width: 300px; /* Adjust the width as needed */
-            padding: 10px; /* Optional: Add some padding for better appearance */
-            margin-bottom: 10px; /* Optional: Add some space between the input fields */
-            font-size: 16px; /* Optional: Adjust font size */
-        }
+        /* input[type="email"], input[type="password"] {
+            width: 300px; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            font-size: 16px; 
+        } */
 </style>
 <body>
+
+
+
+<!-- 
     <h2>Login</h2>
     <input type="email" id="email" placeholder="Email">
     <br>
@@ -37,7 +41,11 @@
     <h2>Download CSV</h2>
     <button id="downloadCsvButton">Download CSV</button>
 
-    <script>
+ -->
+
+
+
+    <!-- <script>
         // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
@@ -189,6 +197,68 @@
 
         // Add event listener to the download CSV button
         document.getElementById('downloadCsvButton').addEventListener('click', downloadCsvData);
-    </script>
+    </script> -->
+
+<script>
+          const firebaseConfig = {
+            apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
+            authDomain: "energy-coaching-cbbc5.firebaseapp.com",
+            databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
+            projectId: "energy-coaching-cbbc5",
+            storageBucket: "energy-coaching-cbbc5.appspot.com",
+            messagingSenderId: "85932482016",
+            appId: "1:85932482016:web:9852865b84481d33f41f85",
+            measurementId: "G-DWJ540T6WE"
+        };
+
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+
+    // Retrieve data from Firebase
+    const dbRef = firebase.database().ref();
+    dbRef.on('value', (snapshot) => {
+      const data = snapshot.val();
+      const data1 = data.data1;
+      const data2 = data.data2;
+      const data3 = data.data3;
+      const data4 = data.data4;
+
+      // Create chart with data
+      createChart([data1, data2, data3, data4]);
+    });
+
+    // Function to create chart
+    function createChart(data) {
+      const ctx = document.getElementById('myChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4'],
+          datasets: [{
+            label: 'Tally',
+            data: data,
+            backgroundColor: ['rgba(75, 192, 192, 0.2)'],
+            borderColor: ['rgba(75, 192, 192, 1)'],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+
+
+</script>
+
+
+
 </body>
 </html>
