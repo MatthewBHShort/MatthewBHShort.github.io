@@ -43,7 +43,6 @@ questions = {
                                 stringFunction("AC","furnaceAge","");
                                     break;
                         };
-                        equipmentAge(0-5,true);
                     }
             },
             "6 - 10 years": { 
