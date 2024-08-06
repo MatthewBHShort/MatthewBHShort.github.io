@@ -318,8 +318,10 @@ function sendEmail(r) {
 
 function equipmentType(machine, heating){
     if(heating){
+        console.log("Adding " + machine + " to heating.");
         surveyResponseData.heating = machine;
     }else{
+        console.log("Adding " + machine + " to cooling.");
         surveyResponseData.cooling = machine;
     }
 }
