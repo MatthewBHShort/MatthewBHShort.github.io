@@ -59,7 +59,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("AC","furnaceAge","");
                                 break;
-                    }
+                    };
+                    equipmentAge("6 - 10 years",true);
                 }
             },
             "11 - 15 years": { 
@@ -75,7 +76,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("AC","furnaceAge","EFM");
                                 break;
-                    }
+                    };
+                    equipmentAge("11 - 15 years",true);
                 }
             },
             "16+ years": { 
@@ -91,7 +93,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("AC","furnaceAge","EFMZ");
                                 break;
-                    }
+                    };
+                    equipmentAge("16+ years",true);
             }
         }
     }
@@ -121,7 +124,8 @@ questions = {
                             case result.driver.includes('equipment'):
                                 stringFunction("waterHeating","ACAge","");
                                     break;
-                        }
+                        };
+                        equipmentAge("0 - 5 years",false);
                     }
             },
             "6 - 10 years": { 
@@ -137,7 +141,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("waterHeating","ACAge","");
                                 break;
-                    }
+                    };
+                    equipmentAge("6 - 10 years",false);
                 }
             },
             "11 - 15 years": { 
@@ -153,7 +158,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("waterHeating","ACAge","");
                                 break;
-                    }
+                    };
+                    equipmentAge("11 - 15 years",false);
                 }
             },
             "16+ years": { 
@@ -169,7 +175,8 @@ questions = {
                         case result.driver.includes('equipment'):
                             stringFunction("waterHeating","ACAge","EFP");
                                 break;
-                    }
+                    };
+                    equipmentAge("16+ years",false);
             }
         }
     }
