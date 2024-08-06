@@ -316,6 +316,7 @@ function sendEmail(r) {
 }
 
 function getLocation(){
+    console.log("getting location: ");
     city = "";
     region = "";
     country = "";
