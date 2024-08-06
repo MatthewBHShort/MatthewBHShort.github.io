@@ -26,7 +26,7 @@ const surveyResponseData = {
     cooling:"",
     coolingAge:0,
     fullResult:"",
-    location: "Calgary, AB"
+    location: ""
   };
 
 
@@ -317,16 +317,11 @@ function sendEmail(r) {
 
 function getLocation(){
     console.log("getting location: ");
-    city = "";
-    region = "";
-    country = "";
     fetch('https://ipapi.co/json/')
     .then(response => response.json())
     .then(data => {
         console.log(data.city, data.region, data.country);
-        city = data.city;
-        region = data.region;
-        country = data.country;
+        surveyResponseData.location = data.city + ", " + data.region + ", " + data.country + ".";
     })
     .catch(error => console.error('Error fetching location:', error));
 }
