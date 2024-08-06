@@ -370,29 +370,14 @@ function addToTally(driver,user){
 
 
 
+
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
-
-
     const formattedResponseData = surveyResponseData;
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
     formattedResponseData.timeFinished = endTime;
-    // const formattedResponseData = {
-    //     timeStarted: startTime,
-    //     timeFinished: endTime,
-    //     drivers:drivers,
-    //     heating:"",
-    //     heatingAge: 0,
-    //     cooling:"",
-    //     coolingAge:0,
-    //     fullResult:"",
-    //     location: "Calgary, AB"
-    //   };
-
-
     saveResponseData(formattedResponseData)
-
 }
 
 function saveResponseData(response) {

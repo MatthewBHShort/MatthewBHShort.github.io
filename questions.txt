@@ -42,7 +42,8 @@ questions = {
                             case result.driver.includes('equipment'):
                                 stringFunction("AC","furnaceAge","");
                                     break;
-                        }
+                        };
+                        equipmentAge("0 - 5 years",true);
                     }
             },
             "6 - 10 years": { 
