@@ -99,7 +99,7 @@ questions = {
     AC: {
         question: "Does your home have Air Conditioning?",
         answers: {
-            "Yes": { next: "ACAge", action: () => stringFunction("ACAge","AC","")},
+            "Yes": { next: "ACAge", action: () => {stringFunction("ACAge","AC","");equipmentType("AC",false)}},
             "No": { next: "hydronicHeating", action: () => stringFunction("hydronicHeating","AC","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virutalConsultation","AC","")},
         }
