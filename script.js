@@ -334,7 +334,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
-    formatResponseData(drivers);
+    // formatResponseData(drivers);
 }
 
 function addToTally(driver,user){
@@ -375,7 +375,7 @@ function findValueinResults(n,results){
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
-    findValueinResults("n","n");
+    // findValueinResults("n","n");
 
 
     const formattedResponseData = {
@@ -404,7 +404,7 @@ function formatResponseData(drivers){
     //     fullResult: fullResult,
     //     location: "Calgary, AB"
     //   };
-    saveResponseData(formattedResponseData)
+    // saveResponseData(formattedResponseData)
 
 }
 
