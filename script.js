@@ -18,8 +18,8 @@ const firebaseConfig = {
 
 
 const surveyResponseData = {
-    timeStarted: "2024-08-02T14:00:00Z",
-    timeFinished: "2024-08-02T14:30:00Z",
+    timeStarted: "",
+    timeFinished: "",
     drivers:"",
     heating:"",
     heatingAge: 0,
@@ -350,7 +350,7 @@ function saveData(stringResponses,drivers){
     if(drivers.includes("equipment")){
         addToTally('equipment',user);
     }
-    // formatResponseData(drivers);
+    formatResponseData(drivers);
 }
 
 function addToTally(driver,user){
@@ -374,6 +374,8 @@ function formatResponseData(drivers){
 
     const formattedResponseData = surveyResponseData;
     formattedResponseData.drivers = drivers;
+    formattedResponseData.timeStarted = startTime;
+    formattedResponseData.timeFinished = endTime;
     // const formattedResponseData = {
     //     timeStarted: startTime,
     //     timeFinished: endTime,
@@ -385,10 +387,6 @@ function formatResponseData(drivers){
     //     fullResult:"",
     //     location: "Calgary, AB"
     //   };
-
-
-
-
 
 
     saveResponseData(formattedResponseData)
