@@ -17,17 +17,17 @@ const firebaseConfig = {
 };
 
 
-// const surveyResponseData = {
-//     timeStarted: "2024-08-02T14:00:00Z",
-//     timeFinished: "2024-08-02T14:30:00Z",
-//     drivers:"",
-//     heating:"",
-//     heatingAge: 0,
-//     cooling:"",
-//     coolingAge:0,
-//     fullResult:"",
-//     location: "Calgary, AB"
-//   };
+const surveyResponseData = {
+    timeStarted: "2024-08-02T14:00:00Z",
+    timeFinished: "2024-08-02T14:30:00Z",
+    drivers:"",
+    heating:"",
+    heatingAge: 0,
+    cooling:"",
+    coolingAge:0,
+    fullResult:"",
+    location: "Calgary, AB"
+  };
 
 
 
@@ -234,7 +234,7 @@ function askQuestion() {
 
         if(q.question == "Would you like to book a virtual consultation?" && answer == "Yes"){
             button.onclick = function() {
-                window.location.href = 'https://calendly.com/cutyourhomecarbon'; // Replace with your desired URL
+                window.location.href = 'https://calendly.com/cutyourhomecarbon';
             };
         }
     }
@@ -316,6 +316,23 @@ function sendEmail(r) {
 
 
 
+function equipmentType(machine, heating){
+    if(heating){
+        surveyResponseData.heating = machine;
+    }else{
+        surveyResponseData.cooling = machine;
+    }
+}
+
+function equipmentAge(age, heating){
+    if(heating){
+        surveyResponseData.heatingAge = age;
+    }else{
+        surveyResponseData.coolingAge = age;
+    }
+}
+
+
 
 
 
@@ -323,7 +340,6 @@ function saveData(stringResponses,drivers){
     const user = auth.currentUser;
     if(drivers.includes("costs")){
         addToTally('costs',user);
-        console.log("Saving new Survey Responses");
     }
     if(drivers.includes("ghgs")){
         addToTally('ghgs',user);
@@ -350,61 +366,32 @@ function addToTally(driver,user){
     });
 }
 
-function findValueinResults(n,results){
-    results = "Does your home have duct work?\nYes"
-    // const splitString = n + "\n";
 
-    const splitString = "work?"
-    const parts = input.split(splitString);
-    const answer = parts[1].substring(0,2);
-    console.log("answer: " + anwer);
-    if (answer === "Yes") {
-        return true;
-    }
-    return false;
-    
-    
-
-
-
-
-
-
-    
-}
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
-    // findValueinResults("n","n");
 
 
-    const formattedResponseData = {
-        timeStarted: startTime,
-        timeFinished: endTime,
-        drivers:drivers,
-        heating:formatResponseData("heating",fullResult),
-        heatingAge: 0,
-        cooling:"",
-        coolingAge:0,
-        fullResult:"",
-        location: "Calgary, AB"
-      };
-
-      formattedResponseData.heating = "test";
-
-
-
-
-
-
+    const formattedResponseData = surveyResponseData;
+    formattedResponseData.drivers = drivers;
     // const formattedResponseData = {
     //     timeStarted: startTime,
     //     timeFinished: endTime,
-    //     drivers: drivers,
-    //     fullResult: fullResult,
+    //     drivers:drivers,
+    //     heating:"",
+    //     heatingAge: 0,
+    //     cooling:"",
+    //     coolingAge:0,
+    //     fullResult:"",
     //     location: "Calgary, AB"
     //   };
-    // saveResponseData(formattedResponseData)
+
+
+
+
+
+
+    saveResponseData(formattedResponseData)
 
 }
 
