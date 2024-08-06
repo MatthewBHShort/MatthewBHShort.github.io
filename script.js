@@ -277,6 +277,7 @@ function saveResponses(yesOrNo) {
         replies = formatResponses(replies);
         saveData(replies,result.driver);
         console.log(replies);
+        getLocation();
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
