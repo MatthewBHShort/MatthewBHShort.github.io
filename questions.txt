@@ -716,16 +716,12 @@ baseboardAge: {
             "No": { next: "electricalPanel", action: () => stringFunction("electricalPanel","shower","")},
         }
     },
-
-
-
-
-
     virtualConsultation: {
         question: "Would you like to book a virtual consultation?",
         answers: {
             "Yes": { next: "end"},
             "No": { next: "end"},
+            "Give Feedback": { next: "end", action: showFeedbackBox }
         }
     },
     end: {

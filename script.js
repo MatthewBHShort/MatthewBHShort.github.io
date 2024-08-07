@@ -25,7 +25,7 @@ const surveyResponseData = {
     heatingAge: 0,
     cooling:"",
     coolingAge:0,
-    fullResult:"",
+    fullSurvey:"",
     location: "",
     feedback: ""
   };
@@ -164,7 +164,7 @@ async function askForLetter(stringAnswer) {
         fullResult += "\n";
         // fullResult += "\n\n\n\n\n\n";
     }
-    surveyResponseData.fullResult = fullResult;
+    
 
     
     if (result) {
@@ -277,6 +277,7 @@ function saveResponses(yesOrNo) {
     if(yesOrNo == true){
         var replies = JSON.stringify(responses,null,2);
         replies = formatResponses(replies);
+        surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
         getLocation();
@@ -316,6 +317,38 @@ function sendEmail(r) {
     
     window.location.href = mailtoLink;
 }
+
+
+function showFeedbackBox() {
+    const feedbackBox = document.getElementById('feedbackBox');
+    feedbackBox.style.display = 'block';
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const feedbackBox = document.getElementById('feedbackBox');
+    const closeButton = document.getElementById('closeButton');
+    const submitFeedback = document.getElementById('submitFeedback');
+    const feedbackInput = document.getElementById('feedbackInput');
+
+    // Hide feedback box
+    closeButton.addEventListener('click', function() {
+        feedbackBox.style.display = 'none';
+    });
+
+    // Save feedback and hide box
+    submitFeedback.addEventListener('click', function() {
+        const feedback = feedbackInput.value;
+        console.log('Feedback:', feedback); // Replace this line with the code to save the feedback
+        feedbackBox.style.display = 'none';
+        feedbackInput.value = ''; // Clear the input after submission
+    });
+
+
+});
+
+
+
 
 function getLocation(){
     console.log("getting location: ");
