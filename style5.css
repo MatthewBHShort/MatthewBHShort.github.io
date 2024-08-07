@@ -1,4 +1,62 @@
-/* styles.css */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background for the page */
+ }  
+
+#formatted-output {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+} 
+
+#theOne{
+    background-color: #7db3f5; /* Blue color on hover */
+    border-color: #7db3f5; /* Match border color on hover */
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #7CB342; /* Green color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img {
+    height: 40px;
+    width: 67px;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid white; /* Thin white border */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.nav-link:hover {
+    background-color: #7db3f5; /* Blue color on hover */
+    border-color: #7db3f5; /* Match border color on hover */
+}
+
+
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
 }
