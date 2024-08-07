@@ -26,7 +26,8 @@ const surveyResponseData = {
     cooling:"",
     coolingAge:0,
     fullResult:"",
-    location: ""
+    location: "",
+    feedback: ""
   };
 
 
@@ -163,6 +164,7 @@ async function askForLetter(stringAnswer) {
         fullResult += "\n";
         // fullResult += "\n\n\n\n\n\n";
     }
+    surveyResponseData.fullResult = fullResult;
 
     
     if (result) {
