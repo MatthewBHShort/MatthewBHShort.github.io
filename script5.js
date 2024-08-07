@@ -1,7 +1,34 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
+    authDomain: "energy-coaching-cbbc5.firebaseapp.com",
+    databaseURL: "https://energy-coaching-cbbc5-default-rtdb.firebaseio.com",
+    projectId: "energy-coaching-cbbc5",
+    storageBucket: "energy-coaching-cbbc5.appspot.com",
+    messagingSenderId: "85932482016",
+    appId: "1:85932482016:web:9852865b84481d33f41f85",
+    measurementId: "G-DWJ540T6WE"
+};
+
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+const auth = firebase.auth();
+
+auth.signInWithEmailAndPassword("matthewshort09@gmail.com", "password")
+    .then((userCredential) => {
+        console.log("User signed in: ", userCredential.user);
+    })
+    .catch((error) => {
+        console.error("Error signing in: ", error);
+    });
+
+
+
+
 responseID = "";
 function retrieveResponseID() {
     responseID = localStorage.getItem('responseID');
-    console.log(responseID);
+    console.log("Response ID: " + responseID);
 }
 retrieveResponseID();
 
@@ -32,9 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Save feedback and hide box
     submitFeedback.addEventListener('click', function() {
         const feedback = feedbackInput.value;
-        console.log('Feedback:', feedback); // Replace this line with the code to save the feedback
+
+
+
+        console.log('Feedback:', feedback); 
+        updateFeedbackPoint(feedback);
+
+
+
         feedbackBox.style.display = 'none';
-        feedbackInput.value = ''; // Clear the input after submission
+        feedbackInput.value = ''; 
     });
 
     // Hide the box if the user clicks outside of it
@@ -44,3 +78,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+function updateFeedbackPoint(feedback){
+    updates['/responses/' + responseId + '/' + feedback] = feedback;
+    return database.ref().update(updates)
+      .then(() => {
+        console.log('Field updated successfully');
+      })
+      .catch((error) => {
+        console.error('Error updating field:', error);
+      });
+}

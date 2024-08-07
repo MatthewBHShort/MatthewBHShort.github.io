@@ -27,7 +27,7 @@ const surveyResponseData = {
     coolingAge:0,
     fullSurvey:"",
     location: "",
-    feedback: "",
+    feedback: "i have not been updated yet!",
     email:"",
   };
 
