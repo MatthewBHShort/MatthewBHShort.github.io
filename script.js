@@ -321,7 +321,7 @@ function sendEmail(r) {
 
 function showFeedbackBox() {
     const feedbackBox = document.getElementById('feedbackBox');
-    feedbackBox.style.display = 'block';
+    // feedbackBox.style.display = 'block';
     feedbackFunction();
 }
 
