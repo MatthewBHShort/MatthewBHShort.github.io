@@ -38,7 +38,7 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const auth = firebase.auth();
 
-auth.signInWithEmailAndPassword("matthewshort09@gmail.com", "password")
+auth.signInWithEmailAndPassword("matthew@laszloenergy.com", "password")
     .then((userCredential) => {
         console.log("User signed in: ", userCredential.user);
     })

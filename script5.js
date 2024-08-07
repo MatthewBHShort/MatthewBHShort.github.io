@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const auth = firebase.auth();
 
-auth.signInWithEmailAndPassword("matthewshort09@gmail.com", "password")
+auth.signInWithEmailAndPassword("matthew@laszloenergy.com", "password")
     .then((userCredential) => {
         console.log("User signed in: ", userCredential.user);
     })
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateFeedbackPoint(feedback){
     const updates = {};
-    updates['/responses/' + responseId + '/' + feedback] = feedback;
+    updates['/responses/' + responseID + '/' + feedback] = feedback;
     return database.ref().update(updates)
       .then(() => {
         console.log('Field updated successfully');
