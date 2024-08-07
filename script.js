@@ -319,35 +319,6 @@ function sendEmail(r) {
 }
 
 
-function showFeedbackBox() {
-    const feedbackBox = document.getElementById('feedbackBox');
-    feedbackBox.style.display = 'block';
-    feedbackFunction();
-}
-
-function feedbackFunction(){
-    document.addEventListener('DOMContentLoaded', function() {
-        const feedbackBox = document.getElementById('feedbackBox');
-        const closeButton = document.getElementById('closeButton');
-        const submitFeedback = document.getElementById('submitFeedback');
-        const feedbackInput = document.getElementById('feedbackInput');
-
-        // Hide feedback box
-        closeButton.addEventListener('click', function() {
-            feedbackBox.style.display = 'none';
-        });
-
-        // Save feedback and hide box
-        submitFeedback.addEventListener('click', function() {
-            const feedback = feedbackInput.value;
-            console.log('Feedback:', feedback); // Replace this line with the code to save the feedback
-            feedbackBox.style.display = 'none';
-            feedbackInput.value = ''; // Clear the input after submission
-        });
-
-
-    });
-}
 
 
 

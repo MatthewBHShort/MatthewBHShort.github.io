@@ -721,8 +721,6 @@ baseboardAge: {
         answers: {
             "Yes": { next: "end"},
             "No": { next: "end"},
-            "What upppp": {next:"end"},
-            "Give Feedback": { next: "end", action: showFeedbackBox }
         }
     },
     end: {
