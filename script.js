@@ -27,7 +27,8 @@ const surveyResponseData = {
     coolingAge:0,
     fullSurvey:"",
     location: "",
-    feedback: ""
+    feedback: "",
+    email:"",
   };
 
 
