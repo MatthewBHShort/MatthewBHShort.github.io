@@ -419,9 +419,3 @@ function saveResponseData(response) {
   }
   
   
-
-
-
-
-  
-
