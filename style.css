@@ -25,6 +25,13 @@
             display: flex;
             gap: 15px;
         }
+        .feedbackBox{
+            display:hidden;
+
+        }
+        #feedbackBox{
+            display:hidden;
+        }
         .nav-link {
             color: white;
             text-decoration: none;
