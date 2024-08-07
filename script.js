@@ -16,7 +16,7 @@ const firebaseConfig = {
     measurementId: "G-DWJ540T6WE"
 };
 
-
+responseID = "";
 const surveyResponseData = {
     timeStarted: "",
     timeFinished: "",
@@ -84,7 +84,9 @@ function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
     localStorage.setItem('sharedString', inputString);
+    localStorage.setItem('responseID',database.ref('responses').push().key);
     // window.location.href = 'https://matthewbhshort.github.io/results.html';
+    window.location.href = 'https://matthewbhshort.github.io/feedback.html';
     
 
 }

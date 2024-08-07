@@ -1,4 +1,17 @@
-// script.js
+responseID = "";
+function retrieveResponseID() {
+    responseID = localStorage.getItem('responseID');
+    console.log(responseID);
+}
+retrieveResponseID();
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const feedbackButton = document.getElementById('feedbackButton');
     const feedbackBox = document.getElementById('feedbackBox');
