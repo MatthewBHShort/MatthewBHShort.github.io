@@ -332,9 +332,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const feedbackInput = document.getElementById('feedbackInput');
 
     // Hide feedback box
-    closeButton.addEventListener('click', function() {
-        feedbackBox.style.display = 'none';
-    });
+    // closeButton.addEventListener('click', function() {
+    //     feedbackBox.style.display = 'none';
+    // });
 
     // Save feedback and hide box
     submitFeedback.addEventListener('click', function() {
