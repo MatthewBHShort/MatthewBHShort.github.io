@@ -26,11 +26,11 @@
             gap: 15px;
         }
         .feedbackBox{
-            display:hidden;
+            display:none;
 
         }
         #feedbackBox{
-            display:hidden;
+            display:none;
         }
         .nav-link {
             color: white;
