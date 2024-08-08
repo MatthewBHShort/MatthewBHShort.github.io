@@ -84,7 +84,6 @@ function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
     localStorage.setItem('sharedString', inputString);
-    localStorage.setItem('responseID',saveResponseData);
     // window.location.href = 'https://matthewbhshort.github.io/results.html';
     // window.location.href = 'https://matthewbhshort.github.io/feedback.html';
     
@@ -405,7 +404,7 @@ function formatResponseData(drivers){
 function saveResponseData(response) {
     responseId = database.ref('responses').push().key;
     saveResponseID = responseId;
-    console.log("id: " + saveResponseID);
+    localStorage.setItem('responseID',saveResponseID);
     const responseData = response;
 
     const updates = {};
