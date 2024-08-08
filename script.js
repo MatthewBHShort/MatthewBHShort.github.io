@@ -404,7 +404,7 @@ function formatResponseData(drivers){
 
 function saveResponseData(response) {
     const responseId = database.ref('responses').push().key;
-    saveResponseID = responseId
+    saveResponseID = responseId;
     const responseData = response;
 
     const updates = {};
