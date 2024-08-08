@@ -226,8 +226,8 @@ function askQuestion() {
         }
 
         if(answer == 'Next'){
-            button.style.display = 'grid';
-            button.style.placeItems = 'center';
+            // button.style.display = 'grid';
+            // button.style.placeItems = 'center';
             
 
             // button.style.display = 'flex';
