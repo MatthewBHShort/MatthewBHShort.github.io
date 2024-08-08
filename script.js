@@ -22,12 +22,12 @@ const surveyResponseData = {
     timeFinished: "",
     drivers:"",
     heating:"",
-    heatingAge: 0,
+    heatingAge:"",
     cooling:"",
-    coolingAge:0,
+    coolingAge:"",
     fullSurvey:"",
     location: "",
-    feedback: "i have not been updated yet!",
+    feedback: "",
     email:"",
   };
 
