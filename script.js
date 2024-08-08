@@ -404,7 +404,7 @@ function formatResponseData(drivers){
 
 function saveResponseData(response) {
     const responseId = database.ref('responses').push().key;
-    console.log("ResponseID: " + reponseID);
+    console.log("ResponseID: " + reponseId);
     saveResponseID = responseId;
     const responseData = response;
 
