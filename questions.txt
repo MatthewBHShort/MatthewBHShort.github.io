@@ -105,7 +105,7 @@ questions = {
         answers: {
             "Yes": { next: "ACAge", action: () => {stringFunction("ACAge","AC","");equipmentType("AC",false)}},
             "No": { next: "hydronicHeating", action: () => stringFunction("hydronicHeating","AC","")},
-            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virutalConsultation","AC","")},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","AC","")},
         }
     },
     ACAge: {
@@ -517,7 +517,7 @@ baseboardAge: {
             "Gas Fired Tankless": { next: "waterHeatingAge"},
             "Electric Tankless": { next: "waterHeatingAge"},
             "Other": { next: "waterHeatingAge"},
-            "I don't know": { next: "virtualConsultation"},
+            "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","waterHeating","")},
         }
     },
     waterHeatingAge: {

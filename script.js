@@ -96,6 +96,8 @@ function backButtonRemoveString(str){
     console.log(result.answerString);
 }
 
+// stringFunction("virtualConsultation","furnace","")
+
 
 async function saveLast (nextQuestion,currentQuestion, str){
     lastQuestionStrAdded = str;
@@ -113,7 +115,6 @@ async function saveLast (nextQuestion,currentQuestion, str){
 async function stringFunction(nextQuestion,currentQuestion, str){
     saveLast(nextQuestion, currentQuestion, str);
     result.answerString += str;
-    // console.log("STRING: " + result.answserString);
 }
 
 async function addRemoveDriver (s){
@@ -430,5 +431,3 @@ function saveResponseData(response) {
       });
       
   }
-  
-  
