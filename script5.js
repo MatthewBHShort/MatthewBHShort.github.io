@@ -28,7 +28,7 @@ auth.signInWithEmailAndPassword("matthew@laszloenergy.com", "password")
 responseID = "";
 function retrieveResponseID() {
     responseID = localStorage.getItem('responseID');
-    responseID = "-O3jSL5W3eVH8tmEYn41";
+    // responseID = "-O3jSL5W3eVH8tmEYn41";
     console.log("Response ID: " + responseID);
 }
 retrieveResponseID();
