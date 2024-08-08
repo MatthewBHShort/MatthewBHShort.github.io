@@ -57,6 +57,49 @@ body {
 
 
 
+
+
+
+button {
+    background-color: #7CB342; /* Green color */
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+button:hover {
+    background-color: #5A8C2A; /* Darker green color for hover effect */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -103,7 +146,7 @@ body {
 }
 
 #submitFeedback {
-    background-color: #4CAF50;
+    background-color: #7CB342;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -111,5 +154,5 @@ body {
 }
 
 #submitFeedback:hover {
-    background-color: #45a049;
+    background-color: #5A8C2A;
 }
