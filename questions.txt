@@ -719,8 +719,8 @@ baseboardAge: {
     virtualConsultation: {
         question: "Would you like to book a virtual consultation?",
         answers: {
-            "Yes": { next: "end"},
-            "No": { next: "end"},
+            "Yes": { next: "end", action: () => stringFunction("end","virtualConsultation","")},
+            "No": { next: "end", action: () => stringFunction("end","virtualConsultation","")},
         }
     },
     end: {
