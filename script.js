@@ -404,6 +404,7 @@ function formatResponseData(drivers){
 
 function saveResponseData(response) {
     const responseId = database.ref('responses').push().key;
+    console.log("ResponseID: " + reponseID);
     saveResponseID = responseId;
     const responseData = response;
 
@@ -413,7 +414,7 @@ function saveResponseData(response) {
     return database.ref().update(updates)
       .then(() => {
         console.log('Data saved successfully');
-        window.location.href = 'https://matthewbhshort.github.io/feedback.html';
+        // window.location.href = 'https://matthewbhshort.github.io/feedback.html';
       })
       .catch((error) => {
         console.error('Error saving data:', error);
