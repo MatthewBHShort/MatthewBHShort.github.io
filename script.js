@@ -226,9 +226,13 @@ function askQuestion() {
         }
 
         if(answer == 'Next'){
-            button.style.display = 'flex';
-            button.style.justifyContent = 'center';
-            button.style.alignItems = 'center';
+            button.style.display = 'grid';
+            button.style.placeItems = 'center';
+            
+
+            // button.style.display = 'flex';
+            // button.style.justifyContent = 'center';
+            // button.style.alignItems = 'center';
         }
 
 
