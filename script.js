@@ -342,7 +342,7 @@ function getLocation(){
     .then(response => response.json())
     .then(data => {
         console.log(data.city, data.region, data.country);
-        location = data.city + ", " + data.region + ", " + data.country + "."
+        // location = data.city + ", " + data.region + ", " + data.country + "."
         surveyResponseData.location = data.city + ", " + data.region + ", " + data.country + ".";
     })
     .catch(error => console.error('Error fetching location:', error));
@@ -411,7 +411,7 @@ function formatResponseData(drivers){
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
     formattedResponseData.timeFinished = endTime;
-    formattedResponseData = location;
+    // formattedResponseData = location;
     saveResponseData(formattedResponseData)
 }
 
