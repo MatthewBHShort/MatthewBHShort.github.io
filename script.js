@@ -411,7 +411,7 @@ function formatResponseData(drivers){
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
     formattedResponseData.timeFinished = endTime;
-    saveResponseData(formattedResponseData)
+    saveResponseData(formattedResponseData);
 }
 
 function saveResponseData(response) {
