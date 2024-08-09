@@ -294,7 +294,7 @@ function saveResponses(yesOrNo) {
         surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
-        getLocation();
+        // getLocation();
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
@@ -406,9 +406,8 @@ function addToTally(driver,user){
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
+    getLocation();
     const formattedResponseData = surveyResponseData;
-    console.log("survey response data location: " + surveyResponseData.location);
-    console.log("formatted response data location: " + formattedResponseData.location);
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
     formattedResponseData.timeFinished = endTime;
