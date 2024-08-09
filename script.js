@@ -424,7 +424,7 @@ function saveResponseData(response) {
     return database.ref().update(updates)
       .then(() => {
         console.log('Data saved successfully');
-        window.location.href = 'https://matthewbhshort.github.io/feedback.html';
+        // window.location.href = 'https://matthewbhshort.github.io/feedback.html';
       })
       .catch((error) => {
         console.error('Error saving data:', error);
