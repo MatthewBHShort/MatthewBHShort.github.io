@@ -17,7 +17,7 @@ const firebaseConfig = {
 };
 
 saveResponseID = "";
-location = "";
+
 const surveyResponseData = {
     timeStarted: "",
     timeFinished: "",
@@ -342,7 +342,6 @@ function getLocation(){
     .then(response => response.json())
     .then(data => {
         console.log(data.city, data.region, data.country);
-        // location = data.city + ", " + data.region + ", " + data.country + "."
         surveyResponseData.location = data.city + ", " + data.region + ", " + data.country + ".";
     })
     .catch(error => console.error('Error fetching location:', error));
@@ -408,10 +407,11 @@ function addToTally(driver,user){
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
     const formattedResponseData = surveyResponseData;
+    console.log("survey response data location: " + surveyResponseData.location);
+    console.log("formatted response data location: " + formattedResponseData.location);
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
     formattedResponseData.timeFinished = endTime;
-    // formattedResponseData = location;
     saveResponseData(formattedResponseData)
 }
 
