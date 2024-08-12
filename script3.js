@@ -96,6 +96,7 @@ populateGlossary();
 window.addEventListener('load', function() {
     // Check if there's a hash in the URL
     const hash = window.location.hash;
+    console.log("hash: " + hash);
 
     if (hash) {
         // Wait for the dynamically loaded content to be inserted
