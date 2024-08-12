@@ -22,9 +22,9 @@ function toggleContent() {
 {/* <a href="page2.html#section2">Go to Section 2 on Page 2</a> */}
 
 const wordsToLink = [
-    { word: 'heat pump', url: 'https://www.javascript.com' },
-    { word: 'furnace', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-    { word: 'thermostat', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
+    { word: 'Heat pump', url: 'https://www.javascript.com' },
+    { word: 'Furnace', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { word: 'Thermostat', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
 ];
 
 function makeWordsClickable() {
