@@ -280,6 +280,13 @@ function handleAnswer(answer) {
         noButton.innerText = 'No';
         noButton.onclick = () => saveResponses(false);
         answersElem.appendChild(noButton);
+
+        const backButton = document.createElement('button');
+        backButton.innerText = 'Back';
+
+        answersElem.appendChild(backButton);
+
+
     
     } else {
         askQuestion();
