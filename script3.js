@@ -42,7 +42,7 @@ async function populateGlossary() {
 
         // Create and append the heading
         const h2 = document.createElement('h2');
-        h2.innerText = `What is ${term}?`;
+        h2.innerText = `${term}?`;
         textDiv.appendChild(h2);
 
         // Create and append the paragraph
