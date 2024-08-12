@@ -1,6 +1,3 @@
-
-
-
 function retrieveString() {
     const sharedString = localStorage.getItem('sharedString');
     console.log(sharedString);
@@ -8,7 +5,6 @@ function retrieveString() {
     document.getElementById('formatted-output').innerHTML = sharedString;
 }
 retrieveString();
-
 function toggleContent() {
     var content1 = document.getElementById('formatted-output');
     var content2 = document.getElementById('guideContent');
@@ -21,6 +17,32 @@ function toggleContent() {
         content2.classList.remove('hidden');
     }
 }
+
+
+{/* <a href="page2.html#section2">Go to Section 2 on Page 2</a> */}
+
+const wordsToLink = [
+    { word: 'heat pump', url: 'https://www.javascript.com' },
+    { word: 'furnace', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { word: 'thermostat', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
+];
+
+function makeWordsClickable() {
+    const elements = document.querySelectorAll('p, span, div');
+
+    elements.forEach(element => {
+        let html = element.innerHTML;
+
+        wordsToLink.forEach(({ word, url }) => {
+            const regex = new RegExp(`\\b${word}\\b`, 'gi'); // Match the whole word, case-insensitive
+            const replacement = `<a href="${url}#${word}" target="_blank">${word}</a>`;
+            html = html.replace(regex, replacement);
+        });
+
+        element.innerHTML = html;
+    });
+}
+window.onload = makeWordsClickable;
 
 
 
