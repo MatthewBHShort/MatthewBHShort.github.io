@@ -5,17 +5,16 @@ async function populateGlossary() {
     const response = await fetch(csvUrl);
     const data = await response.text();
 
+    
     // Parse the CSV file
-    const rows = data.split('\n').slice(1); // Remove header
+    const rows = parseCSV(data).slice(1); // Remove header
     const glossaryContainer = document.getElementById('glossary-container'); // Make sure to have this in your HTML
 
-    rows.forEach((row, index) => {
-        const columns = row.split(',');
-
+    rows.forEach((columns, index) => {
         if (columns.length < 3) return; // Skip any improperly formatted rows
 
         const term = columns[0].trim();
-        const definition = columns[1].trim().replace(/"/g, ''); // Remove double quotes if present
+        const definition = columns[1].trim(); // No need to remove quotes anymore
         const image = columns[2].trim();
 
         // Create the section div
@@ -42,12 +41,12 @@ async function populateGlossary() {
 
         // Create and append the heading
         const h2 = document.createElement('h2');
-        h2.innerText = `${term}?`;
+        h2.innerText = `What is ${term}?`;
         textDiv.appendChild(h2);
 
         // Create and append the paragraph
         const p = document.createElement('p');
-        p.innerText = definition;
+        p.innerHTML = definition.replace(/\n/g, '<br><br>'); // Preserve line breaks and paragraphs
         textDiv.appendChild(p);
 
         // Append the text container to the section
