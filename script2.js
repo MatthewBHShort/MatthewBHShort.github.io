@@ -22,9 +22,9 @@ function toggleContent() {
 {/* <a href="page2.html#section2">Go to Section 2 on Page 2</a> */}
 
 const wordsToLink = [
-    { word: 'Heat pump', url: 'https://www.javascript.com' },
-    { word: 'Furnace', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-    { word: 'Thermostat', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
+    { word: 'furance'},
+    { word: 'Tankless Water Heater'},
+    { word: 'Thermostat'}
 ];
 
 function makeWordsClickable() {
@@ -35,7 +35,7 @@ function makeWordsClickable() {
 
         wordsToLink.forEach(({ word, url }) => {
             const regex = new RegExp(`\\b${word}\\b`, 'gi'); // Match the whole word, case-insensitive
-            const replacement = `<a href="${url}#${word}" target="_blank">${word}</a>`;
+            const replacement = `<a href=https://matthewbhshort.github.io/guide.html#"${word}" target="_blank">${word}</a>`;
             html = html.replace(regex, replacement);
         });
 
