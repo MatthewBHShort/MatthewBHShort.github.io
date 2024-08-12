@@ -94,6 +94,10 @@ body {
             flex: 1;
         }
 
+        .section:nth-child(even) .text h2 {
+            text-align: right;
+        }
+
         
     
 
