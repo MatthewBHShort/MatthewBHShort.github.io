@@ -1,5 +1,4 @@
-// const csvUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.github.io/main/glossary.csv'; // Replace with your actual CSV file URL
-    
+
     
     
 function parseCSV(text) {
@@ -93,3 +92,19 @@ async function populateGlossary() {
 
 // Call the function to populate the glossary
 populateGlossary();
+
+window.addEventListener('load', function() {
+    // Check if there's a hash in the URL
+    const hash = window.location.hash;
+
+    if (hash) {
+        // Wait for the dynamically loaded content to be inserted
+        setTimeout(function() {
+            const element = document.querySelector(hash);
+            if (element) {
+                // Scroll to the element
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 1000); // Adjust the timeout based on your content loading time
+    }
+});
