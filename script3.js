@@ -5,9 +5,8 @@ async function populateGlossary() {
     const response = await fetch(csvUrl);
     const data = await response.text();
 
-    
     // Parse the CSV file
-    const rows = parseCSV(data).slice(1); // Remove header
+    const rows = data.split('\n').slice(1); // Remove header
     const glossaryContainer = document.getElementById('glossary-container'); // Make sure to have this in your HTML
 
     rows.forEach((columns, index) => {
@@ -46,7 +45,7 @@ async function populateGlossary() {
 
         // Create and append the paragraph
         const p = document.createElement('p');
-        p.innerHTML = definition.replace(/\n/g, '<br><br>'); // Preserve line breaks and paragraphs
+        p.innerText = definition;
         textDiv.appendChild(p);
 
         // Append the text container to the section
