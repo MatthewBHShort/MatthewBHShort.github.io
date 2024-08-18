@@ -301,7 +301,7 @@ function saveResponses(yesOrNo) {
         surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
-        // getLocation();
+        getLocation();
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
@@ -348,7 +348,7 @@ function getLocation(){
     fetch('https://ipapi.co/json/')
     .then(response => response.json())
     .then(data => {
-        console.log(data.city, data.region, data.country);
+        // console.log(data.city, data.region, data.country);
         surveyResponseData.location = data.city + ", " + data.region + ", " + data.country + ".";
     })
     .catch(error => console.error('Error fetching location:', error));
@@ -422,6 +422,7 @@ function formatResponseData(drivers){
 }
 
 function saveResponseData(response) {
+    console.log("entry: " + response);
     responseId = database.ref('responses').push().key;
     saveResponseID = responseId;
     localStorage.setItem('responseID',saveResponseID);
