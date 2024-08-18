@@ -195,6 +195,7 @@ let result = {
 let responses = [];
 
 function askQuestion() {
+    getLocation();
     const q = questions[current];
     const questionElem = document.getElementById('question');
     const answersElem = document.getElementById('answers');
@@ -258,7 +259,7 @@ function askQuestion() {
 }
 
 function handleAnswer(answer) {
-    getLocation();
+    // getLocation();
     const q = questions[current];
     responses.push({ question: q.question, answer: answer });
     if (q.answers[answer].action) {
@@ -415,7 +416,6 @@ function addToTally(driver,user){
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
-    // getLocation();
     const formattedResponseData = surveyResponseData;
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
