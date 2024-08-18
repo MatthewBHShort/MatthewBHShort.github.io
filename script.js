@@ -422,7 +422,7 @@ function formatResponseData(drivers){
 }
 
 function saveResponseData(response) {
-    console.log("entry: " + response);
+    console.log("entry: " + response.location);
     responseId = database.ref('responses').push().key;
     saveResponseID = responseId;
     localStorage.setItem('responseID',saveResponseID);
