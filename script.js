@@ -41,6 +41,7 @@ const auth = firebase.auth();
 
 auth.signInWithEmailAndPassword("matthew@laszloenergy.com", "password")
     .then((userCredential) => {
+        
         console.log("User signed in: ", userCredential.user);
     })
     .catch((error) => {
@@ -257,6 +258,7 @@ function askQuestion() {
 }
 
 function handleAnswer(answer) {
+    getLocation();
     const q = questions[current];
     responses.push({ question: q.question, answer: answer });
     if (q.answers[answer].action) {
@@ -301,7 +303,7 @@ function saveResponses(yesOrNo) {
         surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
-        getLocation();
+        // getLocation();
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
@@ -413,7 +415,7 @@ function addToTally(driver,user){
 
 function formatResponseData(drivers){
     const endTime = new Date().toISOString();
-    getLocation();
+    // getLocation();
     const formattedResponseData = surveyResponseData;
     formattedResponseData.drivers = drivers;
     formattedResponseData.timeStarted = startTime;
