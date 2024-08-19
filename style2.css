@@ -150,3 +150,34 @@
 
 
 
+
+
+
+
+
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+        
+        a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            z-index: -1;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover::before {
+            background-color: rgba(0, 0, 0, 0.1); /* Adjust the color and opacity as needed */
+        }
+
+
+
+
