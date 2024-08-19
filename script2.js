@@ -44,6 +44,15 @@ function makeWordsClickable() {
 }
 window.onload = makeWordsClickable;
 
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('info-popup');
+    popup.classList.add('show');
+    
+    setTimeout(function() {
+        popup.classList.remove('show');
+    }, 5000); // Popup will fade out after 5 seconds
+});
+
 
 
 
