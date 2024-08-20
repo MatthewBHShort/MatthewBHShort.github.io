@@ -203,9 +203,12 @@
             opacity: 1;
         }
 
-        #close-btn{
+        .close-btn{
             all: unset;
-
+        }
+        .close-btn:hover{
+            color:red;
+            background-color: transparent;
         }
 
 
