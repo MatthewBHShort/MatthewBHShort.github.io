@@ -78,8 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateFeedbackPoint(feedback,email,name){
     const updates = {};
-    updates['/responses/' + responseID + '/' + "feedback"] = feedback;
     updates['/responses/' + responseID + '/' + "email"] = email;
+    updates['/responses/' + responseID + '/' + "feedback"] = feedback;
+    // updates['/responses/' + responseID + '/' + "email"] = email;
     updates['/responses/' + responseID + '/' + "name"] = name;
     return database.ref().update(updates)
       .then(() => {
