@@ -203,6 +203,11 @@
             opacity: 1;
         }
 
+        #close-btn{
+            all: unset;
+
+        }
+
 
 
 
