@@ -175,7 +175,7 @@
         }
         
         a:hover::before {
-            background-color: rgba(0, 0, 0, 0.1); /* Adjust the color and opacity as needed */
+            background-color: rgba(0, 0, 0, 0.1); 
         }
 
 

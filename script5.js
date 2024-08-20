@@ -41,21 +41,13 @@ retrieveResponseID();
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const feedbackButton = document.getElementById('feedbackButton');
+
     const feedbackBox = document.getElementById('feedbackBox');
-    const closeButton = document.getElementById('closeButton');
+
     const submitFeedback = document.getElementById('submitFeedback');
     const feedbackInput = document.getElementById('feedbackInput');
 
-    // Show feedback box
-    feedbackButton.addEventListener('click', function() {
-        feedbackBox.style.display = 'block';
-    });
 
-    // Hide feedback box
-    closeButton.addEventListener('click', function() {
-        feedbackBox.style.display = 'none';
-    });
 
     // Save feedback and hide box
     submitFeedback.addEventListener('click', function() {
@@ -82,12 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function updateFeedbackPoint(feedback){
+    console.log("hello");
     const updates = {};
     updates['/responses/' + responseID + '/' + "feedback"] = feedback;
     return database.ref().update(updates)
       .then(() => {
         console.log('Field updated successfully');
-        window.location.href = 'https://matthewbhshort.github.io/results.html';
+        // window.location.href = 'https://matthewbhshort.github.io/results.html';
       })
       .catch((error) => {
         console.error('Error updating field:', error);
