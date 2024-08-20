@@ -49,9 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.classList.add('show');
     
     setTimeout(function() {
-        popup.classList.remove('show');
+        if (popup.classList.contains('show')) {
+            popup.classList.remove('show');
+        }
     }, 5000); // Popup will fade out after 5 seconds
 });
+
+function closePopup() {
+    var popup = document.getElementById('info-popup');
+    popup.classList.remove('show');
+}
 
 
 
