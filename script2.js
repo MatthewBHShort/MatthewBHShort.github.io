@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (popup.classList.contains('show')) {
             popup.classList.remove('show');
         }
-    }, 5000); // Popup will fade out after 5 seconds
+    }, 10000); // Popup will fade out after 5 seconds
 });
 
 function closePopup() {
