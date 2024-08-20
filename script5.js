@@ -52,10 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Save feedback and hide box
     submitFeedback.addEventListener('click', function() {
         const feedback = feedbackInput.value;
+        const email = email.value;
+        const name = name.value;
 
 
 
         console.log('Feedback:', feedback); 
+        console.log('Email: ', email);
         updateFeedbackPoint(feedback);
 
 
