@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Name: " + nameValue);
         console.log("Email: " + emailValue);
         console.log('Feedback:', feedback); 
-        updateFeedbackPoint(feedback, email,name);
+        updateFeedbackPoint(feedback, emailValye,nameValue);
 
 
 
