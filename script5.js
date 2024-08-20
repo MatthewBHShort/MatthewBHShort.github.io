@@ -52,14 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Save feedback and hide box
     submitFeedback.addEventListener('click', function() {
         const feedback = feedbackInput.value;
-        const email = email.value;
-        const name = name.value;
+        let emailValue = document.getElementById('email').value;
+        let nameValue = document.getElementById('name').value;
 
 
-
+        console.log("Name: " + nameValue);
+        console.log("Email: " + emailValue);
         console.log('Feedback:', feedback); 
-        console.log('Email: ', email);
-        updateFeedbackPoint(feedback);
+        updateFeedbackPoint(feedback, email,name);
 
 
 
@@ -76,10 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function updateFeedbackPoint(feedback){
-    console.log("hello");
+function updateFeedbackPoint(feedback,email,name){
     const updates = {};
     updates['/responses/' + responseID + '/' + "feedback"] = feedback;
+    updates['/responses/' + responseID + '/' + "email"] = email;
+    updates['/responses/' + responseID + '/' + "name"] = name;
     return database.ref().update(updates)
       .then(() => {
         console.log('Field updated successfully');
