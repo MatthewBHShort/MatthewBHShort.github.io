@@ -84,7 +84,7 @@ function updateFeedbackPoint(feedback,email,name){
     return database.ref().update(updates)
       .then(() => {
         console.log('Field updated successfully');
-        // window.location.href = 'https://matthewbhshort.github.io/results.html';
+        window.location.href = 'https://matthewbhshort.github.io/results.html';
       })
       .catch((error) => {
         console.error('Error updating field:', error);
