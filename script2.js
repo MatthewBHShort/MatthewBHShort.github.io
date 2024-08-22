@@ -32,13 +32,11 @@ function makeWordsClickable() {
 
     elements.forEach(element => {
         let html = element.innerHTML;
-
         wordsToLink.forEach(({ word, url }) => {
             const regex = new RegExp(`\\b${word}\\b`, 'gi'); // Match the whole word, case-insensitive
             const replacement = `<a href=https://matthewbhshort.github.io/guide.html#"${word}">${word}</a>`;
             html = html.replace(regex, replacement);
         });
-
         element.innerHTML = html;
     });
 }
@@ -52,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (popup.classList.contains('show')) {
             popup.classList.remove('show');
         }
-    }, 10000); // Popup will fade out after 5 seconds
+    }, 10000);
 });
 
 function closePopup() {
