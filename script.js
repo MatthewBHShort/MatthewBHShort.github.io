@@ -445,3 +445,20 @@ function saveResponseData(response) {
       });
       
   }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('info-popup');
+    popup.classList.add('show');
+    
+    setTimeout(function() {
+        if (popup.classList.contains('show')) {
+            popup.classList.remove('show');
+        }
+    }, 10000);
+});
+
+function closePopup() {
+    var popup = document.getElementById('info-popup');
+    popup.classList.remove('show');
+}

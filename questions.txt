@@ -1,6 +1,6 @@
 questions = {
     start: {
-        question: "What is your driver? \n Please choose all that apply then click Next.",
+        question: "What is your driver?",
         answers: {
             "Reducing Costs": { next: "start", action: () => addRemoveDriver('costs')},
             "Reducing Emissions": { next: "start", action: () => addRemoveDriver('ghgs')},
