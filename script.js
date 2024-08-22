@@ -85,6 +85,7 @@ lastQuestion = "start";
 function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
+    // const inputString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ2345678";
     localStorage.setItem('sharedString', inputString);
     // window.location.href = 'https://matthewbhshort.github.io/results.html';
     // window.location.href = 'https://matthewbhshort.github.io/feedback.html';
