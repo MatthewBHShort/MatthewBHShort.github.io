@@ -34,7 +34,7 @@ function makeWordsClickable() {
         let html = element.innerHTML;
         wordsToLink.forEach(({ word, url }) => {
             const regex = new RegExp(`\\b${word}\\b`, 'gi'); // Match the whole word, case-insensitive
-            const replacement = `<a href=https://matthewbhshort.github.io/guide.html#"${word}">${word}</a>`;
+            const replacement = `<a href=https://matthewbhshort.github.io/guide.html#${word}>${word}</a>`;
             html = html.replace(regex, replacement);
         });
         element.innerHTML = html;
