@@ -74,7 +74,7 @@ body {
             color: #333;
         }
 
-        .container {
+        /* .container {
             max-width: 800px;
             margin: 0 auto;
         }
@@ -113,14 +113,83 @@ body {
         }
 
         .styled-bullets {
-            margin: 0 0 20px 20px; /* Indent and spacing */
+            margin: 0 0 20px 20px; 
             padding: 0;
         }
 
         .styled-bullets li {
-            margin-bottom: 10px; /* Space between bullet points */
-            list-style-type: disc; /* Use bullet points */
+            margin-bottom: 10px;
+            list-style-type: disc; 
+        } */
+
+        #guideContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        
+        #glossary-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+        
+        .section img {
+            max-width: 100%;
+            height: auto;
+            flex-basis: 40%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        
+        .section .text {
+            flex-basis: 55%;
+            margin: 10px;
+        }
+        
+        .section:nth-child(odd) {
+            flex-direction: row;
+        }
+        
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .section p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+
+
+
+
+
+
+
+        
 
 
 

@@ -30,6 +30,7 @@ const surveyResponseData = {
     location: "",
     feedback: "",
     email:"",
+    name:"",
   };
 
 
