@@ -60,13 +60,13 @@ body {
             align-items: center;
         }
         button:hover {
-            background-color: #5A8C2A; /* Darker green color for hover effect */
+            background-color: #5A8C2A;
         }
         .button-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px; /* Space between buttons */
+            gap: 10px;
         }
         h1 {
             font-size: 4em;
@@ -74,53 +74,7 @@ body {
             color: #333;
         }
 
-        /* .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-        .section img {
-            max-width: 200px;
-            margin: 0 20px;
-        }
-        .section .text {
-            flex: 1;
-        }
-
-        .section:nth-child(even) .text h2 {
-            text-align: right;
-        }
-
-        
     
-
-    
-        #glossary-container {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-
-        p {
-            margin: 20px 0;
-        }
-
-        .styled-bullets {
-            margin: 0 0 20px 20px; 
-            padding: 0;
-        }
-
-        .styled-bullets li {
-            margin-bottom: 10px;
-            list-style-type: disc; 
-        } */
 
         #guideContent {
             display: flex;
