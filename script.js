@@ -156,6 +156,7 @@ const driver = "";
 async function askForLetter(stringAnswer) {
   try {
     const csvData = await fetchAndParseCSV(csvUrl);
+    stringAnswer = "U";
     const letter = removeRepeatingCharacters(stringAnswer);
    
     console.log(stringAnswer + "    ->    " + letter)
