@@ -28,8 +28,7 @@ C,"<h1>Clothes Drying:</h1>
             <li>Reduced risk of fire</li>
         </ul>
     </li>
-</ul>
-",
+</ul>",
 D,"<h1>Dish Washing:</h1>
 <ul class=\""inline-bullets\"">
     <li>Use dishwasher during times of OFF-PEAK electricity rates.
@@ -40,8 +39,7 @@ D,"<h1>Dish Washing:</h1>
     <li>Scrape plates of food scraps before loading into dishwasher.</li>
     <li>Run dishwasher only when it's full.</li>
     <li>Consider setting machine to air dry rather than heat dry.</li>
-</ul>
-",
+</ul>",
 E,"<h1>Thermostat Operation:</h1>
 <ul class=\""inline-bullets\"">
     <li>Turn down temperature-setting a degree or two in the winter to lower heating costs.
@@ -55,8 +53,7 @@ E,"<h1>Thermostat Operation:</h1>
             <li><strong>Expected cooling energy savings: &gt;1% per degree of total cooling costs</strong></li>
         </ul>
     </li>
-</ul>
-",
+</ul>",
 F,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <h2>Ductwork-based System:</h2>
 <ul class=\""inline-bullets\"">
@@ -93,8 +90,7 @@ F,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 G,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
 <ul class=\""inline-bullets\"">
@@ -120,8 +116,7 @@ G,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 H,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <h2>Ductless Heat Pumps (a.k.a. Mini-Splits):</h2>
 <ul class=\""inline-bullets\"">
@@ -153,8 +148,7 @@ H,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 I,"<h1>Heating and Cooling Maintenance Routines:</h1>
 <h2>Electric Baseboard Heating:</h2>
 <ul class=\""inline-bullets\"">
@@ -164,13 +158,24 @@ I,"<h1>Heating and Cooling Maintenance Routines:</h1>
         </ul>
     </li>
     <li>There are many helpful DIY videos on YouTube such as: <a href=\""https://www.youtube.com/watch?v=h1i3ysAo5ZY\"">https://www.youtube.com/watch?v=h1i3ysAo5ZY</a></li>
+</ul>",
+J,"<h1>Water Heater Maintenance Routines:</h1>
+<ul class=""inline-bullets"">
+    <li>Tank-based Heater (gas and electric):</li>
+    <ul class=""inline-bullets"">
+        <li>Turn down the temperature setting to <strong>&gt;49°C (&gt;120°F)</strong> to save energy, extend the life of the heater, and prevent scalding.</li>
+        <ul class=""inline-bullets"">
+            <li><strong>Expected water heating energy savings: &lt;10% per year</strong></li>
+            <li><strong>Expected emissions reductions: &lt;10% per year</strong></li>
+        </ul>
+        <li>Follow the manufacturer's recommended maintenance schedule (e.g., flushing the tank once per year) to ensure proper operation of the appliance and extended life.</li>
+        <li>Consider combining the heater's maintenance with the home's heating annual service call to lower costs.</li>
+        <li>Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters, including a comparison of different technologies and energy-saving tips: 
+            <a href=""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf"">Water Heater Guide</a>.
+        </li>
+    </ul>
 </ul>
 ",
-J,"Water Heater Maintenance Routines:
-Tank-based Heater (gas and electric):
--turn down the temperature setting to >49C (>120F) to save energy, extend the life of the heater and prevent scalding. Expected water heating energy savings: <10%/yr; Expected emissions reductions: <10%/yr
--follow manufacturer's recommended maintenance schedule (e.g. flushing the tank once per year) to ensure proper operation of the appliance and extended life. Consider combining the heater's maintenance with the home's heating annual service call to lower costs
--Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf",
 K,"<h1>Water Heater Maintenance Routines:</h1>
 <h2>Tankless Water Heater (a.k.a. On-Demand Water Heater):</h2>
 <ul class=\""inline-bullets\"">
@@ -189,8 +194,7 @@ K,"<h1>Water Heater Maintenance Routines:</h1>
     </li>
     <li>Consider combining the water heater's service call with that of your home's other heating and cooling equipment regular maintenance schedule to lower costs.</li>
     <li>Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: <a href=\""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf\"">https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf</a></li>
-</ul>
-",
+</ul>",
 L,"<h1>Thermostat Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li>If your home's thermostat cannot be programmed to run your heating and cooling on specified schedules, consider replacing it with a smart thermostat. The scheduling feature can enhance the level of comfort in the home whilst saving energy.
@@ -201,8 +205,7 @@ L,"<h1>Thermostat Upgrading:</h1>
         </ul>
     </li>
     <li>Most installations can be done by homeowners themselves whilst following the manufacturer's instructions.</li>
-</ul>
-",
+</ul>",
 M,"<h1>Space-Heating Equipment Upgrading:</h1>
 <h2>Ductwork-based System:</h2>
 <p>Aging gas furnace replacement with these various options:</p>
@@ -251,8 +254,7 @@ M,"<h1>Space-Heating Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 N,"<h1>Space-Heating Equipment Upgrading:</h1>
 <h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
 <ul class=\""inline-bullets\"">
@@ -288,8 +290,7 @@ N,"<h1>Space-Heating Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 O,"<h1>Space-Heating Equipment Upgrading:</h1>
 <h2>Ductless Heat Pump (a.k.a. Mini-Splits) Heating System:</h2>
 <ul class=\""inline-bullets\"">
@@ -329,8 +330,7 @@ O,"<h1>Space-Heating Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 P,"<h1>Cooling Equipment Upgrading:</h1>
 <h2>Aging AC replacement with these various options:</h2>
 <ul class=\""inline-bullets\"">
@@ -370,8 +370,7 @@ P,"<h1>Cooling Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 Q,"<h1>Water Heater Equipment Upgrading:</h1>
 <h2>Tank-based water heater (electric or gas):</h2>
 <ul class=\""inline-bullets\"">
@@ -424,8 +423,7 @@ Q,"<h1>Water Heater Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 R,"<h1>Water Heater Equipment Upgrading:</h1>
 <h2>Tankless water heater (electric or gas) (a.k.a. on-demand):</h2>
 <ul class=\""inline-bullets\"">
@@ -471,8 +469,7 @@ R,"<h1>Water Heater Equipment Upgrading:</h1>
 <ul class=\""inline-bullets\"">
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
-</ul>
-",
+</ul>",
 S,"<h1>Attic Insulation:</h1>
 <p>Cold rooms on the top floor in the winter and excessively warm ones in the summer may be signs of under-performing insulation in the attic. Other tell-tale signs can be a roof devoid of snow whilst most other surrounding homes remain snow covered, and excessive build-up of icicles off of soffits and guttering. These can be the result of heat escaping into the attic from the interior of the home.</p>
 <p>In general, adding to or even replacing old insulation in the attic is a good investment.
@@ -505,8 +502,7 @@ S,"<h1>Attic Insulation:</h1>
     <li>Test the contractor's knowledge of their ability to assess the impact of installing insulation in your home</li>
     <li>Assess the contractor's level of professionalism (e.g. how they communicate, do they explain the installation process clearly, do they explain clearly the impacts of the insulation on the home's performance, do they respond in a timely manner)</li>
     <li>Are proposals and contracts provided in writing and clearly and comprehensively?</li>
-</ul>
-",
+</ul>",
 T,"<h1>Wall Insulation:</h1>
 <p>Homeowners may sense that the exterior walls are cold-to-the-touch in the winter. Depending on how, and often when, their home was constructed, the problem may be due to poorly performing insulation, including poor installation of the insulation, or no insulation at all in the case of many of the homes built pre and post war. It is recommended that the homeowner source a contractor who is an expert in wall insulation of existing homes to ascertain how the wall is constructed and what options are best to solve the problem. There are a number of techniques available without removing plaster and wall-boards to determine whether one's existing walls are insulated, and if so, with what type of material (e.g. fishing through holes by removing electrical outlet and light switch covers, drilling small holes in inconspicuous places, etc.). The range of solutions include blowing and spraying in insulation between the wall's studs and wall cavities from inside/outside/from below/above, removing plaster-boards entirely to enable batt insulation or foam board insulation, or even applying outside cladding to the wall. It is imperative, however, that skilled contractors be engaged to ensure the work is done to at least the regulations stipulated in the Ontario Building Code (e.g. vapour barriers to prevent mold growth, proper amount of insulation, etc.).</p>
 <p>High level cost estimates will depend on the type of insulation material used (e.g. blown-in: $1 - $3/sq.ft., batts: $2 - $4/sq.ft., spray foam: $2 - $6/sq.ft. depending on foam's density, foam board: $1 - $3/sq.ft.) plus labour which will depend on the extent of the preparatory and finishing work needed. Knowledgeable contractors should be able to run the homeowner through their options and the pros & cons of each option.</p>
@@ -549,8 +545,7 @@ T,"<h1>Wall Insulation:</h1>
     <li>Install thick curtains to slow down the heat transfer through the windows</li>
     <li>Ensure there is proper ventilation in the bedroom to prevent excess humidity that can exacerbate coldness</li>
 </ul>
-</p>
-",
+</p>",
 U,"<h1>Window and Door Gap Sealing:</h1>
 <p>Poorly sealed windows and doors can consume 10% - 20% annually more energy over a similar home that's well sealed. This can represent &gt;0.5 tonnes per year of CO<sub>2</sub> emissions. In most instances, homeowners should be able to both diagnose and fix the seal problems themselves at a very modest cost. Holding a lit candle or incense stick near the sealed area will reveal where the gaps are the most pronounced. If the flame or smoke is pulled into the gap or blown into the room, this will indicate where there's a seal problem. Remedies can include applying caulking, foam sealant, heat-shrink film with double-sided tape, clear rigid acrylic sheets with magnetic seals and weather stripping. Depending on the material and what quantity of material is required, out-of-pocket costs should mostly be under $100. If one's handy, in just a few hours, most gaps can be successfully sealed. If one sees condensation in between the two (or more) layers of panes of glass, it is usually a sign that the window's seal has failed. It is recommended that the homeowner should seek professional advice to confirm the state of the window and whether it needs to be replaced.</p>
 <ul class=\""inline-bullets\"">
@@ -566,8 +561,7 @@ U,"<h1>Window and Door Gap Sealing:</h1>
         <li><a href=\""https://www.youtube.com/watch?v=heizjoK2cHA\"">https://www.youtube.com/watch?v=heizjoK2cHA</a></li>
         <li><a href=\""https://www.youtube.com/watch?v=xzPit2Jf1zg\"">https://www.youtube.com/watch?v=xzPit2Jf1zg</a></li>
     </ul>
-</p>
-",
+</p>",
 V,"<h1>Window Replacement:</h1>
 <p>If your home has single pane windows, you notice condensation between the panes of glass, feel drafts from the window, or are having difficulties being able to close the window tightly (e.g. winding mechanism doesn't work properly), then it may be time to replace the window altogether. Window replacements are a significant investment (e.g. &gt;$1,000/window including labour) which will depend on factors such as the type of windows (e.g. level of efficiency, 3x vs. 2x pane, opening mechanism, encasement material (e.g. wood, fibreglass, aluminum, vinyl), etc.) and the complexity of the installation including trimwork. Depending on the number and complexity of the windows being replaced, homeowners should plan for approximately up to a week to complete.</p>
 
@@ -607,8 +601,7 @@ V,"<h1>Window Replacement:</h1>
         <li><a href=\""https://www.youtube.com/watch?v=wyyM5es8MeI\"">https://www.youtube.com/watch?v=wyyM5es8MeI</a></li>
         <li><a href=\""https://www.youtube.com/watch?v=T_oU0orKUz0\"">https://www.youtube.com/watch?v=T_oU0orKUz0</a></li>
     </ul>
-</p>
-",
+</p>",
 W,"<h1>Door Replacement:</h1>
 <p>Over the years with constant use, extremes in weather and potential shifting in the home's foundation, doors can begin to get out of alignment within their frames. At the extreme, replacing the seal around the door may be insufficient to fix the gap problems; a door replacement will be needed. Apart from different styles, these are the fundamentals a homeowner should consider when selecting a replacement door from an energy efficiency perspective:</p>
 <ul class=\""inline-bullets\"">
@@ -631,8 +624,7 @@ W,"<h1>Door Replacement:</h1>
     <li>Can provide a written contract including but not limited to a clear layout of the payment schedule</li>
     <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
 </ul>
-<p>Make certain to ask about warranties (i.e. materials, finish, structural, glass (if applicable), and installation - whether the manufacturer's warranty is voided unless the door is installed and maintained according to the manufacturer's recommendations), ask about timelines to get the work done, get customer references and seek multiple quotes. As many exist, consider visiting showrooms to gain a better feel for the different styles, materials as well as their prices.</p>
-",
+<p>Make certain to ask about warranties (i.e. materials, finish, structural, glass (if applicable), and installation - whether the manufacturer's warranty is voided unless the door is installed and maintained according to the manufacturer's recommendations), ask about timelines to get the work done, get customer references and seek multiple quotes. As many exist, consider visiting showrooms to gain a better feel for the different styles, materials as well as their prices.</p>",
 Y,"<h1>Floor Vent Deflectors:</h1>
 <p>For ductwork heated and cooled homes, installation of floor-vent air-deflectors in spaces that can become uncomfortably cool in the winter or warm in the summer is a very simple and cost-effective way to improve air circulation, increase comfort level and provide the homeowner with the ability to regulate temperature. Being able to deflect the air from the floor vents more into the centre of a space will help make the home perform better and improve comfort. These simple inexpensive devices, that are available at most hardware stores and online, can be installed by the homeowner themselves in just a few minutes. They range in price from &lt;$10/piece to $20/piece depending on the style and design complexity.</p>
 
@@ -651,8 +643,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
 <ul class=""inline-bullets"">
     <li>If the deflectors do not sufficiently improve comfort, consider consulting an HVAC specialist.</li>
     <li>A professional can check for larger issues within the HVAC system such as blower fan size, ductwork design, and blockages.</li>
-</ul>
-",
+</ul>",
 4,"<h1>Replace Electric or Gas Clothes Dryer with a Heat Pump Clothes Dryer:</h1>
 <p>Heat pump clothes dryers recycle the air that is heated up to dry clothes rather than constantly heating up the air from consuming electricity to run an electric element or burning natural gas to create a flame. This results in a number of very favourable advantages over traditional clothes dryers:</p>
 <ul class=""inline-bullets"">
@@ -679,8 +670,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://goclean.masscec.com/article/how-heat-pump-clothes-dryers-work/"">How Heat Pump Clothes Dryers Work</a></li>
     <li><a href=""https://www.familyhandyman.com/article/heat-pump-dryer/"">Heat Pump Dryer: What is it and How Does it Work?</a></li>
     <li><a href=""https://www.youtube.com/watch?v=_3lITyF2zwk&t=6s"">Heat Pump Dryer Explained</a></li>
-</ul>
-",
+</ul>",
 5,"<h1>Replacing a Clothes Washer:</h1>
 <p>When it comes time to replace a top-loading clothes washer, all homeowners should lean towards doing so with a front-loading machine. The benefits of front-loaders far outweigh the deliverables of the top-loaders:</p>
 <ul class=""inline-bullets"">
@@ -697,8 +687,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
 <ul class=""inline-bullets"">
     <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/appliances-for-residential-use/clothes-washers/13984"">Natural Resources Canada: Clothes Washers</a></li>
     <li><a href=""https://www.consumerreports.org/appliances/washing-machines/5-things-to-know-about-front-load-washers-a6585182686/#:~:text=Front%2Dload%20washers%20not%20only,dryer%20time%20and%20energy%20use."">Consumer Reports: 5 Things to Know About Front-Load Washers</a></li>
-</ul>
-",
+</ul>",
 6,"<h1>Replace Electric or Gas Stove with an Induction Stove:</h1>
 <p>Induction stoves are estimated to be 80% - 90% energy efficient as compared to gas stoves that are 40% - 60% and traditional coil and glass-surface electric stoves that are 70% - 80%. This superior efficiency comes about because induction stoves use electromagnetic technology to directly heat the pots/pans rather than needing a burner (gas) or element (electric) to heat an element and then transfer the heat to the pots/pans. Simply put, a lot of the heat from gas and electric stoves escapes to the surrounding space within the kitchen rather than being fully directed to heat up the pots/pans. The induction stove means less hood ventilation is required, especially in the case of gas stoves. In the summer, the induction stove tends not to heat up the kitchen like gas and electric stoves do which means that the home's air conditioner doesn't have to work as hard. Induction cooking provides precise heating controls where heating up and also cooling down the food in the pots/pans is almost instant.</p>
 
@@ -716,21 +705,26 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/product-information/appliances-for-residential-use/cooking-appliances/13987"">Natural Resources Canada: Cooking Appliances</a></li>
     <li><a href=""https://www.goodhousekeeping.com/appliances/a28435170/induction-stove-cooktop-pros-cons/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_md_pmx_hybd_mix_ca_20317666538&gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU71XeUIRDDd1P3rIY0F8779ar51EZOARMdUu2WUZwpiS95kGpyuHfDRoChwsQAvD_BwE"">Good Housekeeping: Induction Stove Cooktop Pros and Cons</a></li>
     <li><a href=""https://ca.bestreviews.guide/heat-diffuser-for-induction-cooktop?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU77cf_DNUOFKrRipuQe19snBXPReLTuiLlY4LH54x-r2DiRByLASGBhoCO-IQAvD_BwE"">Best Reviews: Heat Diffuser for Induction Cooktop</a></li>
+</ul>",
+7,"<h1>Upgrade Lighting:</h1>
+<p>LED lighting is a game-changing technology that everyone needs to embrace, and fortunately, most are. Statistics Canada reported in a recent consensus that over 50% of Canadians are now using LED lighting. Compared to traditional incandescent lights, LEDs can be up to 90% more efficient, which will certainly save homeowners money on their electricity bills as well as lighten the electrical load on the home's electrical panel, especially on lights constantly in use.</p>
+<p>The technology also has other amazing benefits such as:</p>
+<ul class=""inline-bullets"">
+    <li>Longer lifespan (e.g., able to last multiple years).</li>
+    <li>Increased durability, being resistant to shocks and vibrations.</li>
+    <li>Ability to instantly light up when turned on, unlike CFLs.</li>
+    <li>Flexibility in design and features (e.g., available in different shapes and sizes, wide range of different colours).</li>
+    <li>Ability to focus light where directional lighting is needed.</li>
+    <li>Generate low heat, which improves comfort and safety (i.e., lower fire risk).</li>
+</ul>
+<p>Prices of LEDs continue to decrease over time, making them even more affordable. They are available in most hardware stores, supermarkets, and online. Homeowners should look for the <strong>ENERGYSTAR</strong> symbol on the product or packaging to ensure that the lighting is officially efficient. Homeowners may find that some of their permanent light fixtures (e.g., potlights, fluorescent strips) need to be replaced to accommodate the use of LED lighting. The costs will depend on the fixture and the installation cost.</p>
+<p>Here are a couple of helpful resources:</p>
+<ul class=""inline-bullets"">
+    <li><a href=""https://www.youtube.com/watch?v=Yo6JI_bzUzo"">LED Lighting Overview - YouTube</a></li>
+    <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/lighting/13730"">Natural Resources Canada: Lighting</a></li>
+    <li><a href=""https://www.energystar.gov/products/light_bulbs/learn-about-led-lighting#:~:text=LED%20stands%20for%20light%20emitting,the%20result%20is%20visible%20light."">ENERGYSTAR: Learn About LED Lighting</a></li>
 </ul>
 ",
-7,"Upgrade Lighting:
-LED lighting is a gamechanging technology that everyone needs to embrace, and fortunately most are. Statistics Canada reported in a recent concensus that over 50% of Canadians are now using LED lighting.
-
-Compared to the traditional incandescent lights, LED's can be up to 90% more efficient which will certainly save homeowners money on their electricity bills as well as lighten the electrical load on the home's electrical panel, especially on lights constantly in use. The technology also has other amazing benefits such as 1) longer lifespan (e.g. able to last multiple years), 2) increased durability being resistant to shocks and vibrations, 3) being able to instantly light up when turned on unlike CFL's, 4) offer flexibility in design and features (e.g. available in different shapes and sizes, wide range of different colours), 5) ability to focus light where directional lighting is needed, and 6) generate low heat which improves comfort and safety (i.e. lower fire risk).
-
-Prices of LED's continue to decrease over time making them even more affordable. They are available in most hardware stores, supermarkets and on-line. Homeowners should look for the ENERGYSTAR symbol on the product or packaging to ensure that the lighting is officially efficient.
-
-Homeowners may find that some of their permanent light fixtures (e.g. potlights, flourescents strips) need to be replaced to accommodate the use of LED lighting. The costs will depend on the fixture and the installation cost.
-
-Here are a couple of helpful resources:
-https://www.youtube.com/watch?v=Yo6JI_bzUzo 
-https://natural-resources.canada.ca/energy-efficiency/products/lighting/13730 
-https://www.energystar.gov/products/light_bulbs/learn-about-led-lighting#:~:text=LED%20stands%20for%20light%20emitting,the%20result%20is%20visible%20light.",
 8,"<h1>Efficient Water Fixtures:</h1>
 <p>Sink faucets in the home's bathrooms and kitchen, as well as shower-heads, present an opportunity for homeowners to save on the cost of water and energy to heat water by implementing very modest measures. For water valves whose volume of water can be controlled, homeowners can often install an aerator inside the end of most faucets and showerheads. This simple washer-like device automatically introduces small bubbles into the water stream that gives the impression to the user that more water is coming out than actually is. For an average shower, this can represent up to 30% less water consumption as well as less energy needed for water heating. Faucet aerators are very inexpensive (i.e. &lt;$20 for a multi-pack), available in most hardware stores and are simple for most homeowners to install themselves.</p>
 
@@ -743,8 +737,7 @@ https://www.energystar.gov/products/light_bulbs/learn-about-led-lighting#:~:text
     <li><a href=""https://natural-resources.canada.ca/energy-efficiency/homes/make-small-changes-add/21850"">Make Small Changes, Add Up - Natural Resources Canada</a></li>
 </ul>
 
-<p>In the meantime, make certain to replace washers in sinks, showers, bathtubs, and outside faucets that are leaking. With leaking hot water valves, the homeowner's losing on the unnecessary cost of water and energy! Similarly, leaking toilets should be fixed or replaced as soon as possible. The Government of Canada reports that a leak of just one drop per second can waste 10,000 litres of water, which is more than one needs for cooking in a whole year!! A leaking toilet alone can consume &gt;300 litres of water each day. In the City of Markham, with the current water rates, that works out to ~ $0.08/day or $2.50/mth.</p>
-",
+<p>In the meantime, make certain to replace washers in sinks, showers, bathtubs, and outside faucets that are leaking. With leaking hot water valves, the homeowner's losing on the unnecessary cost of water and energy! Similarly, leaking toilets should be fixed or replaced as soon as possible. The Government of Canada reports that a leak of just one drop per second can waste 10,000 litres of water, which is more than one needs for cooking in a whole year!! A leaking toilet alone can consume &gt;300 litres of water each day. In the City of Markham, with the current water rates, that works out to ~ $0.08/day or $2.50/mth.</p>",
 Z,"<h1>Electrical Panel and Electrical Service:</h1>
 <p>As our society electrifies the transportation and heating sectors, our electricity networks will need to be upgraded considerably to be able to deliver the massive amount of electrical energy we will need. A home is no different. A household deciding to purchase and charge an electric vehicle (EV) at home will at a minimum be adding another 30A appliance to their electric panel. Likewise, a new cold climate heat pump that completely replaces a gas furnace and AC could add an incremental 60A to the home. A heat pump water heater would require a new 30A if it replaced a gas water heater, or 50A for an induction range if it replaced a gas range. For a home that currently has a 100A service, it's not difficult to see that its electrical panel will quickly be under capacity as more of these appliances are electrified.</p>
 
@@ -761,8 +754,7 @@ Z,"<h1>Electrical Panel and Electrical Service:</h1>
     <li>Ask for customer references</li>
     <li>Ask for multiple quotes, all of which should include a description of warranties (parts and labour)</li>
     <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
-</ul>
-",
+</ul>",
 2,"<h1>Solar Generation:</h1>
 <p>Homeowners are permitted to install solar panels on the roof of their home to generate either hot water or electricity.</p>
 
@@ -792,12 +784,10 @@ Z,"<h1>Electrical Panel and Electrical Service:</h1>
     <li>Other tactics include visiting Canadian Solar Industries Association (CanSIA)'s website to learn more about their solar industry members: <a href=""https://www.cansia.ca/"">https://www.cansia.ca/</a></li>
 </ul>
 
-<p>The homeowner must check their local city bylaws (e.g. height restrictions), local electric utility (Alectra Utilities for connection assessment and agreement which will automatically engage the Electrical Safety Authority (ESA)) and the Provincial Building Code (e.g. roof structure) to ensure that any work they plan to have done is in full compliance with the regulations.</p>
-",
+<p>The homeowner must check their local city bylaws (e.g. height restrictions), local electric utility (Alectra Utilities for connection assessment and agreement which will automatically engage the Electrical Safety Authority (ESA)) and the Provincial Building Code (e.g. roof structure) to ensure that any work they plan to have done is in full compliance with the regulations.</p>",
 3,"<h1>Grey-Water Heat-Recovery Drains:</h1>
 <p>For households who take showers rather than baths, there is a potential to reduce the home's energy to heat their water by &lt;50% per year with a specially designed and built heat-recovery drain pipe. This device typically replaces a 3' to 4' 3"" to 4"" diameter section of the home's main drain stack. The temperature of the water going down the drain from a shower or the kitchen sink still contains considerable heat that can be recovered to pre-heat the temperature of the inbound city water entering into the home's hot water heater, thereby reducing the amount of energy the heater needs to meet the household's demand for hot water. Ideally, the drain stack and hot water heater are located close together such as within 10' to be able to utilize as much of the recovered heat as possible. The pipe can be installed in conjunction with any type of water heater (tank-based or tankless).</p>
 
 <p>The heat-recovery drain pipes can be bought at many hardware and plumbing stores or even online. Handy homeowners can install them themselves as can plumbers in just a couple of hours.</p>
 
-<p>Natural Resources Canada has posted helpful information on their website: <a href=""https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568"">https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568</a></p>
-",
+<p>Natural Resources Canada has posted helpful information on their website: <a href=""https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568"">https://natural-resources.canada.ca/energy/products/categories/water-heaters/14568</a></p>",
