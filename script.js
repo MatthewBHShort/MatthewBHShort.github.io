@@ -234,6 +234,7 @@ function askQuestion() {
         if(answer == 'Next'){
 
 
+
         }
 
         
@@ -242,11 +243,13 @@ function askQuestion() {
 
         if (answer == 'Next' && result.driver.length == 0) {
             button.style.backgroundColor = 'grey'; 
+            button.style.visibility = 'hidden';
             questions["start"].answers["Next"].next = 'start';
         }
         if (answer == 'Next' && result.driver.length > 0) {
-            button.style.backgroundColor = 'blue'; 
+            button.style.backgroundColor = 'rgb(114, 172, 240)'; 
             questions["start"].answers["Next"].next = 'ductWork';
+            button.style.visibility = 'visible';
         }
 
         if(q.question == "Would you like to book a virtual consultation?" && answer == "Yes"){
