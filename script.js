@@ -226,20 +226,17 @@ function askQuestion() {
         }
 
 
-        // if(answer == 'Equipment at End of Life'){
-        //     const space = document.createElement('br');
-        //     answersElem.appendChild(space);
-        // }
+        if(answer == 'Equipment at End of Life'){
+            const space = document.createElement('br');
+            answersElem.appendChild(space);
+        }
 
         if(answer == 'Next'){
-            // button.style.display = 'grid';
-            // button.style.placeItems = 'center';
-            
 
-            // button.style.display = 'flex';
-            // button.style.justifyContent = 'center';
-            // button.style.alignItems = 'center';
+
         }
+
+        
 
 
 

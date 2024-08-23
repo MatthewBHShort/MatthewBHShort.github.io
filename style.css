@@ -82,10 +82,11 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            text-align: center;
             gap: 10px; /* Space between buttons */
         }
+
         .question {
-            /* background-image: url('path_to_your_background_image.jpg');  */
             background-size: cover;
             background-position: center;
             color: black;
@@ -120,7 +121,7 @@
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 26px;
             z-index: 1000;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
