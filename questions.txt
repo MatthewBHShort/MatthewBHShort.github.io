@@ -1,6 +1,6 @@
 questions = {
     start: {
-        question: "Whats on your mind?",
+        question: "What's on your mind?",
         answers: {
             "Reducing Costs": { next: "start", action: () => addRemoveDriver('costs')},
             "Reducing Emissions": { next: "start", action: () => addRemoveDriver('ghgs')},
