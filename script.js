@@ -40,17 +40,14 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const auth = firebase.auth();
 
-auth.signInWithEmailAndPassword("matthew@laszloenergy.com", "password")
-    .then((userCredential) => {
-        
-        console.log("User signed in: ", userCredential.user);
-    })
-    .catch((error) => {
-        console.error("Error signing in: ", error);
-    });
-
     
-
+firebase.auth().signInAnonymously()
+.then(() => {
+  console.log('Signed in anonymously');
+})
+.catch(error => {
+  console.error('Error signing in anonymously', error);
+});
 
 
 
