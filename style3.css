@@ -19,7 +19,9 @@ body {
 
 .navbar img {
     height: 40px;
-    width: 67px;
+    width:129px;
+    /* width: 67px; */
+    width: auto;
 }
 .navbar .nav-links {
     display: flex;
