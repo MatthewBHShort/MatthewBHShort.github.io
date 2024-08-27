@@ -343,7 +343,7 @@ questions = {
     baseboard: {
         question: "Does your home have electric baseboard heating?",
         answers: {
-            "Yes": { next: "baseboardAge", action: () => stringFunction("baseboardAge","baseboard","")}, /////////////////////////////////////////////////////////////////////////////////////// FIX THE ROUTING
+            "Yes": { next: "baseboardAge", action: () => stringFunction("baseboardAge","baseboard","")},
             "No": { next: "ductlessHeatPump", action: () => stringFunction("ductlessHeatPump","baseboard","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","baseboard","")},
         }
@@ -357,13 +357,13 @@ baseboardAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("waterHeating","baseboardAge","");
+                                stringFunction("waterHeating","baseboardAge","I");
                             case result.driver.includes('ghgs'):
-                                stringFunction("waterHeating","baseboardAge","");
+                                stringFunction("waterHeating","baseboardAge","I");
                             case result.driver.includes('comfort'):
-                                stringFunction("waterHeating","baseboardAge","");
+                                stringFunction("waterHeating","baseboardAge","I");
                             case result.driver.includes('equipment'):
-                                stringFunction("waterHeating","baseboardAge","");
+                                stringFunction("waterHeating","baseboardAge","I");
                                     break;
                         }
                     }
@@ -373,13 +373,13 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('ghgs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('comfort'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('equipment'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                                 break;
                     }
                 }
@@ -389,13 +389,13 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('ghgs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('comfort'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('equipment'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                                 break;
                     }
                 }
@@ -405,13 +405,13 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('ghgs'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('comfort'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                         case result.driver.includes('equipment'):
-                            stringFunction("waterHeating","baseboardAge","");
+                            stringFunction("waterHeating","baseboardAge","I");
                                 break;
                     }
             }
