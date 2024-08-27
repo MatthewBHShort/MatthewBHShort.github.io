@@ -528,6 +528,7 @@ baseboardAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
+                                console.log("working");
                                 stringFunction("solar","gasFiredTankAge","JK3");
                             case result.driver.includes('ghgs'):
                                 stringFunction("solar","gasFiredTankAge","JK3");
