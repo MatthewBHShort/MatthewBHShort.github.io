@@ -268,10 +268,10 @@ function handleAnswer(answer) {
     current = q.answers[answer].next;
 
     if (current === "end") {
-        const questionElem = document.getElementById('question');
-        const answersElem = document.getElementById('answers');
-        questionElem.innerText = questions[current].question;
-        answersElem.innerHTML = '';
+        // const questionElem = document.getElementById('question');
+        // const answersElem = document.getElementById('answers');
+        // questionElem.innerText = questions[current].question;
+        // answersElem.innerHTML = '';
 
         // const yesButton = document.createElement('button');
         // yesButton.innerText = 'Yes';
