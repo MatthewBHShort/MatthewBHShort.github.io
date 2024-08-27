@@ -331,21 +331,30 @@ function getLocation(){
 
 
 
-function equipmentType(machine, heating){
-    if(heating){
+function equipmentType(machine, type){
+    if(type == 0){
         console.log("Adding " + machine + " to heating.");
         surveyResponseData.heating = machine;
-    }else{
+    }
+    if(type == 1){
         console.log("Adding " + machine + " to cooling.");
         surveyResponseData.cooling = machine;
     }
+    if(type == 2){
+        console.log("Adding " + machine + " to cooling.");
+        surveyResponseData.waterHeating = machine;
+    }
 }
 
-function equipmentAge(age, heating){
-    if(heating){
+function equipmentAge(age, type){
+    if(type){
         surveyResponseData.heatingAge = age;
-    }else{
+    }
+    if(!type){
         surveyResponseData.coolingAge = age;
+    }
+    if(!type){
+        surveyResponseData.waterHeatingAge = age;
     }
 }
 

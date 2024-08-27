@@ -21,7 +21,7 @@ questions = {
     furnace: {
         question: "Do you have a gas/propane/oil/wood furnace?",
         answers: {
-            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace",true)}},
+            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace",1)}},
             "No": { next: "ductedHeatPump", action: () => stringFunction("ductedHeatPump","furnace","")},
             "I don't know": {next: "virtualConsultation", action: () => stringFunction("virtualConsultation","furnace","")},
         }
@@ -43,7 +43,7 @@ questions = {
                                 stringFunction("AC","furnaceAge","");
                                     break;
                         };
-                        equipmentAge("0 - 5 years",true);
+                        equipmentAge("0 - 5 years",0);
                     }
             },
             "6 - 10 years": { 
@@ -60,7 +60,7 @@ questions = {
                             stringFunction("AC","furnaceAge","");
                                 break;
                     };
-                    equipmentAge("6 - 10 years",true);
+                    equipmentAge("6 - 10 years",0);
                 }
             },
             "11 - 15 years": { 
@@ -77,7 +77,7 @@ questions = {
                             stringFunction("AC","furnaceAge","EFM");
                                 break;
                     };
-                    equipmentAge("11 - 15 years",true);
+                    equipmentAge("11 - 15 years",0);
                 }
             },
             "16+ years": { 
@@ -94,7 +94,7 @@ questions = {
                             stringFunction("AC","furnaceAge","EFMZ");
                                 break;
                     };
-                    equipmentAge("16+ years",true);
+                    equipmentAge("16+ years",0);
             }
         }
     }
@@ -103,7 +103,7 @@ questions = {
     AC: {
         question: "Does your home have Air Conditioning?",
         answers: {
-            "Yes": { next: "ACAge", action: () => {stringFunction("ACAge","AC","");equipmentType("AC",false)}},
+            "Yes": { next: "ACAge", action: () => {stringFunction("ACAge","AC","");equipmentType("AC",1)}},
             "No": { next: "hydronicHeating", action: () => stringFunction("hydronicHeating","AC","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","AC","")},
         }
@@ -125,7 +125,7 @@ questions = {
                                 stringFunction("waterHeating","ACAge","");
                                     break;
                         };
-                        equipmentAge("0 - 5 years",false);
+                        equipmentAge("0 - 5 years",1);
                     }
             },
             "6 - 10 years": { 
@@ -142,7 +142,7 @@ questions = {
                             stringFunction("waterHeating","ACAge","");
                                 break;
                     };
-                    equipmentAge("6 - 10 years",false);
+                    equipmentAge("6 - 10 years",1);
                 }
             },
             "11 - 15 years": { 
@@ -159,7 +159,7 @@ questions = {
                             stringFunction("waterHeating","ACAge","");
                                 break;
                     };
-                    equipmentAge("11 - 15 years",false);
+                    equipmentAge("11 - 15 years",1);
                 }
             },
             "16+ years": { 
@@ -176,7 +176,7 @@ questions = {
                             stringFunction("waterHeating","ACAge","EFP");
                                 break;
                     };
-                    equipmentAge("16+ years",false);
+                    equipmentAge("16+ years",1);
             }
         }
     }
