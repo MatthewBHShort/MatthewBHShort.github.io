@@ -69,8 +69,6 @@ lastQuestion = "start";
       .then(response => response.text())
       .then(data => {
         eval(data);
-        // console.log('Object fetched and assigned:', questions);
-
       })
       .catch(error => console.error('Error fetching the file:', error));
 
@@ -83,12 +81,7 @@ lastQuestion = "start";
 function saveString(passedThroughString) {
     console.log(passedThroughString);
     const inputString = passedThroughString;
-    // const inputString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ2345678";
     localStorage.setItem('sharedString', inputString);
-    // window.location.href = 'https://matthewbhshort.github.io/results.html';
-    // window.location.href = 'https://matthewbhshort.github.io/feedback.html';
-    
-
 }
 
 function backButtonRemoveString(str){
@@ -97,7 +90,6 @@ function backButtonRemoveString(str){
     console.log(result.answerString);
 }
 
-// stringFunction("virtualConsultation","furnace","")
 
 
 async function saveLast (nextQuestion,currentQuestion, str){
@@ -122,10 +114,8 @@ async function addRemoveDriver (s){
     const driverString = s;
     if(result.driver.includes(driverString)){
         result.driver = result.driver.replace(driverString,'');
-        // console.log(driverString + " removed");
     }else{
         result.driver += driverString;
-        // console.log(s + " added");
     }
     console.log("result.driver: " + result.driver);   
 }
@@ -167,13 +157,11 @@ async function askForLetter(stringAnswer) {
         result = csvData.find(row => row.identifier && row.identifier.toLowerCase() === letter[i].toLowerCase());
         fullResult += result.paragraph;
         fullResult += "\n";
-        // fullResult += "\n\n\n\n\n\n";
     }
     
 
     
     if (result) {
-        // console.log("FULLRESULTS: " + fullResult);
         saveString(fullResult);
 
     } else {
@@ -259,42 +247,13 @@ function askQuestion() {
 }
 
 function handleAnswer(answer) {
-    // getLocation();
     const q = questions[current];
     responses.push({ question: q.question, answer: answer });
     if (q.answers[answer].action) {
         q.answers[answer].action();
     }
     current = q.answers[answer].next;
-
-    if (current === "end") {
-        // const questionElem = document.getElementById('question');
-        // const answersElem = document.getElementById('answers');
-        // questionElem.innerText = questions[current].question;
-        // answersElem.innerHTML = '';
-
-        // const yesButton = document.createElement('button');
-        // yesButton.innerText = 'Yes';
-        // yesButton.onclick = () => {saveResponses(true)};
-
-        // answersElem.appendChild(yesButton);
-
-        // const noButton = document.createElement('button');
-        // noButton.innerText = 'No';
-        // noButton.onclick = () => saveResponses(false);
-        // answersElem.appendChild(noButton);
-
-        // const backButton = document.createElement('button');
-        // backButton.innerText = 'Back';
-        // backButton.onclick = () => current = 'virtualConsultation';
-
-        // answersElem.appendChild(backButton);
-
-        askQuestion();
-    
-    } else {
-        askQuestion();
-    }
+    askQuestion();
 }
 
 
@@ -305,7 +264,6 @@ function saveResponses(yesOrNo) {
         surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
-        // getLocation();
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
