@@ -154,15 +154,17 @@
 
 
         #clickableWord {
-            color: #ff6347; /* A soft tomato red color */
-            text-decoration: none; /* Removes the underline */
-            font-weight: bold; /* Makes the text bold */
-            cursor: pointer; /* Shows a pointer cursor when hovered */
+            /* color: #ff6347;  */
+            color:black;
+            background-color: yellow;
+            text-decoration: none; 
+            font-weight: bold; 
+            cursor: pointer; 
         }
         
         #clickableWord:hover {
-            color: #e5533d; /* Slightly darker shade of red on hover */
-            text-decoration: underline; /* Adds an underline on hover */
+            /* color: #e5533d;  */
+            text-decoration: underline; 
         }
 
 
@@ -297,5 +299,17 @@
             transform: translate(-50%, -50%);
         }
 
+        #preamble{
+            max-width: 600px; /* Limit the width of the paragraph container */
+            margin: 0 auto; 
+        }
+        /* .content {
+            margin-bottom: 20px;
+        }
+
+        .intro-paragraph {
+            max-width: 600px; 
+            margin: 0 auto; 
+        } */
 
 
