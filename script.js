@@ -290,7 +290,7 @@ function handleAnswer(answer) {
 
         // answersElem.appendChild(backButton);
 
-
+        askQuestion();
     
     } else {
         askQuestion();
