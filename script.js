@@ -114,7 +114,6 @@ async function saveLast (nextQuestion,currentQuestion, str){
 
 
 async function stringFunction(nextQuestion,currentQuestion, str){
-    console.log("saving last");
     saveLast(nextQuestion, currentQuestion, str);
     result.answerString += str;
 }

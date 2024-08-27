@@ -512,11 +512,11 @@ baseboardAge: {
     waterHeating: {
         question: "How do you heat your water?",
         answers: {
-            "Gas Fired Tank": { next: "gasFiredTankAge"},
-            "Electric Tank": { next: "electricTankAge"},
-            "Gas Fired Tankless": { next: "gasFiredTanklessAge"},
-            "Electric Tankless": { next: "electricTanklessAge"},
-            "Other": { next: "waterHeatingAge"},
+            "Gas Fired Tank": { next: "gasFiredTankAge", action: () => stringFunction("gasFiredTankAge","waterHeating","")},
+            "Electric Tank": { next: "electricTankAge", action: () => stringFunction("electricTankAge","waterHeating","")},
+            "Gas Fired Tankless": { next: "gasFiredTanklessAge", action: () => stringFunction("gasFiredTanklessAge","waterHeating","")},
+            "Electric Tankless": { next: "electricTanklessAge", action: () => stringFunction("electricTanklessAge","waterHeating","")},
+            "Other": { next: "waterHeatingAge", action: () => stringFunction("waterHeatingAge","waterHeating","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","waterHeating","")},
         }
     },
@@ -528,7 +528,6 @@ baseboardAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                console.log("working");
                                 stringFunction("solar","gasFiredTankAge","JK3");
                             case result.driver.includes('ghgs'):
                                 stringFunction("solar","gasFiredTankAge","JK3");
