@@ -273,21 +273,22 @@ function handleAnswer(answer) {
         questionElem.innerText = questions[current].question;
         answersElem.innerHTML = '';
 
-        const yesButton = document.createElement('button');
-        yesButton.innerText = 'Yes';
-        yesButton.onclick = () => {saveResponses(true)};
+        // const yesButton = document.createElement('button');
+        // yesButton.innerText = 'Yes';
+        // yesButton.onclick = () => {saveResponses(true)};
 
-        answersElem.appendChild(yesButton);
+        // answersElem.appendChild(yesButton);
 
-        const noButton = document.createElement('button');
-        noButton.innerText = 'No';
-        noButton.onclick = () => saveResponses(false);
-        answersElem.appendChild(noButton);
+        // const noButton = document.createElement('button');
+        // noButton.innerText = 'No';
+        // noButton.onclick = () => saveResponses(false);
+        // answersElem.appendChild(noButton);
 
-        const backButton = document.createElement('button');
-        backButton.innerText = 'Back';
+        // const backButton = document.createElement('button');
+        // backButton.innerText = 'Back';
+        // backButton.onclick = () => current = 'virtualConsultation';
 
-        answersElem.appendChild(backButton);
+        // answersElem.appendChild(backButton);
 
 
     
