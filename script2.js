@@ -1,6 +1,6 @@
 function retrieveString() {
     const sharedString = localStorage.getItem('sharedString');
-    console.log(sharedString);
+    // console.log(sharedString);
     // document.getElementById('displayString').innerText = sharedString ? `${sharedString}` : 'No answers found.';
     document.getElementById('formatted-output').innerHTML = sharedString;
 }
@@ -71,6 +71,25 @@ function closePopup() {
 }
 
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('click', function (event) {
+        // Check if the clicked element is an <h1> tag
+        if (event.target.tagName === 'H1') {
+            console.log(`H1 clicked: ${event.target.textContent.trim()}`);
+
+            let nextElement = event.target.nextElementSibling;
+
+            // Toggle visibility of all elements until the next h1
+            while (nextElement && nextElement.tagName !== 'H1') {
+                nextElement.style.display = nextElement.style.display === 'none' ? '' : 'none';
+                nextElement = nextElement.nextElementSibling;
+            }
+        }
+    });
+
+    console.log('Event delegation setup complete.');
+});
 
 
 
