@@ -158,12 +158,32 @@
 
 
 
-        #clickableWord {
+        /* #clickableWord {
             text-decoration: none;
             color: inherit;
             position: relative;
         }
+
+        #clickableWord:hover{
+
+        } */
         
+
+
+
+        #clickableWord {
+            color: #ff6347; /* A soft tomato red color */
+            text-decoration: none; /* Removes the underline */
+            font-weight: bold; /* Makes the text bold */
+            cursor: pointer; /* Shows a pointer cursor when hovered */
+        }
+        
+        #clickableWord:hover {
+            color: #e5533d; /* Slightly darker shade of red on hover */
+            text-decoration: underline; /* Adds an underline on hover */
+        }
+
+
         a::before {
             content: '';
             position: absolute;
@@ -176,9 +196,9 @@
             transition: background-color 0.3s ease;
         }
         
-        a:hover::before {
+        /* a:hover::before {
             background-color: rgba(0, 0, 0, 0.1); 
-        }
+        } */
 
 
 
