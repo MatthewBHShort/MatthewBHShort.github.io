@@ -188,10 +188,6 @@
 
         h1::after {
             content: '▼'; /* Downward arrow */
-            /* position: absolute; */
-            /* right: 0;
-            top: 50%;
-            transform: translateY(-50%); */
             font-size: 0.6em;
             transition: transform 0.3s ease;
         }
@@ -239,55 +235,13 @@
 
 
 
-        /* lets do this */
-
-
-
-/* 
-        
-        .section {
-            display: flex;
-            flex-wrap: wrap;
-
-
-
- 
-
-
-
-            margin: 20px 0;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            width: 100%;
-        }
-    
-        
-        .section .text {
-            flex-basis: 55%;
-            margin: 10px;
-        }
-        
-        .section h2 {
-            margin-bottom: 10px;
-            font-size: 24px;
-            color: #333;
-        }
-        
-        .section p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.5;
-        } */
-
 
 
 
         .section {
             display: flex;
-            flex-direction: column; /* Stack children vertically */
-            flex-wrap: nowrap; /* Prevent wrapping */
+            flex-direction: column; 
+            flex-wrap: nowrap;
             margin: 20px 0;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -303,15 +257,38 @@
         }
         
         .section .text {
-            flex-basis: auto; /* Let the content size itself naturally */
-            margin: 10px 0 0 0; /* Ensure some margin from the h1 */
+            flex-basis: auto; 
+            margin: 10px 0 0 0;
         }
         
         .section p {
             font-size: 16px;
             color: #666;
             line-height: 1.5;
-            margin-top: 10px; /* Add some space between paragraphs and other content */
+            margin-top: 10px; 
+        }
+
+
+
+
+        .disclaimer {
+            font-size: 28px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            width: 30%;
+            align-items: center;
+            text-align: center;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
 

@@ -7,6 +7,12 @@ function retrieveString() {
     document.getElementById('formatted-output').innerHTML = sharedString;
 }
 retrieveString();
+checkForSections();
+
+
+
+
+
 function toggleContent() {
     var content1 = document.getElementById('formatted-output');
     var content2 = document.getElementById('guideContent');
@@ -19,6 +25,24 @@ function toggleContent() {
         content2.classList.remove('hidden');
     }
 
+}
+
+
+function checkForSections() {
+    const sections = document.querySelectorAll('.section');
+    let disclaimer = document.querySelector('.disclaimer');
+    const navbar = document.querySelector('.navbar');
+
+    if (sections.length === 0) {
+        if (!disclaimer) {
+            disclaimer = document.createElement('h2');
+            disclaimer.className = 'disclaimer';
+            disclaimer.textContent = 'To see your tailored advice, please fill out our Home Energy Advisor Survey!';
+        }
+        navbar.insertAdjacentElement('afterend', disclaimer);
+    } else if (disclaimer) {
+        disclaimer.remove();
+    }
 }
 
 
