@@ -592,6 +592,95 @@ baseboardAge: {
 
 
 
+electricTankAge: {
+        question: "What is the age of your Electric Tank water heating system?",
+        answers: {
+            "0 - 5 years": { 
+                next: "solar", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("solar","electricTankAge","JK3");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("solar","electricTankAge","JK3");
+                            case result.driver.includes('comfort'):
+                                stringFunction("solar","electricTankAge","JK");
+                            case result.driver.includes('equipment'):
+                                stringFunction("solar","electricTankAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "solar",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","gasFiredTankAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","gasFiredTankAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","wgasFiredTankAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","gasFiredTankAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","electricTankAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","electricTankAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","electricTankAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","electricTankAge","JKQR");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","electricTankAge","JKQRZ3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","electricTankAge","JKQRZ3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","electricTankAge","JKQRZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","electricTankAge","JKQRZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 waterHeatingAge: {
         question: "What is the age of your water heating system?",
