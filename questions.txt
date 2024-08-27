@@ -513,9 +513,9 @@ baseboardAge: {
         question: "How do you heat your water?",
         answers: {
             "Gas Fired Tank": { next: "gasFiredTankAge"},
-            "Electric Tank": { next: "waterHeatingAge"},
-            "Gas Fired Tankless": { next: "waterHeatingAge"},
-            "Electric Tankless": { next: "waterHeatingAge"},
+            "Electric Tank": { next: "electricTankAge"},
+            "Gas Fired Tankless": { next: "gasFiredTanklessAge"},
+            "Electric Tankless": { next: "electricTanklessAge"},
             "Other": { next: "waterHeatingAge"},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","waterHeating","")},
         }
@@ -662,7 +662,147 @@ electricTankAge: {
     }
     },
 
+gasFiredTanklessAge: {
+        question: "What is the age of your Gas Fired Tankless water heating system?",
+        answers: {
+            "0 - 5 years": { 
+                next: "solar", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("solar","gasFiredTanklessAge","JK3");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("solar","gasFiredTanklessAge","JK3");
+                            case result.driver.includes('comfort'):
+                                stringFunction("solar","gasFiredTanklessAge","JK");
+                            case result.driver.includes('equipment'):
+                                stringFunction("solar","gasFiredTanklessAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "solar",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","wgasFiredTanklessAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","gasFiredTanklessAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","gasFiredTanklessAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","gasFiredTanklessAge","JKQR");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","gasFiredTanklessAge","JKQRZ3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","gasFiredTanklessAge","JKQRZ3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","gasFiredTanklessAge","JKQRZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","gasFiredTanklessAge","JKQRZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
 
+
+
+electricTanklessAge: {
+        question: "What is the age of your Electric Tankless water heating system?",
+        answers: {
+            "0 - 5 years": { 
+                next: "solar", 
+                    action: () => {
+                        switch (true) {
+                            case result.driver.includes('costs'):
+                                stringFunction("solar","electricTanklessAge","JK3");
+                            case result.driver.includes('ghgs'):
+                                stringFunction("solar","electricTanklessAge","JK3");
+                            case result.driver.includes('comfort'):
+                                stringFunction("solar","electricTanklessAge","JK");
+                            case result.driver.includes('equipment'):
+                                stringFunction("solar","electricTanklessAge","");
+                                    break;
+                        }
+                    }
+            },
+            "6 - 10 years": { 
+                next: "solar",
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","wgasFiredTanklessAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","gasFiredTanklessAge","");
+                                break;
+                    }
+                }
+            },
+            "11 - 15 years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","electricTanklessAge","JK3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","electricTanklessAge","JK3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","electricTanklessAge","JK");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","electricTanklessAge","JKQR");
+                                break;
+                    }
+                }
+            },
+            "16+ years": { 
+                next: "solar", 
+                action: () => {
+                    switch (true) {
+                        case result.driver.includes('costs'):
+                            stringFunction("solar","electricTanklessAge","JKQRZ3");
+                        case result.driver.includes('ghgs'):
+                            stringFunction("solar","electricTanklessAge","JKQRZ3");
+                        case result.driver.includes('comfort'):
+                            stringFunction("solar","electricTanklessAge","JKQRZ");
+                        case result.driver.includes('equipment'):
+                            stringFunction("solar","electricTanklessAge","JKQRZ");
+                                break;
+                    }
+            }
+        }
+    }
+    },
 
 
 
