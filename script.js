@@ -149,6 +149,19 @@ async function askForLetter(stringAnswer) {
     console.log(stringAnswer + "    ->    " + letter)
 
     function removeRepeatingCharacters(str) {
+        if(result.driver.contains('costs')){
+            str += "ABCDESTUVWY";
+        }
+        if(result.driver.contains('ghgs')){
+            str += "ABCDESTUVWYZ";
+        }
+        if(result.driver.contains('comfort')){
+            str += "ABCDESTUVWY";
+        }
+        if(result.driver.contains('equipment')){
+            str += "Z";
+        }
+
         return Array.from(new Set(str)).join("");
       }    
 

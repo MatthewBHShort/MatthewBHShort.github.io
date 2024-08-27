@@ -1,3 +1,5 @@
+
+
 function retrieveString() {
     const sharedString = localStorage.getItem('sharedString');
     // console.log(sharedString);
@@ -16,6 +18,9 @@ function toggleContent() {
         content1.classList.add('hidden');
         content2.classList.remove('hidden');
     }
+
+
+
 }
 
 
@@ -62,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (popup.classList.contains('show')) {
             popup.classList.remove('show');
         }
-    }, 10000);
+    }, 10000); 
 });
 
 function closePopup() {
@@ -72,27 +77,29 @@ function closePopup() {
 
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     document.addEventListener('click', function (event) {
-//         // Check if the clicked element is an <h1> tag
-//         if (event.target.tagName === 'H1') {
-//             console.log(`H1 clicked: ${event.target.textContent.trim()}`);
-
-//             let nextElement = event.target.nextElementSibling;
-
-//             // Toggle visibility of all elements until the next h1
-//             while (nextElement && nextElement.tagName !== 'H1') {
-//                 nextElement.style.display = nextElement.style.display === 'none' ? '' : 'none';
-//                 nextElement = nextElement.nextElementSibling;
-//             }
-//         }
-//     });
-
-//     console.log('Event delegation setup complete.');
-// });
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    const headings = document.querySelectorAll('h1');
+
+    headings.forEach((heading) => {
+        let nextElement = heading.nextElementSibling;
+
+        while (nextElement && nextElement.tagName !== 'H1') {
+            nextElement.style.display = 'none';
+            nextElement = nextElement.nextElementSibling;
+        }
+
+        heading.classList.add('collapsed');
+    });
+
+
+
+
+
     document.addEventListener('click', function (event) {
         // Check if the clicked element is an <h1> tag
         if (event.target.tagName === 'H1') {
