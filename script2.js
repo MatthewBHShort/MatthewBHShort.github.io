@@ -7,7 +7,7 @@ function retrieveString() {
     document.getElementById('formatted-output').innerHTML = sharedString;
 }
 retrieveString();
-checkForSections();
+// checkForSections();
 
 
 
@@ -40,7 +40,7 @@ function checkForSections() {
             disclaimer.textContent = 'To see your tailored advice, please fill out our Home Energy Advisor Survey!';
         }
         navbar.insertAdjacentElement('afterend', disclaimer);
-    } else if (disclaimer) {
+    } else {
         disclaimer.remove();
     }
 }
