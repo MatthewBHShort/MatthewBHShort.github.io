@@ -199,6 +199,20 @@
         h1{
             cursor:pointer;
         }
+
+        h1::after {
+            content: '▼'; /* Downward arrow */
+            /* position: absolute; */
+            /* right: 0;
+            top: 50%;
+            transform: translateY(-50%); */
+            font-size: 0.6em;
+            transition: transform 0.3s ease;
+        }
+        
+        h1.collapsed::after {
+            content: '►'; /* Rightward arrow when collapsed */
+        }
         
         /* a:hover::before {
             background-color: rgba(0, 0, 0, 0.1); 

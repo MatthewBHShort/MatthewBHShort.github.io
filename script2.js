@@ -72,6 +72,26 @@ function closePopup() {
 
 
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.addEventListener('click', function (event) {
+//         // Check if the clicked element is an <h1> tag
+//         if (event.target.tagName === 'H1') {
+//             console.log(`H1 clicked: ${event.target.textContent.trim()}`);
+
+//             let nextElement = event.target.nextElementSibling;
+
+//             // Toggle visibility of all elements until the next h1
+//             while (nextElement && nextElement.tagName !== 'H1') {
+//                 nextElement.style.display = nextElement.style.display === 'none' ? '' : 'none';
+//                 nextElement = nextElement.nextElementSibling;
+//             }
+//         }
+//     });
+
+//     console.log('Event delegation setup complete.');
+// });
+
+
 document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (event) {
         // Check if the clicked element is an <h1> tag
@@ -79,18 +99,31 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(`H1 clicked: ${event.target.textContent.trim()}`);
 
             let nextElement = event.target.nextElementSibling;
+            let isCollapsed = false;
 
             // Toggle visibility of all elements until the next h1
             while (nextElement && nextElement.tagName !== 'H1') {
-                nextElement.style.display = nextElement.style.display === 'none' ? '' : 'none';
+                if (nextElement.style.display === 'none') {
+                    nextElement.style.display = '';
+                    isCollapsed = false;
+                } else {
+                    nextElement.style.display = 'none';
+                    isCollapsed = true;
+                }
                 nextElement = nextElement.nextElementSibling;
+            }
+
+            // Toggle the arrow direction by adding/removing the collapsed class
+            if (isCollapsed) {
+                event.target.classList.add('collapsed');
+            } else {
+                event.target.classList.remove('collapsed');
             }
         }
     });
 
     console.log('Event delegation setup complete.');
 });
-
 
 
 

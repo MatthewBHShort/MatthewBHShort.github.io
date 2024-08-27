@@ -1,7 +1,7 @@
 identifier,paragraph,
-A,"<h1>Household Routines:</h1> <ul class=\""inline-bullets\""> <li>Draw curtains during cold winter days and bright hot sunny days. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > 10% per year</li> <li>Expected emissions reductions: > 0.5 tonnes of CO<sub>2</sub> per year. </li></strong></ul></li> <li>Make sure that furniture does not block floor vents, radiators or electric baseboard heaters.</li> <li>Turn off lights and appliances when not in use including switching power bars off serving appliances that aren't being used. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $100 per year </li> <li>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </li> </ul> <li> If you take baths in the winter, leave the water in the tub for a couple of hours after use to allow the remaining heat in the water to continue warming up the home. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < $100 per year; </li> <li>Expected emissions reductions: < 0.5 tonnes per year CO<sub>2</sub></strong></li> </li> </ul> <li> Take showers instead of baths. Showers lasting longer than 10mins can consume more water and energy than a bath. Take shorter showers. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: ~ $50 - $100 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> Limit how long you leave your fridge door open; decide what you need before opening it.</li> <li> Vacuum fridge coils of dust and dirt every six months so its compressor doesn't have to work as hard. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $10 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> If you have an open wood fireplace, close its damper when not in use to prevent warm air escaping up the chimney. If you have a gas fireplace, determine whether it is possible to switch back on its pilot light if you shut off the gas when not using the unit. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < 10% per year</strong></li> <li><strong>Expected emissions reductions: < 10% per year</strong></li> </ul> </li> </li></ul>",
-B,"<h1>Clothes Washing:</h1> <ul class=\""inline-bullets\""> <li>Wash clothes in cold water. <ul class=\""inline-bullets\""> <li><strong>Expected cost savings: ~ $1 per wash cycle</strong></li> <li><strong>Reduction in emissions: > 0.1 tonnes of CO<sub>2</sub> compared to washing clothes in hot water</strong></li> </ul> </li> </ul>",
-C,"<h1>Clothes Drying:</h1>
+A,"<h1>Household Routines</h1> <ul class=\""inline-bullets\""> <li>Draw curtains during cold winter days and bright hot sunny days. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > 10% per year</li> <li>Expected emissions reductions: > 0.5 tonnes of CO<sub>2</sub> per year. </li></strong></ul></li> <li>Make sure that furniture does not block floor vents, radiators or electric baseboard heaters.</li> <li>Turn off lights and appliances when not in use including switching power bars off serving appliances that aren't being used. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $100 per year </li> <li>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </li> </ul> <li> If you take baths in the winter, leave the water in the tub for a couple of hours after use to allow the remaining heat in the water to continue warming up the home. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < $100 per year; </li> <li>Expected emissions reductions: < 0.5 tonnes per year CO<sub>2</sub></strong></li> </li> </ul> <li> Take showers instead of baths. Showers lasting longer than 10mins can consume more water and energy than a bath. Take shorter showers. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: ~ $50 - $100 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> Limit how long you leave your fridge door open; decide what you need before opening it.</li> <li> Vacuum fridge coils of dust and dirt every six months so its compressor doesn't have to work as hard. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: > $10 per year</strong></li> <li><strong>Expected emissions reductions: < 0.5 tonnes of CO<sub>2</sub> per year.</strong></li> </ul> </li> </li> <li> If you have an open wood fireplace, close its damper when not in use to prevent warm air escaping up the chimney. If you have a gas fireplace, determine whether it is possible to switch back on its pilot light if you shut off the gas when not using the unit. <ul class=\""inline-bullets\""> <li><strong>Expected energy savings: < 10% per year</strong></li> <li><strong>Expected emissions reductions: < 10% per year</strong></li> </ul> </li> </li></ul>",
+B,"<h1>Clothes Washing</h1> <ul class=\""inline-bullets\""> <li>Wash clothes in cold water. <ul class=\""inline-bullets\""> <li><strong>Expected cost savings: ~ $1 per wash cycle</strong></li> <li><strong>Reduction in emissions: > 0.1 tonnes of CO<sub>2</sub> compared to washing clothes in hot water</strong></li> </ul> </li> </ul>",
+C,"<h1>Clothes Drying</h1>
 <ul class=\""inline-bullets\"">
     <li>Hang dry clothes whenever possible even if just one load per week. Clothes drying can reach up to 10% of a household's total utility bills.
         <ul class=\""inline-bullets\"">
@@ -29,7 +29,7 @@ C,"<h1>Clothes Drying:</h1>
         </ul>
     </li>
 </ul>",
-D,"<h1>Dish Washing:</h1>
+D,"<h1>Dish Washing</h1>
 <ul class=\""inline-bullets\"">
     <li>Use dishwasher during times of OFF-PEAK electricity rates.
         <ul class=\""inline-bullets\"">
@@ -40,7 +40,7 @@ D,"<h1>Dish Washing:</h1>
     <li>Run dishwasher only when it's full.</li>
     <li>Consider setting machine to air dry rather than heat dry.</li>
 </ul>",
-E,"<h1>Thermostat Operation:</h1>
+E,"<h1>Thermostat Operation</h1>
 <ul class=\""inline-bullets\"">
     <li>Turn down temperature-setting a degree or two in the winter to lower heating costs.
         <ul class=\""inline-bullets\"">
@@ -54,7 +54,7 @@ E,"<h1>Thermostat Operation:</h1>
         </ul>
     </li>
 </ul>",
-F,"<h1>Heating and Cooling Maintenance Routines:</h1>
+F,"<h1>Heating and Cooling Maintenance Routines</h1>
 <h2>Ductwork-based System:</h2>
 <ul class=\""inline-bullets\"">
     <li>Clean and replace air filters at least twice per year.
@@ -91,7 +91,7 @@ F,"<h1>Heating and Cooling Maintenance Routines:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-G,"<h1>Heating and Cooling Maintenance Routines:</h1>
+G,"<h1>Heating and Cooling Maintenance Routines</h1>
 <h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
 <ul class=\""inline-bullets\"">
     <li>Schedule a technician to inspect and maintain the system as per the manufacturer's recommended schedule, or if unknown, once per year.
@@ -117,7 +117,7 @@ G,"<h1>Heating and Cooling Maintenance Routines:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-H,"<h1>Heating and Cooling Maintenance Routines:</h1>
+H,"<h1>Heating and Cooling Maintenance Routines</h1>
 <h2>Ductless Heat Pumps (a.k.a. Mini-Splits):</h2>
 <ul class=\""inline-bullets\"">
     <li>Clean air filters at least twice per year.
@@ -149,7 +149,7 @@ H,"<h1>Heating and Cooling Maintenance Routines:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-I,"<h1>Heating and Cooling Maintenance Routines:</h1>
+I,"<h1>Heating and Cooling Maintenance Routines</h1>
 <h2>Electric Baseboard Heating:</h2>
 <ul class=\""inline-bullets\"">
     <li>To ensure that the baseboards deliver heat efficiently and safely, regularly (i.e. once per year) clean the units of dust (e.g. vacuum cleaner after the heater is switched off). Remember to keep furniture, curtains and other objects away from the heaters to ensure safe and reliable operation.
@@ -159,7 +159,7 @@ I,"<h1>Heating and Cooling Maintenance Routines:</h1>
     </li><li><iframe width=""560"" height=""315"" src=""https://www.youtube.com/embed/h1i3ysAo5ZY?si=GhTmaP3dKNpFxCNW"" title=""YouTube video player"" frameborder=""0"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"" referrerpolicy=""strict-origin-when-cross-origin"" allowfullscreen></iframe></li>
     <li>There are many helpful DIY videos on YouTube such as: <a href=\""https://www.youtube.com/watch?v=h1i3ysAo5ZY\"">https://www.youtube.com/watch?v=h1i3ysAo5ZY</a></li>
 </ul>",
-J,"<h1>Water Heater Maintenance Routines:</h1>
+J,"<h1>Water Heater Maintenance Routines</h1>
     <h2>Tank-based Heater (gas and electric):</h2>
     <ul class=""inline-bullets"">
     <ul class=""inline-bullets"">
@@ -175,7 +175,7 @@ J,"<h1>Water Heater Maintenance Routines:</h1>
         </li>
     </ul>
 </ul>",
-K,"<h1>Water Heater Maintenance Routines:</h1>
+K,"<h1>Water Heater Maintenance Routines</h1>
 <h2>Tankless Water Heater (a.k.a. On-Demand Water Heater):</h2>
 <ul class=\""inline-bullets\"">
     <li>Turn down the temperature setting to &gt;49C (&gt;120F) to save energy, extend the life of the heater and prevent scalding.
@@ -194,7 +194,7 @@ K,"<h1>Water Heater Maintenance Routines:</h1>
     <li>Consider combining the water heater's service call with that of your home's other heating and cooling equipment regular maintenance schedule to lower costs.</li>
     <li>Natural Resources Canada released a helpful guide for homeowners on all aspects of hot water heaters including comparison of different technologies and energy saving tips: <a href=\""https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf\"">https://natural-resources.canada.ca/sites/nrcan/files/oee/files/pdf/equipment/WaterHeaterGuide_e.pdf</a></li>
 </ul>",
-L,"<h1>Thermostat Upgrading:</h1>
+L,"<h1>Thermostat Upgrading</h1>
 <ul class=\""inline-bullets\"">
     <li>If your home's thermostat cannot be programmed to run your heating and cooling on specified schedules, consider replacing it with a smart thermostat. The scheduling feature can enhance the level of comfort in the home whilst saving energy.
         <ul class=\""inline-bullets\"">
@@ -205,7 +205,7 @@ L,"<h1>Thermostat Upgrading:</h1>
     </li>
     <li>Most installations can be done by homeowners themselves whilst following the manufacturer's instructions.</li>
 </ul>",
-M,"<h1>Space-Heating Equipment Upgrading:</h1>
+M,"<h1>Space-Heating Equipment Upgrading</h1>
 <h2>Ductwork-based System:</h2>
 <p>Aging gas furnace replacement with these various options:</p>
 <h3>1) High energy efficiency gas furnace:</h3>
@@ -254,7 +254,7 @@ M,"<h1>Space-Heating Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-N,"<h1>Space-Heating Equipment Upgrading:</h1>
+N,"<h1>Space-Heating Equipment Upgrading</h1>
 <h2>Boiler-Hydronic (Radiator/In-Floor) Heating System:</h2>
 <ul class=\""inline-bullets\"">
     <li>Consider replacing the gas-fired boiler with a cold climate heat pump connected to a hydronic air-handler (a.k.a. heat exchanger) that would transfer the pump's thermal energy to the home's radiator or in-floor heating network. It may also be possible to use the same system to provide domestic hot water heating as well thereby negating the need for a separate water heater. Depending on the home and location, the annual energy costs may exceed the heating costs from a gas furnace, however. The delivered benefits, though, include vastly expected reduced emissions of &gt;50% per year, the continued stable heating sink provided from the home's radiators and in-floor heating network, and possibly the elimination of a separate water heater. For very cold weather, an electric backup system built into an accompanying buffer tank will be included in the system's specifications. 
@@ -290,7 +290,7 @@ N,"<h1>Space-Heating Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-O,"<h1>Space-Heating Equipment Upgrading:</h1>
+O,"<h1>Space-Heating Equipment Upgrading</h1>
 <h2>Ductless Heat Pump (a.k.a. Mini-Splits) Heating System:</h2>
 <ul class=\""inline-bullets\"">
     <li>Consider replacing the system with a more efficient model if the existing system's HSPF rating (Heating Seasonal Performance Factor) is less than 8. Consider the following sample calculation to gauge the incremental efficiency impact of a new machine with a higher HSPF:
@@ -330,7 +330,7 @@ O,"<h1>Space-Heating Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-P,"<h1>Cooling Equipment Upgrading:</h1>
+P,"<h1>Cooling Equipment Upgrading</h1>
 <h2>Aging AC replacement with these various options:</h2>
 <ul class=\""inline-bullets\"">
     <li>Consider installing a high energy efficiency AC meaning one with as high a SEER rating (Seasonal Energy Efficiency Ratio) as you can manage. As a rough gauge, each SEER # increase is equivalent to approximately a $30 per year saving in electricity. As an example, an AC with a SEER rating of 19 could save a homeowner some $150 per year in energy costs over an AC with a SEER rating of 14. 
@@ -370,7 +370,7 @@ P,"<h1>Cooling Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-Q,"<h1>Water Heater Equipment Upgrading:</h1>
+Q,"<h1>Water Heater Equipment Upgrading</h1>
 <h2>Tank-based water heater (electric or gas):</h2>
 <ul class=\""inline-bullets\"">
     <li>If you notice any rust or corrosion (i.e. visually noticeable on the heater, discoloration of the water), the heater should be replaced immediately to avoid a leak and hence water damage to the home. If the heater is taking longer to heat water, it is recommended that you call a service technician to inspect the appliance. In some instances, the tank will need to be replaced. The 10-year mark is a good reference point for this. Consider the following options:
@@ -423,7 +423,7 @@ Q,"<h1>Water Heater Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-R,"<h1>Water Heater Equipment Upgrading:</h1>
+R,"<h1>Water Heater Equipment Upgrading</h1>
 <h2>Tankless water heater (electric or gas) (a.k.a. on-demand):</h2>
 <ul class=\""inline-bullets\"">
     <li>Depending on whether the heater has been used for just domestic hot water or that as well as hydronic space heating in the home (e.g. in-floor heating, radiators), and how well the unit has been maintained, the appliance typically will need to be replaced after 12 - 15 years. Expect costs to be in the $4,000 - $5,000 range with annual maintenance of ~$300; consider combining the water heater's annual service call with the home's furnace or heat pump maintenance schedule to save money. 
@@ -469,7 +469,7 @@ R,"<h1>Water Heater Equipment Upgrading:</h1>
     <li><a href=\""https://www.hrai.ca/consumer-tips\"">The Heating, Refrigeration and Air Conditioning Institute of Canada</a></li>
     <li><a href=\""https://www.skilledtradesontario.ca/about-us/\"">Skilled Trades Ontario</a></li>
 </ul>",
-S,"<h1>Attic Insulation:</h1>
+S,"<h1>Attic Insulation</h1>
 <p>Cold rooms on the top floor in the winter and excessively warm ones in the summer may be signs of under-performing insulation in the attic. Other tell-tale signs can be a roof devoid of snow whilst most other surrounding homes remain snow covered, and excessive build-up of icicles off of soffits and guttering. These can be the result of heat escaping into the attic from the interior of the home.</p>
 <p>In general, adding to or even replacing old insulation in the attic is a good investment.
     <ul class=\""inline-bullets\"">
@@ -502,7 +502,7 @@ S,"<h1>Attic Insulation:</h1>
     <li>Assess the contractor's level of professionalism (e.g. how they communicate, do they explain the installation process clearly, do they explain clearly the impacts of the insulation on the home's performance, do they respond in a timely manner)</li>
     <li>Are proposals and contracts provided in writing and clearly and comprehensively?</li>
 </ul>",
-T,"<h1>Wall Insulation:</h1>
+T,"<h1>Wall Insulation</h1>
 <p>Homeowners may sense that the exterior walls are cold-to-the-touch in the winter. Depending on how, and often when, their home was constructed, the problem may be due to poorly performing insulation, including poor installation of the insulation, or no insulation at all in the case of many of the homes built pre and post war. It is recommended that the homeowner source a contractor who is an expert in wall insulation of existing homes to ascertain how the wall is constructed and what options are best to solve the problem. There are a number of techniques available without removing plaster and wall-boards to determine whether one's existing walls are insulated, and if so, with what type of material (e.g. fishing through holes by removing electrical outlet and light switch covers, drilling small holes in inconspicuous places, etc.). The range of solutions include blowing and spraying in insulation between the wall's studs and wall cavities from inside/outside/from below/above, removing plaster-boards entirely to enable batt insulation or foam board insulation, or even applying outside cladding to the wall. It is imperative, however, that skilled contractors be engaged to ensure the work is done to at least the regulations stipulated in the Ontario Building Code (e.g. vapour barriers to prevent mold growth, proper amount of insulation, etc.).</p>
 <p>High level cost estimates will depend on the type of insulation material used (e.g. blown-in: $1 - $3/sq.ft., batts: $2 - $4/sq.ft., spray foam: $2 - $6/sq.ft. depending on foam's density, foam board: $1 - $3/sq.ft.) plus labour which will depend on the extent of the preparatory and finishing work needed. Knowledgeable contractors should be able to run the homeowner through their options and the pros & cons of each option.</p>
 <p>This is a good primer on the different types of spray-foam: <a href=\""https://www.whysprayfoam.org/spray-foam/types-spray-foam/\"">https://www.whysprayfoam.org/spray-foam/types-spray-foam/</a></p>
@@ -545,7 +545,7 @@ T,"<h1>Wall Insulation:</h1>
     <li>Ensure there is proper ventilation in the bedroom to prevent excess humidity that can exacerbate coldness</li>
 </ul>
 </p>",
-U,"<h1>Window and Door Gap Sealing:</h1>
+U,"<h1>Window and Door Gap Sealing</h1>
 <p>Poorly sealed windows and doors can consume 10% - 20% annually more energy over a similar home that's well sealed. This can represent &gt;0.5 tonnes per year of CO<sub>2</sub> emissions. In most instances, homeowners should be able to both diagnose and fix the seal problems themselves at a very modest cost. Holding a lit candle or incense stick near the sealed area will reveal where the gaps are the most pronounced. If the flame or smoke is pulled into the gap or blown into the room, this will indicate where there's a seal problem. Remedies can include applying caulking, foam sealant, heat-shrink film with double-sided tape, clear rigid acrylic sheets with magnetic seals and weather stripping. Depending on the material and what quantity of material is required, out-of-pocket costs should mostly be under $100. If one's handy, in just a few hours, most gaps can be successfully sealed. If one sees condensation in between the two (or more) layers of panes of glass, it is usually a sign that the window's seal has failed. It is recommended that the homeowner should seek professional advice to confirm the state of the window and whether it needs to be replaced.</p>
 <ul class=\""inline-bullets\"">
     <li><strong>Expected energy savings: 10% - 20% annually</strong></li>
@@ -562,7 +562,7 @@ U,"<h1>Window and Door Gap Sealing:</h1>
         <li><a href=\""https://www.youtube.com/watch?v=xzPit2Jf1zg\"">https://www.youtube.com/watch?v=xzPit2Jf1zg</a></li>
     </ul>
 </p>",
-V,"<h1>Window Replacement:</h1>
+V,"<h1>Window Replacement</h1>
 <p>If your home has single pane windows, you notice condensation between the panes of glass, feel drafts from the window, or are having difficulties being able to close the window tightly (e.g. winding mechanism doesn't work properly), then it may be time to replace the window altogether. Window replacements are a significant investment (e.g. &gt;$1,000/window including labour) which will depend on factors such as the type of windows (e.g. level of efficiency, 3x vs. 2x pane, opening mechanism, encasement material (e.g. wood, fibreglass, aluminum, vinyl), etc.) and the complexity of the installation including trimwork. Depending on the number and complexity of the windows being replaced, homeowners should plan for approximately up to a week to complete.</p>
 
 <ul class=\""inline-bullets\"">
@@ -602,7 +602,7 @@ V,"<h1>Window Replacement:</h1>
         <li><a href=\""https://www.youtube.com/watch?v=T_oU0orKUz0\"">https://www.youtube.com/watch?v=T_oU0orKUz0</a></li>
     </ul>
 </p>",
-W,"<h1>Door Replacement:</h1>
+W,"<h1>Door Replacement</h1>
 <p>Over the years with constant use, extremes in weather and potential shifting in the home's foundation, doors can begin to get out of alignment within their frames. At the extreme, replacing the seal around the door may be insufficient to fix the gap problems; a door replacement will be needed. Apart from different styles, these are the fundamentals a homeowner should consider when selecting a replacement door from an energy efficiency perspective:</p>
 <ul class=\""inline-bullets\"">
     <li>Material select (i.e. fibreglass and insulated doors (foam insulation in the core) are recommended for their insulation properties over wooden doors that are also prone to warping)</li>
@@ -625,7 +625,7 @@ W,"<h1>Door Replacement:</h1>
     <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
 </ul>
 <p>Make certain to ask about warranties (i.e. materials, finish, structural, glass (if applicable), and installation - whether the manufacturer's warranty is voided unless the door is installed and maintained according to the manufacturer's recommendations), ask about timelines to get the work done, get customer references and seek multiple quotes. As many exist, consider visiting showrooms to gain a better feel for the different styles, materials as well as their prices.</p>",
-Y,"<h1>Floor Vent Deflectors:</h1>
+Y,"<h1>Floor Vent Deflectors</h1>
 <p>For ductwork heated and cooled homes, installation of floor-vent air-deflectors in spaces that can become uncomfortably cool in the winter or warm in the summer is a very simple and cost-effective way to improve air circulation, increase comfort level and provide the homeowner with the ability to regulate temperature. Being able to deflect the air from the floor vents more into the centre of a space will help make the home perform better and improve comfort. These simple inexpensive devices, that are available at most hardware stores and online, can be installed by the homeowner themselves in just a few minutes. They range in price from &lt;$10/piece to $20/piece depending on the style and design complexity.</p>
 
 <p>Should the volume of air coming through the vents be mostly inadequate, however, it is recommended that the homeowner check with an HVAC specialist to see if the low flow is a sign of a larger problem (e.g. blower fan too small, set at too low a speed, section of ductwork is undersized, blocked, etc.) and can be remedied. A well-designed and operating ductwork system should really be bathing the room's outside wall with warm or cool air depending on the season. The air from the vent aimed at the wall and running up it towards the ceiling is designed to be an 'air-curtain' to shield the room from the extreme temperature elements from outside and the space and hence the home's occupants.</p>
@@ -644,7 +644,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li>If the deflectors do not sufficiently improve comfort, consider consulting an HVAC specialist.</li>
     <li>A professional can check for larger issues within the HVAC system such as blower fan size, ductwork design, and blockages.</li>
 </ul>",
-4,"<h1>Replace Electric or Gas Clothes Dryer with a Heat Pump Clothes Dryer:</h1>
+4,"<h1>Replace Electric or Gas Clothes Dryer with a Heat Pump Clothes Dryer</h1>
 <p>Heat pump clothes dryers recycle the air that is heated up to dry clothes rather than constantly heating up the air from consuming electricity to run an electric element or burning natural gas to create a flame. This results in a number of very favourable advantages over traditional clothes dryers:</p>
 <ul class=""inline-bullets"">
     <li><strong>&lt;50% more energy efficient</strong> meaning lower energy costs and emissions</li>
@@ -671,7 +671,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://www.familyhandyman.com/article/heat-pump-dryer/"">Heat Pump Dryer: What is it and How Does it Work?</a></li>
     <li><a href=""https://www.youtube.com/watch?v=_3lITyF2zwk&t=6s"">Heat Pump Dryer Explained</a></li>
 </ul>",
-5,"<h1>Replacing a Clothes Washer:</h1>
+5,"<h1>Replacing a Clothes Washer</h1>
 <p>When it comes time to replace a top-loading clothes washer, all homeowners should lean towards doing so with a front-loading machine. The benefits of front-loaders far outweigh the deliverables of the top-loaders:</p>
 <ul class=""inline-bullets"">
     <li><strong>Use &lt;75% less water</strong></li>
@@ -688,7 +688,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/appliances-for-residential-use/clothes-washers/13984"">Natural Resources Canada: Clothes Washers</a></li>
     <li><a href=""https://www.consumerreports.org/appliances/washing-machines/5-things-to-know-about-front-load-washers-a6585182686/#:~:text=Front%2Dload%20washers%20not%20only,dryer%20time%20and%20energy%20use."">Consumer Reports: 5 Things to Know About Front-Load Washers</a></li>
 </ul>",
-6,"<h1>Replace Electric or Gas Stove with an Induction Stove:</h1>
+6,"<h1>Replace Electric or Gas Stove with an Induction Stove</h1>
 <p>Induction stoves are estimated to be 80% - 90% energy efficient as compared to gas stoves that are 40% - 60% and traditional coil and glass-surface electric stoves that are 70% - 80%. This superior efficiency comes about because induction stoves use electromagnetic technology to directly heat the pots/pans rather than needing a burner (gas) or element (electric) to heat an element and then transfer the heat to the pots/pans. Simply put, a lot of the heat from gas and electric stoves escapes to the surrounding space within the kitchen rather than being fully directed to heat up the pots/pans. The induction stove means less hood ventilation is required, especially in the case of gas stoves. In the summer, the induction stove tends not to heat up the kitchen like gas and electric stoves do which means that the home's air conditioner doesn't have to work as hard. Induction cooking provides precise heating controls where heating up and also cooling down the food in the pots/pans is almost instant.</p>
 
 <p>Induction technology for cooking has been around for over a century with Europe as the biggest user. But North Americans have been catching on to the technology, which is bringing down the costs of induction stoves. In many cases, they can be comparable in price to their gas and electric counterparts.</p>
@@ -706,7 +706,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://www.goodhousekeeping.com/appliances/a28435170/induction-stove-cooktop-pros-cons/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_md_pmx_hybd_mix_ca_20317666538&gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU71XeUIRDDd1P3rIY0F8779ar51EZOARMdUu2WUZwpiS95kGpyuHfDRoChwsQAvD_BwE"">Good Housekeeping: Induction Stove Cooktop Pros and Cons</a></li>
     <li><a href=""https://ca.bestreviews.guide/heat-diffuser-for-induction-cooktop?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU77cf_DNUOFKrRipuQe19snBXPReLTuiLlY4LH54x-r2DiRByLASGBhoCO-IQAvD_BwE"">Best Reviews: Heat Diffuser for Induction Cooktop</a></li>
 </ul>",
-7,"<h1>Upgrade Lighting:</h1>
+7,"<h1>Upgrade Lighting</h1>
 <p>LED lighting is a game-changing technology that everyone needs to embrace, and fortunately, most are. Statistics Canada reported in a recent consensus that over 50% of Canadians are now using LED lighting. Compared to traditional incandescent lights, LEDs can be up to 90% more efficient, which will certainly save homeowners money on their electricity bills as well as lighten the electrical load on the home's electrical panel, especially on lights constantly in use.</p>
 <p>The technology also has other amazing benefits such as:</p>
 <ul class=""inline-bullets"">
@@ -724,7 +724,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
     <li><a href=""https://natural-resources.canada.ca/energy-efficiency/products/lighting/13730"">Natural Resources Canada: Lighting</a></li>
     <li><a href=""https://www.energystar.gov/products/light_bulbs/learn-about-led-lighting#:~:text=LED%20stands%20for%20light%20emitting,the%20result%20is%20visible%20light."">ENERGYSTAR: Learn About LED Lighting</a></li>
 </ul>",
-8,"<h1>Efficient Water Fixtures:</h1>
+8,"<h1>Efficient Water Fixtures</h1>
 <p>Sink faucets in the home's bathrooms and kitchen, as well as shower-heads, present an opportunity for homeowners to save on the cost of water and energy to heat water by implementing very modest measures. For water valves whose volume of water can be controlled, homeowners can often install an aerator inside the end of most faucets and showerheads. This simple washer-like device automatically introduces small bubbles into the water stream that gives the impression to the user that more water is coming out than actually is. For an average shower, this can represent up to 30% less water consumption as well as less energy needed for water heating. Faucet aerators are very inexpensive (i.e. &lt;$20 for a multi-pack), available in most hardware stores and are simple for most homeowners to install themselves.</p>
 
 <p>If the shower faucet is due to be replaced, consider doing so with one that allows the user to control the flow of water (i.e. not just an on/off).</p>
@@ -737,7 +737,7 @@ Y,"<h1>Floor Vent Deflectors:</h1>
 </ul>
 
 <p>In the meantime, make certain to replace washers in sinks, showers, bathtubs, and outside faucets that are leaking. With leaking hot water valves, the homeowner's losing on the unnecessary cost of water and energy! Similarly, leaking toilets should be fixed or replaced as soon as possible. The Government of Canada reports that a leak of just one drop per second can waste 10,000 litres of water, which is more than one needs for cooking in a whole year!! A leaking toilet alone can consume &gt;300 litres of water each day. In the City of Markham, with the current water rates, that works out to ~ $0.08/day or $2.50/mth.</p>",
-Z,"<h1>Electrical Panel and Electrical Service:</h1>
+Z,"<h1>Electrical Panel and Electrical Service</h1>
 <p>As our society electrifies the transportation and heating sectors, our electricity networks will need to be upgraded considerably to be able to deliver the massive amount of electrical energy we will need. A home is no different. A household deciding to purchase and charge an electric vehicle (EV) at home will at a minimum be adding another 30A appliance to their electric panel. Likewise, a new cold climate heat pump that completely replaces a gas furnace and AC could add an incremental 60A to the home. A heat pump water heater would require a new 30A if it replaced a gas water heater, or 50A for an induction range if it replaced a gas range. For a home that currently has a 100A service, it's not difficult to see that its electrical panel will quickly be under capacity as more of these appliances are electrified.</p>
 
 <p>If the homeowner does decide to upgrade their electrical panel, they should strongly consider having the electrician include installing a conduited 30A - 60A dedicated wire from the panel to the garage or driveway in anticipation of an EV charger being installed one day in the future. (An actual EV charger need not be purchased at this stage, however). This is the perfect time to get this work done. Even if the homeowner does not have any immediate plans to purchase an electric car, this is an investment in the home. EV-Ready homes will be a feature more and more future homeowners will be looking for.</p>
@@ -754,7 +754,7 @@ Z,"<h1>Electrical Panel and Electrical Service:</h1>
     <li>Ask for multiple quotes, all of which should include a description of warranties (parts and labour)</li>
     <li>Contractor communicates (both verbally and in writing) on a timely basis and properly</li>
 </ul>",
-2,"<h1>Solar Generation:</h1>
+2,"<h1>Solar Generation</h1>
 <p>Homeowners are permitted to install solar panels on the roof of their home to generate either hot water or electricity.</p>
 
 <h2>Solar Water Heaters:</h2>
@@ -784,7 +784,7 @@ Z,"<h1>Electrical Panel and Electrical Service:</h1>
 </ul>
 
 <p>The homeowner must check their local city bylaws (e.g. height restrictions), local electric utility (Alectra Utilities for connection assessment and agreement which will automatically engage the Electrical Safety Authority (ESA)) and the Provincial Building Code (e.g. roof structure) to ensure that any work they plan to have done is in full compliance with the regulations.</p>",
-3,"<h1>Grey-Water Heat-Recovery Drains:</h1>
+3,"<h1>Grey-Water Heat-Recovery Drains</h1>
 <p>For households who take showers rather than baths, there is a potential to reduce the home's energy to heat their water by &lt;50% per year with a specially designed and built heat-recovery drain pipe. This device typically replaces a 3' to 4' 3"" to 4"" diameter section of the home's main drain stack. The temperature of the water going down the drain from a shower or the kitchen sink still contains considerable heat that can be recovered to pre-heat the temperature of the inbound city water entering into the home's hot water heater, thereby reducing the amount of energy the heater needs to meet the household's demand for hot water. Ideally, the drain stack and hot water heater are located close together such as within 10' to be able to utilize as much of the recovered heat as possible. The pipe can be installed in conjunction with any type of water heater (tank-based or tankless).</p>
 
 <p>The heat-recovery drain pipes can be bought at many hardware and plumbing stores or even online. Handy homeowners can install them themselves as can plumbers in just a couple of hours.</p>
