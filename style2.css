@@ -106,21 +106,7 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-        .section img {
-            max-width: 200px;
-            margin: 0 20px;
-        }
-        .section .text {
-            flex: 1;
-        }
+
 
         .switch {
             position: relative;
@@ -213,10 +199,6 @@
         h1.collapsed::after {
             content: '►'; /* Rightward arrow when collapsed */
         }
-        
-        /* a:hover::before {
-            background-color: rgba(0, 0, 0, 0.1); 
-        } */
 
 
 
@@ -251,6 +233,86 @@
             background-color: transparent;
         }
 
+
+
+
+
+
+
+        /* lets do this */
+
+
+
+/* 
+        
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+ 
+
+
+
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+    
+        
+        .section .text {
+            flex-basis: 55%;
+            margin: 10px;
+        }
+        
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .section p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        } */
+
+
+
+
+        .section {
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            flex-wrap: nowrap; /* Prevent wrapping */
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+        
+        .section h1 {
+            margin-bottom: 10px;
+            font-size: 28px; /* Adjust as needed */
+            color: #333;
+        }
+        
+        .section .text {
+            flex-basis: auto; /* Let the content size itself naturally */
+            margin: 10px 0 0 0; /* Ensure some margin from the h1 */
+        }
+        
+        .section p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-top: 10px; /* Add some space between paragraphs and other content */
+        }
 
 
 

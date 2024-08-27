@@ -19,9 +19,32 @@ function toggleContent() {
         content2.classList.remove('hidden');
     }
 
-
-
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const headings = document.querySelectorAll('h1');
+    
+    headings.forEach((heading, index) => {
+        const wrapperDiv = document.createElement('div');
+        // wrapperDiv.className = `section-${index + 1}`; 
+        wrapperDiv.className = `section`; 
+        heading.before(wrapperDiv); // Insert the wrapper div before the h1
+        let nextElement = heading.nextElementSibling;
+        
+        // Move the heading and subsequent elements into the wrapper until the next h1
+        wrapperDiv.appendChild(heading);
+
+        while (nextElement && nextElement.tagName !== 'H1') {
+            const next = nextElement.nextElementSibling; // Save reference to next element
+            wrapperDiv.appendChild(nextElement); // Move the current element inside the wrapper
+            nextElement = next; // Move to the next element
+        }
+    });
+});
+
+
 
 
 {/* <a href="page2.html#section2">Go to Section 2 on Page 2</a> */}
