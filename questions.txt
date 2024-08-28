@@ -21,7 +21,7 @@ questions = {
     furnace: {
         question: "Do you have a gas/propane/oil/wood furnace?",
         answers: {
-            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace",0)}},
+            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace","0")}},
             "No": { next: "ductedHeatPump", action: () => stringFunction("ductedHeatPump","furnace","")},
             "I don't know": {next: "virtualConsultation", action: () => stringFunction("virtualConsultation","furnace","")},
         }
@@ -327,7 +327,7 @@ questions = {
     ductedHeatPump: {
         question: "Does your home have a ducted heat pump?",
         answers: {
-            "Yes": { next: "ductedHeatPumpAge", action: () => stringFunction("ductedHeatPumpAge","ductedHeatPump","");equipmentType("ductedHeatPump",0)},
+            "Yes": { next: "ductedHeatPumpAge", action: () => stringFunction("ductedHeatPumpAge","ductedHeatPump","")},
             "No": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductedHeatPump","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","ductedHeatPump","")},
         }
@@ -335,7 +335,7 @@ questions = {
     hydronicHeating: {
         question: "Does your home have hot water radiators/in-floor?",
         answers: {
-            "Yes": { next: "boiler", action: () => stringFunction("boiler","hydronicHeating","");equipmentType("hydronicHeating",0)},
+            "Yes": { next: "boiler", action: () => stringFunction("boiler","hydronicHeating","")},
             "No": { next: "baseboard", action: () => stringFunction("baseboard","hydronicHeating","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","hydronicHeating","")},
         }
@@ -343,7 +343,7 @@ questions = {
     baseboard: {
         question: "Does your home have electric baseboard heating?",
         answers: {
-            "Yes": { next: "baseboardAge", action: () => stringFunction("baseboardAge","baseboard","");equipmentType("baseboard",0)},
+            "Yes": { next: "baseboardAge", action: () => stringFunction("baseboardAge","baseboard","")},
             "No": { next: "ductlessHeatPump", action: () => stringFunction("ductlessHeatPump","baseboard","")},
             "I don't know": { next: "virtualConsultation", action: () => stringFunction("virtualConsultation","baseboard","")},
         }
