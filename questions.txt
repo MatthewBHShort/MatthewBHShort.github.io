@@ -21,7 +21,7 @@ questions = {
     furnace: {
         question: "Do you have a gas/propane/oil/wood furnace?",
         answers: {
-            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace","0")}},
+            "Yes": { next: "furnaceAge", action: () => {stringFunction("furnaceAge","furnace","");equipmentType("furnace",1)}},
             "No": { next: "ductedHeatPump", action: () => stringFunction("ductedHeatPump","furnace","")},
             "I don't know": {next: "virtualConsultation", action: () => stringFunction("virtualConsultation","furnace","")},
         }
