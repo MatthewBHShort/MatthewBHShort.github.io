@@ -528,11 +528,11 @@ baseboardAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("solar","gasFiredTankAge","JK3");
+                                stringFunction("solar","gasFiredTankAge","J3");
                             case result.driver.includes('ghgs'):
-                                stringFunction("solar","gasFiredTankAge","JK3");
+                                stringFunction("solar","gasFiredTankAge","J3");
                             case result.driver.includes('comfort'):
-                                stringFunction("solar","gasFiredTankAge","JK");
+                                stringFunction("solar","gasFiredTankAge","J");
                             case result.driver.includes('equipment'):
                                 stringFunction("solar","gasFiredTankAge","");
                                     break;
@@ -544,11 +544,11 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","wgasFiredTankAge","JK");
+                            stringFunction("solar","wgasFiredTankAge","J");
                         case result.driver.includes('equipment'):
                             stringFunction("solar","gasFiredTankAge","");
                                 break;
@@ -560,13 +560,13 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","gasFiredTankAge","JK");
+                            stringFunction("solar","gasFiredTankAge","J");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","gasFiredTankAge","JKQR");
+                            stringFunction("solar","gasFiredTankAge","JQR");
                                 break;
                     }
                 }
@@ -576,13 +576,13 @@ baseboardAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTankAge","JKQRZ3");
+                            stringFunction("solar","gasFiredTankAge","JQRZ3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTankAge","JKQRZ3");
+                            stringFunction("solar","gasFiredTankAge","JQRZ3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","gasFiredTankAge","JKQRZ");
+                            stringFunction("solar","gasFiredTankAge","JQRZ");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","gasFiredTankAge","JKQRZ");
+                            stringFunction("solar","gasFiredTankAge","JQRZ");
                                 break;
                     }
             }
@@ -600,11 +600,11 @@ electricTankAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("solar","electricTankAge","JK3");
+                                stringFunction("solar","electricTankAge","J3");
                             case result.driver.includes('ghgs'):
-                                stringFunction("solar","electricTankAge","JK3");
+                                stringFunction("solar","electricTankAge","J3");
                             case result.driver.includes('comfort'):
-                                stringFunction("solar","electricTankAge","JK");
+                                stringFunction("solar","electricTankAge","J");
                             case result.driver.includes('equipment'):
                                 stringFunction("solar","electricTankAge","");
                                     break;
@@ -616,11 +616,11 @@ electricTankAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTankAge","JK3");
+                            stringFunction("solar","gasFiredTankAge","J3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","wgasFiredTankAge","JK");
+                            stringFunction("solar","wgasFiredTankAge","J");
                         case result.driver.includes('equipment'):
                             stringFunction("solar","gasFiredTankAge","");
                                 break;
@@ -632,13 +632,13 @@ electricTankAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","electricTankAge","JK3");
+                            stringFunction("solar","electricTankAge","J3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","electricTankAge","JK3");
+                            stringFunction("solar","electricTankAge","J3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","electricTankAge","JK");
+                            stringFunction("solar","electricTankAge","J");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","electricTankAge","JKQR");
+                            stringFunction("solar","electricTankAge","JQR");
                                 break;
                     }
                 }
@@ -648,13 +648,13 @@ electricTankAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","electricTankAge","JKQRZ3");
+                            stringFunction("solar","electricTankAge","JQRZ3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","electricTankAge","JKQRZ3");
+                            stringFunction("solar","electricTankAge","JQRZ3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","electricTankAge","JKQRZ");
+                            stringFunction("solar","electricTankAge","JQRZ");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","electricTankAge","JKQRZ");
+                            stringFunction("solar","electricTankAge","JQRZ");
                                 break;
                     }
             }
@@ -670,11 +670,11 @@ gasFiredTanklessAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("solar","gasFiredTanklessAge","JK3");
+                                stringFunction("solar","gasFiredTanklessAge","K3");
                             case result.driver.includes('ghgs'):
-                                stringFunction("solar","gasFiredTanklessAge","JK3");
+                                stringFunction("solar","gasFiredTanklessAge","K3");
                             case result.driver.includes('comfort'):
-                                stringFunction("solar","gasFiredTanklessAge","JK");
+                                stringFunction("solar","gasFiredTanklessAge","K");
                             case result.driver.includes('equipment'):
                                 stringFunction("solar","gasFiredTanklessAge","");
                                     break;
@@ -686,11 +686,11 @@ gasFiredTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","wgasFiredTanklessAge","JK");
+                            stringFunction("solar","wgasFiredTanklessAge","K");
                         case result.driver.includes('equipment'):
                             stringFunction("solar","gasFiredTanklessAge","");
                                 break;
@@ -702,13 +702,13 @@ gasFiredTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","gasFiredTanklessAge","JK");
+                            stringFunction("solar","gasFiredTanklessAge","K");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","gasFiredTanklessAge","JKQR");
+                            stringFunction("solar","gasFiredTanklessAge","KQR");
                                 break;
                     }
                 }
@@ -718,13 +718,13 @@ gasFiredTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTanklessAge","JKQRZ3");
+                            stringFunction("solar","gasFiredTanklessAge","KQRZ3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTanklessAge","JKQRZ3");
+                            stringFunction("solar","gasFiredTanklessAge","KQRZ3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","gasFiredTanklessAge","JKQRZ");
+                            stringFunction("solar","gasFiredTanklessAge","KQRZ");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","gasFiredTanklessAge","JKQRZ");
+                            stringFunction("solar","gasFiredTanklessAge","KQRZ");
                                 break;
                     }
             }
@@ -742,11 +742,11 @@ electricTanklessAge: {
                     action: () => {
                         switch (true) {
                             case result.driver.includes('costs'):
-                                stringFunction("solar","electricTanklessAge","JK3");
+                                stringFunction("solar","electricTanklessAge","K3");
                             case result.driver.includes('ghgs'):
-                                stringFunction("solar","electricTanklessAge","JK3");
+                                stringFunction("solar","electricTanklessAge","K3");
                             case result.driver.includes('comfort'):
-                                stringFunction("solar","electricTanklessAge","JK");
+                                stringFunction("solar","electricTanklessAge","K");
                             case result.driver.includes('equipment'):
                                 stringFunction("solar","electricTanklessAge","");
                                     break;
@@ -758,11 +758,11 @@ electricTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","gasFiredTanklessAge","JK3");
+                            stringFunction("solar","gasFiredTanklessAge","K3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","wgasFiredTanklessAge","JK");
+                            stringFunction("solar","wgasFiredTanklessAge","K");
                         case result.driver.includes('equipment'):
                             stringFunction("solar","gasFiredTanklessAge","");
                                 break;
@@ -774,13 +774,13 @@ electricTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","electricTanklessAge","JK3");
+                            stringFunction("solar","electricTanklessAge","K3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","electricTanklessAge","JK3");
+                            stringFunction("solar","electricTanklessAge","K3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","electricTanklessAge","JK");
+                            stringFunction("solar","electricTanklessAge","K");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","electricTanklessAge","JKQR");
+                            stringFunction("solar","electricTanklessAge","KQR");
                                 break;
                     }
                 }
@@ -790,13 +790,13 @@ electricTanklessAge: {
                 action: () => {
                     switch (true) {
                         case result.driver.includes('costs'):
-                            stringFunction("solar","electricTanklessAge","JKQRZ3");
+                            stringFunction("solar","electricTanklessAge","KQRZ3");
                         case result.driver.includes('ghgs'):
-                            stringFunction("solar","electricTanklessAge","JKQRZ3");
+                            stringFunction("solar","electricTanklessAge","KQRZ3");
                         case result.driver.includes('comfort'):
-                            stringFunction("solar","electricTanklessAge","JKQRZ");
+                            stringFunction("solar","electricTanklessAge","KQRZ");
                         case result.driver.includes('equipment'):
-                            stringFunction("solar","electricTanklessAge","JKQRZ");
+                            stringFunction("solar","electricTanklessAge","KQRZ");
                                 break;
                     }
             }
