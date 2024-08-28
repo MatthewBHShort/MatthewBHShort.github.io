@@ -88,6 +88,7 @@ const wordsToLink = [
     { word: 'Heat Pump'},
     { word: 'Electric Baseboard Heaters'},
     { word: 'LED Lighting'},
+    { word: 'Heat Pump water heater'},
 
 ];
 function makeWordsClickable() {

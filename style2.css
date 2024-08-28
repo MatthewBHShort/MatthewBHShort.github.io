@@ -168,6 +168,22 @@
         }
 
 
+        h1 > #clickableWord {
+            /* Your styles here */
+            color: black;
+            background-color: transparent;
+        }
+
+        h2 > #clickableWord {
+            /* Your styles here */
+            color: black;
+            background-color: transparent;
+        }
+
+
+
+
+
         a::before {
             content: '';
             position: absolute;
