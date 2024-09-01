@@ -237,14 +237,12 @@ function askQuestion() {
         if (answer == 'Next' && result.driver.length == 0) {
             button.style.backgroundColor = 'grey'; 
             hideResultsWindow();
-            // button.style.visibility = 'hidden';
             questions["start"].answers["Next"].next = 'start';
         }
         if (answer == 'Next' && result.driver.length > 0) {
             button.style.backgroundColor = 'rgb(114, 172, 240)'; 
             questions["start"].answers["Next"].next = 'ductWork';
-            openResultsWindow();
-            // button.style.visibility = 'visible';
+            showResultsWindow();
         }
 
         if(q.question == "Would you like to book a virtual consultation?" && answer == "Yes"){
@@ -312,9 +310,9 @@ function sendEmail(r) {
 
 
 
-function openResultsWindow() {
+function showResultsWindow() {
     console.log("Show cart");
-    document.getElementById("floatingWindow").style.display = "flex";
+    document.getElementById("floatingWindow").style.display = "block";
     document.getElementById("app").style.width = "64%";
     document.getElementById("app").style.paddingLeft = "2%";
 }
