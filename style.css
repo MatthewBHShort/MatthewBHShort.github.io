@@ -1,9 +1,6 @@
 
 
-        #app{
-            width: 64%; /* Adjusted to accommodate padding */
-            padding-left: 2%;
-        }
+
 
         .container {
             display: flex;
@@ -12,6 +9,7 @@
         }
 
         #floatingWindow {
+            display:none;
             position: fixed;
             /* top: 20px; */
             right: 2%; 
@@ -32,14 +30,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Light grey background for the page */
+            background-color: #f4f4f4; 
         }
         #theOne{
-            background-color: #7db3f5; /* Blue color on hover */
-            border-color: #7db3f5; /* Match border color on hover */
+            background-color: #7db3f5; 
+            border-color: #7db3f5;
         }
         .navbar {
-            background-color: #7CB342; /* Green color */
+            background-color: #7CB342; 
             padding: 10px 20px;
             display: flex;
             align-items: center;
@@ -67,12 +65,12 @@
             padding: 10px 20px;
             font-size: 14px;
             border-radius: 50px;
-            border: 1px solid white; /* Thin white border */
+            border: 1px solid white; 
             transition: background-color 0.3s, border-color 0.3s;
         }
         .nav-link:hover {
-            background-color: #7db3f5; /* Blue color on hover */
-            border-color: #7db3f5; /* Match border color on hover */
+            background-color: #7db3f5; 
+            border-color: #7db3f5; 
         }
  
  
@@ -91,7 +89,7 @@
         }
         
         button {
-            background-color: #7CB342; /* Green color */
+            background-color: #7CB342; 
             color: white;
             padding: 15px 30px;
             text-align: center;
@@ -105,14 +103,14 @@
             align-items: center;
         }
         button:hover {
-            background-color: #5A8C2A; /* Darker green color for hover effect */
+            background-color: #5A8C2A; 
         }
         .button-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             text-align: center;
-            gap: 10px; /* Space between buttons */
+            gap: 10px; 
         }
 
         .question {

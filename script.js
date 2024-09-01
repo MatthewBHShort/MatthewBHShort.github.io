@@ -230,24 +230,20 @@ function askQuestion() {
             answersElem.appendChild(space);
         }
 
-        if(answer == 'Next'){
-
-
-
-        }
-
         
 
 
 
         if (answer == 'Next' && result.driver.length == 0) {
             button.style.backgroundColor = 'grey'; 
+            hideResultsWindow();
             // button.style.visibility = 'hidden';
             questions["start"].answers["Next"].next = 'start';
         }
         if (answer == 'Next' && result.driver.length > 0) {
             button.style.backgroundColor = 'rgb(114, 172, 240)'; 
             questions["start"].answers["Next"].next = 'ductWork';
+            openResultsWindow();
             // button.style.visibility = 'visible';
         }
 
@@ -312,6 +308,23 @@ function sendEmail(r) {
     var mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&cc=${cc}&bcc=${bcc}`;
     
     window.location.href = mailtoLink;
+}
+
+
+
+function openResultsWindow() {
+    console.log("Show cart");
+    document.getElementById("floatingWindow").style.display = "flex";
+    document.getElementById("app").style.width = "64%";
+    document.getElementById("app").style.paddingLeft = "2%";
+}
+
+function hideResultsWindow(){
+    console.log("Hide cart");
+    document.getElementById("floatingWindow").style.display = "none";
+    document.getElementById("app").style.width = "100%";
+    document.getElementById("app").style.paddingLeft = "0%";
+
 }
 
 
