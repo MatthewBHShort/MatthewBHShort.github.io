@@ -1,5 +1,29 @@
 
 
+        #app{
+            width: 64%; /* Adjusted to accommodate padding */
+            padding-left: 2%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #floatingWindow {
+            position: fixed;
+            /* top: 20px; */
+            right: 2%; 
+            width: 25%; 
+            max-height: 200px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+            /* z-index: 1000; */
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,7 +44,6 @@
         .navbar img {
             height: 40px;
             width:129px;
-            /* width: 67px; */
             width: auto;
         }
         .navbar .nav-links {
@@ -105,7 +128,7 @@
             align-items: center;
             padding: 10px;
             background-color: #f8f8f8;
-            width: fit-content; /* Adjusts the width to fit the content */
+            width: fit-content; 
             border-radius: 10px;
         }
         .header img {

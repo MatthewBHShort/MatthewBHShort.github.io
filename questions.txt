@@ -892,40 +892,6 @@ waterHeatingAge: {
     }
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     electricalPanel: {
         question: "What is the size of your electrical panel?",
         answers: {
