@@ -236,10 +236,12 @@ function askQuestion() {
 
         if (answer == 'Next' && result.driver.length == 0) {
             button.style.backgroundColor = 'grey'; 
-            hideResultsWindow();
+            driversInCart();
+            // hideResultsWindow();
             questions["start"].answers["Next"].next = 'start';
         }
         if (answer == 'Next' && result.driver.length > 0) {
+            driversInCart();
             button.style.backgroundColor = 'rgb(114, 172, 240)'; 
             questions["start"].answers["Next"].next = 'ductWork';
             showResultsWindow();
@@ -271,9 +273,41 @@ function saveResponses(yesOrNo) {
         surveyResponseData.fullSurvey = replies;
         saveData(replies,result.driver);
         console.log(replies);
+
         // sendEmail(replies);
     }
     askForLetter(result.answerString); 
+}
+
+
+function driversInCart(){
+    let r = result.driver;
+    console.log("Running driversInCart");
+    let drivers = [];
+    if(r.includes("costs")){
+        drivers.push("Costs");
+    }
+    if(r.includes("ghgs")){
+        drivers.push("Ghgs");
+    }
+    if(r.includes("comfort")){
+        drivers.push("Comfort");
+    }
+    if(r.includes("equipment")){
+        drivers.push("Equipment");
+    }
+    let driversFormatted = "";
+    for(let i = 0; i < drivers.length; i++){
+        driversFormatted += drivers[i];
+        if(i < drivers.length-1){
+            driversFormatted += ", ";
+        }else{
+            driversFormatted += ".";
+        }
+    }
+    document.getElementById("driversInCart").innerHTML = "<strong>Drivers: </strong> " + driversFormatted;
+    console.log(driversFormatted);
+
 }
 
 function formatResponses(r){
