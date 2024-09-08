@@ -269,7 +269,7 @@ function updateShoppingCart(r){
     
     // Find all <h1>...</h1> matches and store the inner content
     let match;
-    while ((match = regex.exec(inputString)) !== null) {
+    while ((match = regex.exec(r)) !== null) {
         h1List.push(match[1]);
     }
     
