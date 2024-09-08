@@ -4,6 +4,7 @@ const txtUrl = 'https://raw.githubusercontent.com/MatthewBHShort/MatthewBHShort.
 
 const startTime = new Date().toISOString();
 console.log("Survey Started at: " + startTime);
+let shoppingCartResult = "";
 
 const firebaseConfig = {
     apiKey: "AIzaSyATFx-WHCXHC2uA0FZZwIcPO7LAjRh8Wjg",
@@ -170,6 +171,7 @@ async function askForLetter(stringAnswer) {
         result = csvData.find(row => row.identifier && row.identifier.toLowerCase() === letter[i].toLowerCase());
         fullResult += result.paragraph;
         fullResult += "\n";
+        shoppingCartResult = fullResult;
     }
     
 
@@ -254,6 +256,39 @@ function askQuestion() {
         }
     }
 }
+
+
+
+
+function updateShoppingCart(r){
+    // Regular expression to match <h1>...</h1>
+    const regex = /<h1>(.*?)<\/h1>/g;
+    
+    // Array to store matches
+    const h1List = [];
+    
+    // Find all <h1>...</h1> matches and store the inner content
+    let match;
+    while ((match = regex.exec(inputString)) !== null) {
+        h1List.push(match[1]);
+    }
+    
+    // Create an HTML list
+    let listHtml = '<ul>';
+    h1List.forEach(h1 => {
+        listHtml += `<li>${h1}</li>`;
+    });
+    listHtml += '</ul>';
+    
+    return listHtml;
+}
+
+const resultHtml = updateShoppingCart(shoppingCartResult);
+
+// Output the result
+console.log(resultHtml);
+
+
 
 function handleAnswer(answer) {
     const q = questions[current];

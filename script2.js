@@ -4,7 +4,7 @@ function retrieveString() {
     const sharedString = localStorage.getItem('sharedString');
     // console.log(sharedString);
     // document.getElementById('displayString').innerText = sharedString ? `${sharedString}` : 'No answers found.';
-    // document.getElementById('formatted-output').innerHTML = sharedString;
+    document.getElementById('formatted-output').innerHTML = sharedString;
 }
 retrieveString();
 // checkForSections();
