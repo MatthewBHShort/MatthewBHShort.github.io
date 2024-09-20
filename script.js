@@ -253,7 +253,7 @@ function askQuestion() {
 
         if(q.question == "Would you like to book a virtual consultation?" && answer == "Yes"){
             button.onclick = function() {
-                window.location.href = 'https://calendly.com/cutyourhomecarbon';
+                // window.location.href = 'https://calendly.com/cutyourhomecarbon';
             };
         }
     }
