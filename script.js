@@ -173,6 +173,8 @@ async function askForLetter(stringAnswer) {
         fullResult += "\n";
         shoppingCartResult = fullResult;
     }
+    const resultHtml = updateShoppingCart("<h1>hello</h1>");
+    console.log(resultHtml);
     
 
     
@@ -283,10 +285,6 @@ function updateShoppingCart(r){
     return listHtml;
 }
 
-const resultHtml = updateShoppingCart(shoppingCartResult);
-
-// Output the result
-console.log(resultHtml);
 
 
 
@@ -399,11 +397,10 @@ function hideResultsWindow(){
 
 
 function getLocation(){
-    // console.log("getting location: ");
+    askForLetter(result.answerString); 
     fetch('https://ipapi.co/json/')
     .then(response => response.json())
     .then(data => {
-        // console.log(data.city, data.region, data.country);
         surveyResponseData.location = data.city + ", " + data.region + ", " + data.country + ".";
     })
     .catch(error => console.error('Error fetching location:', error));
