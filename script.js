@@ -182,11 +182,11 @@ async function askForLetter(stringAnswer) {
         saveString(fullResult);
 
     } else {
-      document.getElementById('result').innerText = `No paragraph found for ${letter}`;
+    //   document.getElementById('result').innerText = `No paragraph found for ${letter}`;
     }
   } catch (error) {
     console.error('Error fetching or parsing CSV:', error);
-    document.getElementById('result').innerText = 'Error fetching or parsing CSV. Check the console for details.';
+    // document.getElementById('result').innerText = 'Error fetching or parsing CSV. Check the console for details.';
   }
 }
 
@@ -397,6 +397,7 @@ function hideResultsWindow(){
 
 
 function getLocation(){
+    console.log("here: " + result.answerString);
     askForLetter(result.answerString); 
     fetch('https://ipapi.co/json/')
     .then(response => response.json())
